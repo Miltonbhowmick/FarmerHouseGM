@@ -4,10 +4,12 @@
     {"id":{"name":"sMediumTree","path":"sprites/sMediumTree/sMediumTree.yy",},"order":0,},
     {"id":{"name":"sSmallTree","path":"sprites/sSmallTree/sSmallTree.yy",},"order":1,},
     {"id":{"name":"oMediumTree","path":"objects/oMediumTree/oMediumTree.yy",},"order":2,},
+    {"id":{"name":"sLargeTree","path":"sprites/sLargeTree/sLargeTree.yy",},"order":4,},
     {"id":{"name":"tGround","path":"tilesets/tGround/tGround.yy",},"order":0,},
     {"id":{"name":"sTileSet","path":"sprites/sTileSet/sTileSet.yy",},"order":3,},
     {"id":{"name":"oSmallTree","path":"objects/oSmallTree/oSmallTree.yy",},"order":0,},
     {"id":{"name":"oSoil","path":"objects/oSoil/oSoil.yy",},"order":1,},
+    {"id":{"name":"oLargeTree","path":"objects/oLargeTree/oLargeTree.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

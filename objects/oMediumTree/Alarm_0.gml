@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.clickable = true;
+instance_change(oLargeTree,true);
