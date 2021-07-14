@@ -1,1 +1,1 @@
-show_message("AHAC");
+instance_destroy(inst_large_tree);
