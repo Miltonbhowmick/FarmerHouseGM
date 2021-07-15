@@ -1,10 +1,13 @@
-//if(ck)
-inst_large_tree = instance_nearest(x,y,oLargeTree);
+if(ck)
+	inst_large_tree = instance_nearest(x,y,oLargeTree);
 
 if(instance_exists(inst_large_tree)){
-	if(ck) 	inst_large_tree.OccupiedFarmer = id;
+	if(ck){
+		if(inst_large_tree.OccupiedFarmer == noone) 
+			inst_large_tree.OccupiedFarmer = id;
+	}
 	
-	if(inst_large_tree.OccupiedFarmer == id){		
+	if(inst_large_tree.OccupiedFarmer == id){	
 		ck=false;
 		x = inst_large_tree.x;
 		y = inst_large_tree.y;
@@ -12,7 +15,14 @@ if(instance_exists(inst_large_tree)){
 			alarm[0] = room_speed * 5;		
 		}
 	}
+	else{
+		//show_message(string(id) + "milse" + string(inst_large_tree.OccupiedFarmer));
+	}
 	
 }
 else{
+	if(instance_exists(instance_nearest(x,y,oSmallTree))==0 && instance_exists(instance_nearest(x,y,oMediumTree))==0){
+		instance_destroy();
+		if(GameManager.Farmer<2) GameManager.Farmer++;
+	}
 }
