@@ -7,18 +7,17 @@ if(instance_exists(inst_large_tree)){
 			inst_large_tree.OccupiedFarmer = id;
 	}
 	
-	if(inst_large_tree.OccupiedFarmer == id){	
+	if(inst_large_tree.OccupiedFarmer == id){
 		ck=false;
 		x = inst_large_tree.x;
 		y = inst_large_tree.y;
 		if(alarm[0]<0){
-			alarm[0] = room_speed * 5;		
+			alarm[0] = room_speed * 5;
 		}
 	}
 	else{
 		//show_message(string(id) + "milse" + string(inst_large_tree.OccupiedFarmer));
 	}
-	
 }
 else{
 	if(instance_exists(instance_nearest(x,y,oSmallTree))==0 && instance_exists(instance_nearest(x,y,oMediumTree))==0){
