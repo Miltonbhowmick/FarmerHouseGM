@@ -3,3 +3,4 @@
 
 MousePressed=0;
 GameManager = inst_GameManager;
+OccupiedFarmer = noone;
