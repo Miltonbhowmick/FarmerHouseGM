@@ -17,11 +17,12 @@ if(instance_exists(inst_large_tree)){
 	}
 	else{
 		//show_message(string(id) + "milse" + string(inst_large_tree.OccupiedFarmer));
-	}
+	}	
 }
 else{
-	if(instance_exists(instance_nearest(x,y,oSmallTree))==0 && instance_exists(instance_nearest(x,y,oMediumTree))==0){
+	if(instance_exists(instance_nearest(x,y,oSmallTree))==0 && instance_exists(instance_nearest(x,y,oMediumTree))==0 && instance_number(oLargeTree)<=1){
 		instance_destroy();
+		show_message("nai");
 		if(GameManager.Farmer<2) GameManager.Farmer++;
 	}
 }
