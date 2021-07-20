@@ -3,7 +3,7 @@
     "name": "sSmallTree",
     "path": "sprites/sSmallTree/sSmallTree.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": {
     "name": "sSmallTree",

@@ -9,7 +9,6 @@ function create_button(){
 	var _script = argument[5];
 	
 	var _button = instance_create_layer(_x,_y,"GUI",oButton);
-	
 	with(_button){
 		width = _width;
 		height = _height;

@@ -3,7 +3,7 @@
     "name": "sMediumTree",
     "path": "sprites/sMediumTree/sMediumTree.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": {
     "name": "sMediumTree",

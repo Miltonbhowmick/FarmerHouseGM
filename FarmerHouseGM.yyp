@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":10,},
     {"id":{"name":"oFarmer","path":"objects/oFarmer/oFarmer.yy",},"order":7,},
     {"id":{"name":"sFarmerL","path":"sprites/sFarmerL/sFarmerL.yy",},"order":6,},
     {"id":{"name":"sSoil","path":"sprites/sSoil/sSoil.yy",},"order":2,},
@@ -16,6 +17,7 @@
     {"id":{"name":"sFarmerR","path":"sprites/sFarmerR/sFarmerR.yy",},"order":5,},
     {"id":{"name":"sTileSet","path":"sprites/sTileSet/sTileSet.yy",},"order":3,},
     {"id":{"name":"oSmallTree","path":"objects/oSmallTree/oSmallTree.yy",},"order":0,},
+    {"id":{"name":"oRoad","path":"objects/oRoad/oRoad.yy",},"order":9,},
     {"id":{"name":"oSoil","path":"objects/oSoil/oSoil.yy",},"order":1,},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},"order":0,},
     {"id":{"name":"instance_nth_nearest","path":"scripts/instance_nth_nearest/instance_nth_nearest.yy",},"order":3,},

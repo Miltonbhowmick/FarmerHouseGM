@@ -1,8 +1,11 @@
 inst_object = noone;
-inst_large_tree = noone;
-ck = true;
-FarmerPosition = inst_FarmerPosition;
-px = FarmerPosition.x;
-py = FarmerPosition.y;
 
+// large tree instance
+inst_large_tree = noone;
+// ck as trigger
+ck = true;
+// initialize instance of farmer dropped
+FarmerPosition = inst_FarmerPosition;
+
+// oGameManager instance
 GameManager  = inst_GameManager;
