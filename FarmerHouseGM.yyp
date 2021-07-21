@@ -12,7 +12,6 @@
     {"id":{"name":"sFarmer","path":"sprites/sFarmer/sFarmer.yy",},"order":7,},
     {"id":{"name":"oGoal","path":"objects/oGoal/oGoal.yy",},"order":11,},
     {"id":{"name":"sSmallTree","path":"sprites/sSmallTree/sSmallTree.yy",},"order":1,},
-    {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},"order":9,},
     {"id":{"name":"sGoal","path":"sprites/sGoal/sGoal.yy",},"order":10,},
     {"id":{"name":"oMediumTree","path":"objects/oMediumTree/oMediumTree.yy",},"order":2,},
     {"id":{"name":"sLargeTree","path":"sprites/sLargeTree/sLargeTree.yy",},"order":4,},
