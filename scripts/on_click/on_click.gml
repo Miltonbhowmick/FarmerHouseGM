@@ -21,5 +21,6 @@ function on_click(){
 	}
 	else if(text=="4"){
 		show_debug_message("Add soil");
+		GameManager.soil_create = true;
 	}
 }

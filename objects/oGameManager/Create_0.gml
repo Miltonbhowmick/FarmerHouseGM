@@ -5,3 +5,9 @@ Cut = 0;
 Plant = 0;
 
 CollectTrees = 0;
+
+// soil create
+soil_create = false;
+sp_grid = 32;
+spx = 130;
+spy = 240;
