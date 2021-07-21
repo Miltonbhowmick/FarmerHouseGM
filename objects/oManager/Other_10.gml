@@ -3,6 +3,7 @@
 var _width = 20;
 var _height = 20;
 
-create_button(650,300, _width, _height, "3", on_click);
-create_button(650,300+50, _width, _height, "2", on_click);
-create_button(650,300+50*2, _width, _height, "1", on_click);
+create_button(650,200, _width, _height, "4", on_click);
+create_button(650,200+50, _width, _height, "3", on_click);
+create_button(650,200+50*2, _width, _height, "2", on_click);
+create_button(650,200+50*3, _width, _height, "1", on_click);

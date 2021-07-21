@@ -7,5 +7,6 @@ ck = true;
 // initialize instance of farmer dropped
 FarmerPosition = inst_FarmerPosition;
 
+
 // oGameManager instance
 GameManager  = inst_GameManager;

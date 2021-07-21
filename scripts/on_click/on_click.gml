@@ -3,11 +3,11 @@ function on_click(){
 		GameManager.Plant = !GameManager.Plant;
 		show_debug_message("Plant");	
 	}	
-	if(text=="2"){
+	else if(text=="2"){
 		GameManager.Cut = !GameManager.Cut;
 		show_debug_message("Cut");	
 	}	
-	if(text=="3"){
+	else if(text=="3"){
 		if(GameManager.Farmer>0){
 			var _x = GameManager.FarmerPosition.x;
 			var _y = GameManager.FarmerPosition.y;
@@ -18,5 +18,8 @@ function on_click(){
 			GameManager.Farmer--;
 		}
 		show_debug_message("Farmer");	
+	}
+	else if(text=="4"){
+		show_debug_message("Add soil");
 	}
 }

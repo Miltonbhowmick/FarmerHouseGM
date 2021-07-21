@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"snd_Destroy","path":"sounds/snd_Destroy/snd_Destroy.yy",},"order":0,},
     {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":10,},
     {"id":{"name":"oFarmer","path":"objects/oFarmer/oFarmer.yy",},"order":7,},
     {"id":{"name":"sGuard","path":"sprites/sGuard/sGuard.yy",},"order":11,},
