@@ -5,8 +5,6 @@ Cut = 0;
 Plant = 0;
 CollectTrees = 0;
 
-// oGrid inheritance
-GridManager = inst_Grid;
 
 // soil create
 soil_create = false;
