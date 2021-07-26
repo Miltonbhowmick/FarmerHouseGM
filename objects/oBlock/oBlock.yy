@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sRoad",
-    "path": "sprites/sRoad/sRoad.yy",
+    "name": "sBlock",
+    "path": "sprites/sBlock/sBlock.yy",
   },
   "solid": true,
   "visible": true,
   "spriteMaskId": {
-    "name": "sRoad",
-    "path": "sprites/sRoad/sRoad.yy",
+    "name": "sBlock",
+    "path": "sprites/sBlock/sBlock.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oRoad",
+  "name": "oBlock",
   "tags": [],
   "resourceType": "GMObject",
 }
