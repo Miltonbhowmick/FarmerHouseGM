@@ -1,8 +1,10 @@
-if(soil_create && mouse_check_button_pressed(mb_left)){
+
+	
+if(soil_create){
+	
 	
 	custom_destroy_instance(spx,spy,oBlock);
 	custom_destroy_instance(spx-sp_grid,spy,oBlock);
-	
 	instance_create_layer(spx,spy,"Soils", oSoil);
 	instance_create_layer(spx-sp_grid,spy,"Roads", oRoad);
 	if(spy+sp_grid>=camera_get_view_height(view_camera[0])-32){
@@ -18,5 +20,8 @@ if(soil_create && mouse_check_button_pressed(mb_left)){
 	else{
 		spy+=sp_grid;
 	}
+	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 16, 16);
+	mp_grid_add_instances(global.rmGrid, oSoil, true);
+	mp_grid_add_instances(global.rmGrid, oBlock, true);
 	soil_create = false;
 }
