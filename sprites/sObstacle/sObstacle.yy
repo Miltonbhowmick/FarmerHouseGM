@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","path":"sprites/sGoal/sGoal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","path":"sprites/sGoal/sGoal.yy",},"LayerId":{"name":"36c909eb-5ae2-4b44-93f3-bce52b48c04c","path":"sprites/sGoal/sGoal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sGoal","path":"sprites/sGoal/sGoal.yy",},"resourceVersion":"1.0","name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","path":"sprites/sObstacle/sObstacle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","path":"sprites/sObstacle/sObstacle.yy",},"LayerId":{"name":"36c909eb-5ae2-4b44-93f3-bce52b48c04c","path":"sprites/sObstacle/sObstacle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sObstacle","path":"sprites/sObstacle/sObstacle.yy",},"resourceVersion":"1.0","name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sGoal","path":"sprites/sGoal/sGoal.yy",},
+    "spriteId": {"name":"sObstacle","path":"sprites/sObstacle/sObstacle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"70645fb9-013d-4c22-8aa6-aae2005644bd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","path":"sprites/sGoal/sGoal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70645fb9-013d-4c22-8aa6-aae2005644bd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa015da0-9187-4ba5-8a2f-fdd164fc16aa","path":"sprites/sObstacle/sObstacle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sGoal","path":"sprites/sGoal/sGoal.yy",},
+    "parent": {"name":"sObstacle","path":"sprites/sObstacle/sObstacle.yy",},
     "resourceVersion": "1.3",
-    "name": "sGoal",
+    "name": "sObstacle",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sGoal",
+  "name": "sObstacle",
   "tags": [],
   "resourceType": "GMSprite",
 }
