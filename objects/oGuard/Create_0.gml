@@ -1,2 +1,0 @@
-/// @description Variables
-timeToDraw = false;

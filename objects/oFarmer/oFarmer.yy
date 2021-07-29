@@ -5,7 +5,10 @@
   },
   "solid": true,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sFarmer",
+    "path": "sprites/sFarmer/sFarmer.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

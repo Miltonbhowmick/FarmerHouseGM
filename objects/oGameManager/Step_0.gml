@@ -1,5 +1,4 @@
 
-	
 if(soil_create){
 	
 	
@@ -21,6 +20,7 @@ if(soil_create){
 		spy+=sp_grid;
 	}
 	// initialize mp grid
+
 	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 16, 16);
 	mp_grid_add_instances(global.rmGrid, oSoil, true);
 	mp_grid_add_instances(global.rmGrid, oBlock, true);

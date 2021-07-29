@@ -1,22 +1,47 @@
 // point_distance(x,y,inst_FarmerPosition.x,inst_FarmerPosition.y)
 // farmer_bubble_skip(x,y,inst_FarmerPosition.x, inst_FarmerPosition.y)==true
 
-
-if(distance_to_object(oFarmerPosition)!=0 && distance_to_object(oFarmerPosition)!=22 && distance_to_object(oFarmer)==GameManager.bubble_range){	
+if(instance_number(oObstacle)==0 && distance_to_object(oFarmerPosition)>=16 && collision_circle(x,y,10, oFarmer, false,true)){
+	show_message("milsee");
+	near_farmer =  collision_circle(x,y,10, oFarmer, false,true);
+	obstacle = instance_create_layer(near_farmer.x-30,near_farmer.y,"Blocks",oObstacle);
+	mp_grid_add_instances(global.rmGrid,oObstacle,true);	
 	
-	// geting same object nearest instance
-	near_farmer = instance_nth_nearest(x,y,oFarmer,2);	
-	// create obstacle object
-	obstacle = instance_create_layer(near_farmer.x,near_farmer.y,"Blocks",oObstacle);
-	mp_grid_add_instances(global.rmGrid, oObstacle, true);
-
-	show_message(string(near_farmer.x)+ "==" + string(near_farmer.y) + "--" + string(distance_to_object(oFarmerPosition))+"Excuse Me!");	
-
-	with obstacle{
-		alarm[0] = room_speed * 5;
+	with obstacle {
+		alarm[0] = room_speed * 3;
 	}
+	
 }
+// NEW
+/*
+if(instance_number(oObstacle)==0 && distance_to_object(oFarmerPosition)!=0 && distance_to_object(oFarmerPosition)!=22 && distance_to_object(oFarmer)==GameManager.bubble_range){
+	// geting same object nearest instance
+	
+	near_farmer = instance_nth_nearest(x,y,oFarmer,2);
+	
+	if(y<near_farmer)
+	{
+		up_obstacle = instance_create_layer(x-30,y+10,"Blocks",oObstacle);
+		down_obstacle = instance_create_layer(near_farmer.x-30,near_farmer.y+10,"Blocks",oObstacle);
+	}
+	else{
+		up_obstacle = instance_create_layer(x-30,y-10,"Blocks",oObstacle);
+		down_obstacle = instance_create_layer(near_farmer.x-30,near_farmer.y-10,"Blocks",oObstacle);
+	}
+	
+	mp_grid_add_instances(global.rmGrid,oObstacle,true);	
+	show_message(string(up_obstacle) + "--" + string(distance_to_object(oFarmerPosition))+"Excuse Me!");
 
+	with up_obstacle {
+		alarm[0] = room_speed * 3;
+	}
+	with down_obstacle {
+		alarm[0] = room_speed * 3;
+	}	
+}
+*/
+
+// OLD
 /*
 if(distance_to_object(oFarmerPosition)!=0 && distance_to_object(oFarmerPosition)!=22 && distance_to_object(oFarmer)==GameManager.bubble_range){	
 // create obstacle object

@@ -29,7 +29,6 @@
     {"id":{"name":"oRoad","path":"objects/oRoad/oRoad.yy",},"order":9,},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},"order":1,},
     {"id":{"name":"oSoil","path":"objects/oSoil/oSoil.yy",},"order":1,},
-    {"id":{"name":"oGuard","path":"objects/oGuard/oGuard.yy",},"order":12,},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},"order":0,},
     {"id":{"name":"instance_nth_nearest","path":"scripts/instance_nth_nearest/instance_nth_nearest.yy",},"order":3,},
     {"id":{"name":"get_hover","path":"scripts/get_hover/get_hover.yy",},"order":0,},
