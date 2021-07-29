@@ -1,10 +1,51 @@
 // point_distance(x,y,inst_FarmerPosition.x,inst_FarmerPosition.y)
 // farmer_bubble_skip(x,y,inst_FarmerPosition.x, inst_FarmerPosition.y)==true
 
-if(instance_number(oObstacle)==0 && distance_to_object(oFarmerPosition)>=16 && collision_circle(x,y,10, oFarmer, false,true)){
+// NEW 3*
+
+if(instance_number(oObstacle) == 0 && distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,24, oFarmer, false,true)){
+	
+	var mid_x=0;
+	var mid_y=0;
+	with oFarmer{
+		//show_message(string(x)+"--"+string(y));
+		mid_x+=x;
+		mid_y+=y;
+	}
+	mid_x = mid_x/2;
+	mid_y = mid_y/2;
+	
+	obstacle = instance_create_layer(mid_x-16,mid_y,"Blocks",oObstacle);
+	mp_grid_clear_all(global.rmGrid);
+	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 8, 8);
+	mp_grid_add_instances(global.rmGrid, oSoil, true);
+	mp_grid_add_instances(global.rmGrid, oBlock, true);
+	mp_grid_add_instances(global.rmGrid, oObstacle, true);
+
+	with obstacle {
+		alarm[0] = room_speed * 3;
+	}
+	
+}
+
+
+// NEW 2
+/*
+if(instance_number(oObstacle)==0 && distance_to_object(oFarmerPosition)>=16 && collision_circle(x,y,16, oFarmer, false,true)){
 	show_message("milsee");
-	near_farmer =  collision_circle(x,y,10, oFarmer, false,true);
-	obstacle = instance_create_layer(near_farmer.x-30,near_farmer.y,"Blocks",oObstacle);
+	
+	var near_farmer =  collision_circle(x,y,16, oFarmer, false,true);
+	var mid_x, mid_y;
+	show_message(near_farmer);
+	with near_farmer {
+		var opp_farmer = instance_nearest(x,y,oFarmer);
+		mid_x = (x+opp_farmer.x)/2;
+		mid_y = (y+opp_farmer.y)/2;
+	}
+	
+	obstacle = instance_create_layer(mid_x-16,mid_y,"Blocks",oObstacle);
+	
+	
 	mp_grid_add_instances(global.rmGrid,oObstacle,true);	
 	
 	with obstacle {
@@ -12,6 +53,9 @@ if(instance_number(oObstacle)==0 && distance_to_object(oFarmerPosition)>=16 && c
 	}
 	
 }
+
+*/
+
 // NEW
 /*
 if(instance_number(oObstacle)==0 && distance_to_object(oFarmerPosition)!=0 && distance_to_object(oFarmerPosition)!=22 && distance_to_object(oFarmer)==GameManager.bubble_range){
