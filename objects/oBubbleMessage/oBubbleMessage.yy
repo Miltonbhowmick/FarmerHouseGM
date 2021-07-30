@@ -3,7 +3,7 @@
     "name": "sBubbleMessage",
     "path": "sprites/sBubbleMessage/sBubbleMessage.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": {
     "name": "sBubbleMessage",
