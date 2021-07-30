@@ -13,3 +13,6 @@ FarmerPosition = inst_FarmerPosition;
 if(GameManager.CollideResponse==noone){
 	GameManager.CollideResponse = id;
 }
+
+// bubble message
+bubble_message = noone;

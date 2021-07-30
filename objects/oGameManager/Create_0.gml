@@ -13,7 +13,7 @@ mp_grid_add_instances(global.rmGrid, oObstacle, true);
 
 
 // Farmer create
-bubble_range = 16;
+//bubble_range = 16;
 CollideResponse = noone;
 
 // Soil create

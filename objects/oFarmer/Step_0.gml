@@ -3,24 +3,37 @@
 
 // NEW 3*
 
-if(instance_number(oObstacle) == 0 && distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,24, oFarmer, false,true)){
+if(instance_number(oObstacle) == 0 && distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,22, oFarmer, false,true)){
+//	path_end(); **OK DEBUG
 	
 	var mid_x=0;
 	var mid_y=0;
 	with oFarmer{
-		//show_message(string(x)+"--"+string(y));
+		show_message(string(x)+"--"+string(y));
 		mid_x+=x;
 		mid_y+=y;
 	}
 	mid_x = mid_x/2;
 	mid_y = mid_y/2;
 	
-	obstacle = instance_create_layer(mid_x-16,mid_y,"Blocks",oObstacle);
+	// "Excuse me message"
+	bubble_message = instance_create_layer(mid_x-50,mid_y-40,"Bubbles",oBubbleMessage);
+	
+	// obstacle create
+	var obstacle = instance_create_layer(mid_x-16,mid_y,"Blocks",oObstacle);
+	
+	// Zoom in and out MID X-Y area
+	
+//	update_zoom(mid_x, mid_y, 1.9);
+	
+	// MP GRID size change for avoid obstacle 
 	mp_grid_clear_all(global.rmGrid);
-	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 8, 8);
+	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 2, 2);
 	mp_grid_add_instances(global.rmGrid, oSoil, true);
 	mp_grid_add_instances(global.rmGrid, oBlock, true);
 	mp_grid_add_instances(global.rmGrid, oObstacle, true);
+
+	alarm[1] = room_speed * .2;
 
 	with obstacle {
 		alarm[0] = room_speed * 3;
