@@ -14,5 +14,7 @@ if(GameManager.CollideResponse==noone){
 	GameManager.CollideResponse = id;
 }
 
+near_farmer = noone;
+
 // bubble message
 bubble_message = noone;

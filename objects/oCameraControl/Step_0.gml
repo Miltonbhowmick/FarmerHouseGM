@@ -1,4 +1,4 @@
-// start:
+// start
 
 var _w = camera_get_view_width(view_camera[0]);
 var _h = camera_get_view_height(view_camera[0]);
@@ -9,7 +9,8 @@ if (mouse_check_button_pressed(mb_left)) {
     drag_x = mouse_x;
     drag_y = mouse_y;
 }
-// update:
+
+// update
 if (mouse_check_button(mb_left)) {
     // actual dragging logic:
     _x = drag_x - (mouse_x - _x);
