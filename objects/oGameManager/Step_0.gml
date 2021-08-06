@@ -6,7 +6,7 @@ if(soil_create){
 	custom_destroy_instance(spx-sp_grid,spy,oBlock);
 	instance_create_layer(spx,spy,"Soils", oSoil);
 	instance_create_layer(spx-sp_grid,spy,"Roads", oRoad);
-	if(spy+sp_grid>=camera_get_view_height(view_camera[0])-32){
+	if(spy+sp_grid>=room_height-32){
 		custom_destroy_instance(spx,spy+sp_grid,oBlock);
 		instance_create_layer(spx,spy+sp_grid,"Roads", oH_Road);
 

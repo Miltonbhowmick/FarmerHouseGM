@@ -18,6 +18,9 @@ mp_grid_add_instances(global.rmGrid, oFarmer, true);
 //bubble_range = 16;
 CollideResponse = noone;
 
+
+
+
 // Soil create
 soil_create = false;
 sp_grid = 32;
