@@ -20,6 +20,7 @@ if(distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,22, oFarmer, 
 	var mid_x=0;
 	var mid_y=0;
 	with oFarmer{
+		
 		mid_x+=x;
 		mid_y+=y;
 	}
