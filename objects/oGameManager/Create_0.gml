@@ -1,3 +1,5 @@
+// oManager GUI Button
+
 Farmer = 2;
 FarmerPosition = inst_FarmerPosition;
 

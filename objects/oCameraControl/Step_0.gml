@@ -8,10 +8,11 @@ var _y = camera_get_view_y(view_camera[0]);
 if (mouse_check_button_pressed(mb_left)) {
     drag_x = mouse_x;
     drag_y = mouse_y;
+	opened = true;
 }
 
 // update
-if (mouse_check_button(mb_left)) {
+if (opened && mouse_check_button(mb_left)) {
     // actual dragging logic:
     _x = drag_x - (mouse_x - _x);
     _y = drag_y - (mouse_y - _y);

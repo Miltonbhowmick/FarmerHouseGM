@@ -1,5 +1,8 @@
 /// @description Variables
 
+// room opened
+opened = false;
+
 // camera
 camSpeed = 16;
 camWidth = 680;

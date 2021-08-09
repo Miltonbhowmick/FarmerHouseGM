@@ -1,15 +1,10 @@
-/// @description 
 
-width = 128;
-height = 256;
+width = 256;
+height = 256
 
-op_border = 16;
-op_space = 24;
+op_space = 50;
 
-pos = 0;
+event_user(0);
 
-option[0] = "Start Game";
-option[1] = "Settings";
-option[2] = "Exit";
 
-op_length = array_length(option);
+
