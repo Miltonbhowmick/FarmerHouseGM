@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-var _width = 40;
-var _height = 40;
+var _width = 35;
+var _height = 35;
 
 var pos_x = 992-50;
 var pos_y = 480/2-50;
