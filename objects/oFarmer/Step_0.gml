@@ -1,4 +1,3 @@
-
 // mp grid path speed 
 path_speed = .5;
 
@@ -19,8 +18,7 @@ if(distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,22, oFarmer, 
 	// bubble message position
 	var mid_x=0;
 	var mid_y=0;
-	with oFarmer{
-		
+	with oFarmer{	
 		mid_x+=x;
 		mid_y+=y;
 	}
@@ -28,11 +26,16 @@ if(distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,22, oFarmer, 
 	mid_y = mid_y/2;
 	
 	// "Excuse me" message
+	bubble_message = instance_create_layer(x-15,y-15,"Bubbles",oBubbleMessage);
+	with bubble_message {
+		alarm[0] = 1;
+	}
+	/*
 	if(instance_number(oBubbleMessage)==0){
 		bubble_message = instance_create_layer(mid_x-50,mid_y-40,"Bubbles",oBubbleMessage);
 		alarm[1] = room_speed * .4;
 	}
-			
+	*/
 }
 
 // Farmer is running to large tree
