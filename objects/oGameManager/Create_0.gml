@@ -21,7 +21,8 @@ mp_grid_add_instances(global.rmGrid, oFarmer, true);
 CollideResponse = noone;
 
 
-
+// create go go...
+go_go = false;
 
 // Soil create
 soil_create = false;

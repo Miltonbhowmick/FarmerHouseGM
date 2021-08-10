@@ -30,12 +30,7 @@ if(distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,22, oFarmer, 
 	with bubble_message {
 		alarm[0] = 1;
 	}
-	/*
-	if(instance_number(oBubbleMessage)==0){
-		bubble_message = instance_create_layer(mid_x-50,mid_y-40,"Bubbles",oBubbleMessage);
-		alarm[1] = room_speed * .4;
-	}
-	*/
+	alarm[1] = room_speed * .4;
 }
 
 // Farmer is running to large tree
@@ -48,14 +43,17 @@ if(instance_number(oLargeTree)<1){
 }
 else
 {
+	
+	//OLD PATH MOVING
+	
 	if(ck){
 		inst_large_tree = instance_nearest(x,y,oLargeTree);
-		if(instance_exists(inst_large_tree) && inst_large_tree.OccupiedFarmer!=noone && inst_large_tree.OccupiedFarmer!=id){	
+		if(instance_exists(inst_large_tree) && inst_large_tree.OccupiedFarmer!=noone && inst_large_tree.OccupiedFarmer!=id){
 			inst_large_tree = instance_nth_nearest(x,y,oLargeTree,2);
 		}
 	}
+	
 	if(instance_exists(inst_large_tree)){
-
 		if(inst_large_tree.OccupiedFarmer==noone || inst_large_tree.OccupiedFarmer == id){
 			ck=false;
 			inst_large_tree.OccupiedFarmer = id;
@@ -72,4 +70,5 @@ else
 			}
 		}
 	}
+	
 }
