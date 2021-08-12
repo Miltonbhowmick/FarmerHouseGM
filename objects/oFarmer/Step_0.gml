@@ -57,7 +57,7 @@ else
 		if(inst_large_tree.OccupiedFarmer==noone || inst_large_tree.OccupiedFarmer == id){
 			ck=false;
 			inst_large_tree.OccupiedFarmer = id;
-			if(x==inst_large_tree.x-4 && y==inst_large_tree.y+20){
+			if((x==inst_large_tree.x-4 && y==inst_large_tree.y+20) || (x==inst_large_tree.x+10 && y==inst_large_tree.y) ){
 				if(alarm[0]<0){
 					alarm[0] = room_speed  * 5;
 				}
@@ -66,6 +66,12 @@ else
 				myPath = path_add();
 				if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x-4, inst_large_tree.y+20, true)){
 					path_start(myPath, 2, path_action_stop, true);
+				}
+				else if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x+10, inst_large_tree.y, true)){
+					path_start(myPath, 2, path_action_stop, true);
+				}
+				else{
+					show_message(id);
 				}
 			}
 		}

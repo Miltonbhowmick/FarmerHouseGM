@@ -5,8 +5,8 @@ opened = false;
 
 // camera
 camSpeed = 16;
-cam_x = 150;
-cam_y = 50;
+cam_x = 250;
+cam_y = 250;
 camWidth = 680;
 camHeight = 340;
 
