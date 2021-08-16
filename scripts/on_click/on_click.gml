@@ -1,7 +1,12 @@
 function on_click(){
 	if(text=="1"){
 		GameManager.Plant = !GameManager.Plant;
-		show_debug_message("Plant");	
+		if(GameManager.Plant==true){
+			btn_x = floor(mouse_x/GameManager.sp_grid)*GameManager.sp_grid;
+			btn_y = floor(mouse_y/GameManager.sp_grid)*GameManager.sp_grid;
+			show_debug_message(string(place_meeting(mouse_x,mouse_y,oButton)));
+		}
+		show_debug_message("Plant");
 	}	
 	else if(text=="2"){
 		GameManager.Cut = !GameManager.Cut;

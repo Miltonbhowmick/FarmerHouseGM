@@ -1,11 +1,183 @@
-if(go_go && mouse_check_button_pressed(mb_left)){
-	
-	
+if(go_go && mouse_check_button_pressed(mb_left)){		
 	go_go = false;
+	// calculating mouse click on mid point of the grid	
+	spx = floor(mouse_x/sp_grid)*sp_grid;
+	spy = floor(mouse_y/sp_grid)*sp_grid;
 	
-	spx = floor(mouse_x/32)*32;
-	spy = floor(mouse_y/32)*32;
+	if(FarmerPosition.y<spy){
+		if( (FarmerPosition.x - ((sp_grid*up_down_soil)))<=spx && (spx <= down_x || spx-sp_grid <= down_x )){
+			// down
+			var possible1 = FarmerPosition.x - spx;
+			var possible2 = FarmerPosition.x - (spx-sp_grid);
+			
+			if(spy == down_y){
+				if((possible1/sp_grid)%3==0){
+					var px = spx,py=spy;
+					custom_destroy_instance(spx, spy,oBlock);
+					instance_create_layer(spx, spy, "Soils", oSoil);
+					custom_destroy_instance(spx-sp_grid, spy-sp_grid,oBlock);
+					instance_create_layer(spx-sp_grid,spy-sp_grid,"Roads", oH_Road);
+					custom_destroy_instance(spx-sp_grid, spy,oBlock);
+					instance_create_layer(spx-sp_grid,spy,"Roads", oH_Road);
+					custom_destroy_instance(spx,spy-sp_grid,oBlock);
+					instance_create_layer(spx,spy-sp_grid,"Roads", oH_Road);
+					
+					px = spx + sp_grid;
+					custom_destroy_instance(px,spy-sp_grid,oBlock);
+					instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+					custom_destroy_instance(px+sp_grid,spy,oBlock);
+					instance_create_layer(px+sp_grid,spy,"Roads", oH_Road);
+					custom_destroy_instance(px,spy-sp_grid,oBlock);
+					instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+					
+					py = spy + sp_grid;
+					custom_destroy_instance(spx-sp_grid,py+sp_grid,oBlock);
+					instance_create_layer(spx-sp_grid,py+sp_grid,"Roads", oH_Road);
+					custom_destroy_instance(spx-sp_grid,py,oBlock);
+					instance_create_layer(spx-sp_grid,py,"Roads", oH_Road);
+					custom_destroy_instance(spx,py+sp_grid,oBlock);
+					instance_create_layer(spx,py+sp_grid,"Roads", oH_Road);
+					
+					px = spx+sp_grid;
+					py = spy+sp_grid;
+					custom_destroy_instance(px+sp_grid,py+sp_grid,oBlock);
+					instance_create_layer(px+sp_grid,py+sp_grid, "Roads", oH_Road);
+					custom_destroy_instance(px+sp_grid,py,oBlock);
+					instance_create_layer(px+sp_grid,py, "Roads", oH_Road);
+					custom_destroy_instance(px,py+sp_grid,oBlock);
+					instance_create_layer(px,py+sp_grid, "Roads", oH_Road);
+				}
+				else if((possible2/sp_grid)%3==0){
+					instance_create_layer(spx-sp_grid, spy, "Soils", oSoil);
+					
+					spx-=sp_grid;
+					var px = spx,py=spy;
+					custom_destroy_instance(spx,spy,oBlock);
+					instance_create_layer(spx, spy, "Soils", oSoil);
+					custom_destroy_instance(spx-sp_grid,spy-sp_grid,oBlock);
+					instance_create_layer(spx-sp_grid,spy-sp_grid,"Roads", oH_Road);
+					custom_destroy_instance(spx-sp_grid,spy,oBlock);
+					instance_create_layer(spx-sp_grid,spy,"Roads", oH_Road);
+					custom_destroy_instance(spx,spy-sp_grid,oBlock);
+					instance_create_layer(spx,spy-sp_grid,"Roads", oH_Road);
+					
+					px = spx + sp_grid;
+					custom_destroy_instance(px,spy-sp_grid,oBlock);
+					instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+					custom_destroy_instance(px+sp_grid,spy,oBlock);
+					instance_create_layer(px+sp_grid,spy,"Roads", oH_Road);
+					custom_destroy_instance(px,spy-sp_grid,oBlock);
+					instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+					
+					py = spy + sp_grid;
+					custom_destroy_instance(spx-sp_grid,py+sp_grid,oBlock);
+					instance_create_layer(spx-sp_grid,py+sp_grid,"Roads", oH_Road);
+					custom_destroy_instance(spx-sp_grid,py,oBlock);
+					instance_create_layer(spx-sp_grid,py,"Roads", oH_Road);
+					custom_destroy_instance(spx,py+sp_grid,oBlock);
+					instance_create_layer(spx,py+sp_grid,"Roads", oH_Road);
+					
+					px = spx+sp_grid;
+					py = spy+sp_grid;
+					custom_destroy_instance(px+sp_grid,py+sp_grid, oBlock);
+					instance_create_layer(px+sp_grid,py+sp_grid, "Roads", oH_Road);
+					custom_destroy_instance(px+sp_grid,py,oBlock);
+					instance_create_layer(px+sp_grid,py, "Roads", oH_Road);
+					custom_destroy_instance(px,py+sp_grid,oBlock);
+					instance_create_layer(px,py+sp_grid, "Roads", oH_Road);
+				}
+			}
+			
+		}	
+	}
+	else{
+		if( (FarmerPosition.x - ((sp_grid*up_down_soil)))<=spx && (spx <= up_x || spx-sp_grid <= up_x )){
+			// up
+			var possible1 = FarmerPosition.x - spx;
+			var possible2 = FarmerPosition.x - (spx-sp_grid);
+				if(spy == up_y){
+					spy-=sp_grid;
+					if((possible1/sp_grid)%3==0){
+						var px = spx,py=spy;
+						custom_destroy_instance(spx, spy, oBlock);
+						instance_create_layer(spx, spy, "Soils", oSoil);
+						custom_destroy_instance(spx-sp_grid,spy-sp_grid, oBlock);
+						instance_create_layer(spx-sp_grid,spy-sp_grid,"Roads", oH_Road);
+						custom_destroy_instance(spx-sp_grid,spy, oBlock);
+						instance_create_layer(spx-sp_grid,spy,"Roads", oH_Road);
+						custom_destroy_instance(spx,spy-sp_grid, oBlock);
+						instance_create_layer(spx,spy-sp_grid,"Roads", oH_Road);
+						
+						px = spx + sp_grid;
+						custom_destroy_instance(px+sp_grid,spy-sp_grid, oBlock);
+						instance_create_layer(px+sp_grid,spy-sp_grid,"Roads", oH_Road);
+						custom_destroy_instance(px+sp_grid,spy, oBlock);
+						instance_create_layer(px+sp_grid,spy,"Roads", oH_Road);
+						custom_destroy_instance(px,spy-sp_grid,oBlock);
+						instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+					
+						py = spy + sp_grid;
+						custom_destroy_instance(spx-sp_grid,py+sp_grid,oBlock);
+						instance_create_layer(spx-sp_grid,py+sp_grid,"Roads", oH_Road);
+						custom_destroy_instance(spx-sp_grid,py,oBlock);
+						instance_create_layer(spx-sp_grid,py,"Roads", oH_Road);
+						custom_destroy_instance(spx,py+sp_grid,oBlock);
+						instance_create_layer(spx,py+sp_grid,"Roads", oH_Road);
+					
+						px = spx+sp_grid;
+						py = spy+sp_grid;
+						custom_destroy_instance(px+sp_grid,py+sp_grid,oBlock);
+						instance_create_layer(px+sp_grid,py+sp_grid, "Roads", oH_Road);
+						custom_destroy_instance(px+sp_grid,py,oBlock);
+						instance_create_layer(px+sp_grid,py, "Roads", oH_Road);
+						custom_destroy_instance(px,py+sp_grid,oBlock);
+						instance_create_layer(px,py+sp_grid, "Roads", oH_Road);
+					}
+					else if((possible2/sp_grid)%3==0){
+						instance_create_layer(spx-sp_grid, spy, "Soils", oSoil);
+					
+						spx-=sp_grid;
+						var px = spx,py=spy;
+						custom_destroy_instance(spx, spy,oBlock);
+						instance_create_layer(spx, spy, "Soils", oSoil);
+						custom_destroy_instance(spx-sp_grid,spy-sp_grid,oBlock);
+						instance_create_layer(spx-sp_grid,spy-sp_grid,"Roads", oH_Road);
+						custom_destroy_instance(spx-sp_grid,spy,oBlock);
+						instance_create_layer(spx-sp_grid,spy,"Roads", oH_Road);
+						custom_destroy_instance(spx,spy-sp_grid,oBlock);
+						instance_create_layer(spx,spy-sp_grid,"Roads", oH_Road);
+					
+						px = spx + sp_grid;
+						custom_destroy_instance(px,spy-sp_grid,oBlock);
+						instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+						custom_destroy_instance(px+sp_grid,spy,oBlock);
+						instance_create_layer(px+sp_grid,spy,"Roads", oH_Road);
+						custom_destroy_instance(px,spy-sp_grid,oBlock);
+						instance_create_layer(px,spy-sp_grid,"Roads", oH_Road);
+					
+						py = spy + sp_grid;
+						custom_destroy_instance(spx-sp_grid,py+sp_grid,oBlock);
+						instance_create_layer(spx-sp_grid,py+sp_grid,"Roads", oH_Road);
+						custom_destroy_instance(spx-sp_grid,py,oBlock);
+						instance_create_layer(spx-sp_grid,py,"Roads", oH_Road);
+						custom_destroy_instance(spx,py+sp_grid,oBlock);
+						instance_create_layer(spx,py+sp_grid,"Roads", oH_Road);
+					
+						px = spx+sp_grid;
+						py = spy+sp_grid;
+						custom_destroy_instance(px+sp_grid,py+sp_grid,oBlock);
+						instance_create_layer(px+sp_grid,py+sp_grid, "Roads", oH_Road);
+						custom_destroy_instance(px+sp_grid,py,oBlock);
+						instance_create_layer(px+sp_grid,py, "Roads", oH_Road);
+						custom_destroy_instance(px,py+sp_grid,oBlock);
+						instance_create_layer(px,py+sp_grid, "Roads", oH_Road);
+					}
+				}
+		}
+	}
 	
+	
+	/*
 	if(spy<down_y && spy>up_y){
 		// left side
 		if(down_x - sp_grid*up_down_soil == spx) // as now down_x==up_x
@@ -95,74 +267,14 @@ if(go_go && mouse_check_button_pressed(mb_left)){
 			}
 		}
 	}
-	/*
-	if(position_meeting(spx+32,spy,oH_Road)){
-		custom_destroy_instance(spx,spy,oBlock);
-		custom_destroy_instance(spx-sp_grid,spy,oBlock);
-		
-		instance_create_layer(spx,spy,"Soils", oSoil);
-		instance_create_layer(spx-sp_grid,spy,"Roads", oH_Road);
-
-		if(spy+sp_grid>=room_height-32){
-			custom_destroy_instance(spx,spy+sp_grid,oBlock);
-			instance_create_layer(spx,spy+sp_grid,"Roads", oH_Road);
-
-			custom_destroy_instance(spx-sp_grid,spy+sp_grid,oBlock);	
-			instance_create_layer(spx-sp_grid,spy+sp_grid,"Roads", oH_Road);
-		
-			spx+=sp_grid*2;
-			spy = 192;
-		}
-		else{
-			spy+=sp_grid;
-		}
-	}
-	else if(position_meeting(spx,spy+32, oH_Road) && position_meeting(spx+32,spy+32, oSoil)==false){
-		custom_destroy_instance(spx,spy,oBlock);
-		custom_destroy_instance(spx,spy-sp_grid,oBlock);
-
-		instance_create_layer(spx,spy,"Soils", oSoil);
-		instance_create_layer(spx,spy-sp_grid,"Roads", oH_Road);
-
-		if(spy+sp_grid>=room_height-32){
-			custom_destroy_instance(spx,spy+sp_grid,oBlock);
-			instance_create_layer(spx,spy+sp_grid,"Roads", oH_Road);
-
-			custom_destroy_instance(spx-sp_grid,spy+sp_grid,oBlock);	
-			instance_create_layer(spx-sp_grid,spy+sp_grid,"Roads", oH_Road);
-		
-			spx+=sp_grid*2;
-			spy = 192;
-		}
-		else{
-			spy+=sp_grid;
-		}
-	}
-	else if(position_meeting(spx,spy-32, oH_Road) && position_meeting(spx-32,spy-32, oSoil)==false ){
-		custom_destroy_instance(spx,spy,oBlock);
-		custom_destroy_instance(spx,spy+sp_grid,oBlock);
-
-		instance_create_layer(spx,spy,"Soils", oSoil);
-		instance_create_layer(spx,spy+sp_grid,"Roads", oH_Road);
-
-		
-	}
-	else{
-		if(position_meeting(spx+32,spy+32, oH_Road)){
-			if((position_meeting(spx+32,spy, oSoil) && position_meeting(spx,spy+32, oSoil)) || (position_meeting(spx+32,spy, all)==false && position_meeting(spx,spy+32, all)==false)){
-				show_debug_message("upore conay");
-			}
-		}
-		
-	}
+	
 	*/
 	
 	// initialize mp grid
 	mp_grid_clear_all(global.rmGrid);
-	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 16, 16);
+	global.rmGrid = mp_grid_create(0,0,room_width/16, room_height/16, 16, 16);
 	mp_grid_add_instances(global.rmGrid, oSoil, true);
 	mp_grid_add_instances(global.rmGrid, oBlock, true);
-	mp_grid_add_instances(global.rmGrid, oObstacle, true);
 	
 	if(total_create == prev_total + 8){
 		soil_layer++;
@@ -179,7 +291,5 @@ if(go_go && mouse_check_button_pressed(mb_left)){
 
 if(soil_create){
 	go_go = true;
-	
-
 	soil_create = false;
 }

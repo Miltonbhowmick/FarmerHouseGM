@@ -1,24 +1,23 @@
 // mp grid path speed 
 path_speed = .5;
 
-// Two farmer collision
-if(distance_to_object(oFarmerPosition)>=25 && collision_circle(x,y,22, oFarmer, false,true)){
+// Two farmer collision -> old distance_to_object 25 , co-circle 22
+if(distance_to_object(oFarmerPosition)>=22 && collision_circle(x,y,20, oFarmer, false,true)){
 	
 	// near farmer on collision moment
 	near_farmer = instance_nth_nearest(x,y,oFarmer,2);
 	
 	// changing grid size 2x2
 	mp_grid_clear_all(global.rmGrid);
-	global.rmGrid = mp_grid_create(0,0,room_width, room_height, 2, 2);
+	global.rmGrid = mp_grid_create(0,0,room_width/2, room_height/2, 2, 2);
 	mp_grid_add_instances(global.rmGrid, oSoil, true);
 	mp_grid_add_instances(global.rmGrid, oBlock, true);
-	mp_grid_add_instances(global.rmGrid, oObstacle, true);
 	mp_grid_add_instances(global.rmGrid, near_farmer , true);
 
 	// bubble message position
 	var mid_x=0;
 	var mid_y=0;
-	with oFarmer{	
+	with oFarmer{
 		mid_x+=x;
 		mid_y+=y;
 	}
@@ -57,21 +56,22 @@ else
 		if(inst_large_tree.OccupiedFarmer==noone || inst_large_tree.OccupiedFarmer == id){
 			ck=false;
 			inst_large_tree.OccupiedFarmer = id;
-			if((x==inst_large_tree.x-4 && y==inst_large_tree.y+20) || (x==inst_large_tree.x+10 && y==inst_large_tree.y) ){
+			// 35 is grid_size + 3
+			if((x==inst_large_tree.x+35 && y==inst_large_tree.y+20) || (x==inst_large_tree.x+20 && y==inst_large_tree.y) ||(x==inst_large_tree.x-4 && y==inst_large_tree.y+20) ){
 				if(alarm[0]<0){
 					alarm[0] = room_speed  * 5;
 				}
 			}
 			else{
 				myPath = path_add();
-				if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x-4, inst_large_tree.y+20, true)){
+				if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x+35, inst_large_tree.y+20, true)){
 					path_start(myPath, 2, path_action_stop, true);
 				}
-				else if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x+10, inst_large_tree.y, true)){
+				else if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x+20, inst_large_tree.y, true)){
 					path_start(myPath, 2, path_action_stop, true);
 				}
-				else{
-					show_message(id);
+				else if(mp_grid_path(rmGrid, myPath, x, y ,inst_large_tree.x-4, inst_large_tree.y+20, true)){
+					path_start(myPath, 2, path_action_stop, true);
 				}
 			}
 		}
