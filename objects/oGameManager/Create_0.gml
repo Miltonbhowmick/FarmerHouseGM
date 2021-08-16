@@ -42,7 +42,9 @@ down_y = FarmerPosition.y + (sp_grid*8);
 
 soil_layer = 3;
 up_down_soil = 4*3;
-side_soil = 5;
-prev_total = up_down_soil + side_soil;
+side_soil = 11;
+side_gap = 16;
+
+prev_total = 9;
 total_create = 0;
 
