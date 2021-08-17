@@ -5,15 +5,16 @@ opened = false;
 
 // camera
 camSpeed = 16;
-cam_x = 250;
-cam_y = 250;
+cam_x = x;
+cam_y = y;
 camWidth = 680;
 camHeight = 340;
 
+show_debug_message(string(x)+"--" +string(y) + "==" +string(cam_x) + "--"+string(cam_y));
 // setup camera
 view_enabled = true;
 view_visible[0] = true;
-view_camera[0] = camera_create_view(cam_x,cam_y, camWidth, camHeight, 0, noone, 0, 0, 0);
+view_camera[0] = camera_create_view(x,y, camWidth, camHeight, 0, noone, 0, 0, 0);
 
 // setup vars
 pinching = false;

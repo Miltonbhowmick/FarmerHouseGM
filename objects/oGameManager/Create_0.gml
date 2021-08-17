@@ -1,5 +1,7 @@
-// oManager GUI Button
+// oCameraControl
+instance_create_layer(250,250,"GUI", oCameraControl);
 
+// oManager GUI Button
 Farmer = 2;
 FarmerPosition = inst_FarmerPosition;
 
