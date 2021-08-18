@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTileSet1",
-    "path": "sprites/sTileSet1/sTileSet1.yy",
+    "name": "sMenuBackground",
+    "path": "sprites/sMenuBackground/sMenuBackground.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -9,7 +9,7 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
-  "spriteNoExport": true,
+  "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
