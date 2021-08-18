@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sMenuBackground",
-    "path": "sprites/sMenuBackground/sMenuBackground.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

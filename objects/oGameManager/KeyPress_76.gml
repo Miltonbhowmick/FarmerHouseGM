@@ -1,3 +1,0 @@
-/// @description 
-
-scr_loadGame();
