@@ -29,7 +29,13 @@ function on_click(){
 		GameManager.soil_create = true;
 		
 	}
-	else if(text =="Start Menu"){
+	else if(text =="Resume"){
+		room_goto_next();
+	}
+	else if(text =="New Game"){
+		if(file_exists("savedgame.save")){
+			file_delete("savedgame.save");
+		}
 		room_goto_next();
 	}
 	else if(text == ""){
