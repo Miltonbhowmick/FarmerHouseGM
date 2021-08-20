@@ -10,7 +10,6 @@ Plant = 0;
 CollectTrees = 0;
 
 // Grid for AI
-
 global.rmGrid = mp_grid_create(0,0,room_width/16, room_height/16, 16, 16);
 mp_grid_add_instances(global.rmGrid, oSoil, true);
 mp_grid_add_instances(global.rmGrid, oBlock, true);
@@ -50,3 +49,14 @@ side_gap = 16;
 prev_total = 9;
 total_create = 0;
 
+
+// -- Tree --
+// cut tree position
+c_tx = 0;
+c_ty = 50;
+_depth = 2;
+tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceLocation.y,"Transports", oTreeTransport);
+with tree_transport{
+	depth = -1000;
+}
+stack_loaded_range = 2;

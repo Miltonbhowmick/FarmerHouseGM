@@ -1,5 +1,6 @@
 width = 20;
 height = 20;
+_sprite_index = noone;
 
 text = "";
 
