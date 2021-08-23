@@ -15,8 +15,12 @@ if (GameManager.CollectTrees >= GameManager.stack_loaded_range){
 			instance_destroy(tree_in_stack);
 		}
 	}
+	sz = ds_list_size(GameManager.list_cut_tree);
 	
-	GameManager.c_tx = ds_list_find_value(GameManager.list_cut_tree,sz-1).x;
-	GameManager.c_ty = ds_list_find_value(GameManager.list_cut_tree,sz-1).y;
+	// --- ABSTRACT ---
+	//GameManager.c_tx = ds_list_find_value(GameManager.list_cut_tree,sz-1).x;
+	//GameManager.c_ty = ds_list_find_value(GameManager.list_cut_tree,sz-1).y;
 	
+	GameManager.c_tx = 0;
+	GameManager.c_ty = 50;	
 }
