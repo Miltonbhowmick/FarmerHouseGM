@@ -7,7 +7,7 @@ FarmerPosition = inst_FarmerPosition;
 
 Cut = 0;
 Plant = 0;
-CollectTrees = 0;
+CollectTrees = 0;	
 
 // Grid for AI
 global.rmGrid = mp_grid_create(0,0,room_width/16, room_height/16, 16, 16);
@@ -59,4 +59,7 @@ tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceL
 with tree_transport{
 	depth = -1000;
 }
-stack_loaded_range = 2;
+stack_loaded_range = 10;
+list_cut_tree = ds_list_create();
+
+

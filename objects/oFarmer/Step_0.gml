@@ -33,7 +33,7 @@ if(distance_to_object(oFarmerPosition)>=22 && collision_circle(x,y,20, oFarmer, 
 }
 
 // Farmer is running to large tree
-if(instance_number(oLargeTree)<1 or GameManager.CollectTrees==GameManager.stack_loaded_range){
+if(GameManager.CollectTrees>=GameManager.stack_loaded_range or instance_number(oLargeTree)<1){
 	myPath = path_add();
 	if(mp_grid_path(rmGrid, myPath, x, y ,inst_FarmerPosition.x, inst_FarmerPosition.y, true)){
 		path_start(myPath, 2, path_action_stop, true);
