@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sV_Obstacle",
-    "path": "sprites/sV_Obstacle/sV_Obstacle.yy",
+    "name": "sHorseCarriage_left",
+    "path": "sprites/sHorseCarriage_left/sHorseCarriage_left.yy",
   },
   "solid": false,
   "visible": true,

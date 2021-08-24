@@ -17,13 +17,13 @@ if(go_go && mouse_check_button_pressed(mb_left)){
 				}
 				total_create++;
 				var px = spx,py=spy;
-				custom_destroy_instance(spx, spy, oBlock);
+				custom_destroy_instance(spx, spy, oBlock_16x16);
 				instance_create_layer(spx, spy, "Soils", oSoil);
-				custom_destroy_instance(spx-sp_grid,spy-sp_grid, oBlock);
+				custom_destroy_instance(spx-sp_grid,spy-sp_grid, oBlock_16x16);
 				instance_create_layer(spx-sp_grid,spy-sp_grid,"Roads", oH_Road);
-				custom_destroy_instance(spx-sp_grid,spy, oBlock);
+				custom_destroy_instance(spx-sp_grid,spy, oBlock_16x16);
 				instance_create_layer(spx-sp_grid,spy,"Roads", oH_Road);
-				custom_destroy_instance(spx,spy-sp_grid, oBlock);
+				custom_destroy_instance(spx,spy-sp_grid, oBlock_16x16);
 				instance_create_layer(spx,spy-sp_grid,"Roads", oH_Road);
 						
 				px = spx + sp_grid;
@@ -232,9 +232,9 @@ if(go_go && mouse_check_button_pressed(mb_left)){
 	
 	// initialize mp grid
 	mp_grid_clear_all(global.rmGrid);
-	global.rmGrid = mp_grid_create(0,0,room_width/16, room_height/16, 16, 16);
+	global.rmGrid = mp_grid_create(0,0,room_width/4, room_height/4,4, 4);
 	mp_grid_add_instances(global.rmGrid, oSoil, true);
-	mp_grid_add_instances(global.rmGrid, oBlock, true);
+	mp_grid_add_instances(global.rmGrid, oBlock_16x16, true);
 	
 	if(total_create == prev_total+4){
 		show_debug_message("sdasdasda");

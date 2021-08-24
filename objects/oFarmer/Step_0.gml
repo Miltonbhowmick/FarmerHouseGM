@@ -10,8 +10,7 @@ if(distance_to_object(oFarmerPosition)>=22 && collision_circle(x,y,20, oFarmer, 
 	// changing grid size 2x2
 	mp_grid_clear_all(global.rmGrid);
 	global.rmGrid = mp_grid_create(0,0,room_width/2, room_height/2, 2, 2);
-	mp_grid_add_instances(global.rmGrid, oSoil, true);
-	mp_grid_add_instances(global.rmGrid, oBlock, true);
+	mp_grid_add_instances(global.rmGrid, oBlock_32x32, true);
 	mp_grid_add_instances(global.rmGrid, near_farmer , true);
 
 	// bubble message position
