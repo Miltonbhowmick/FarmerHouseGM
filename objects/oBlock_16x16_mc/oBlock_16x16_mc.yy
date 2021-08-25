@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sBlock_32x32",
-    "path": "sprites/sBlock_32x32/sBlock_32x32.yy",
+    "name": "sBlock_16x16_mc",
+    "path": "sprites/sBlock_16x16_mc/sBlock_16x16_mc.yy",
   },
   "solid": true,
   "visible": true,
   "spriteMaskId": {
-    "name": "sBlock_32x32",
-    "path": "sprites/sBlock_32x32/sBlock_32x32.yy",
+    "name": "sBlock_16x16_mc",
+    "path": "sprites/sBlock_16x16_mc/sBlock_16x16_mc.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBlock_32x32",
+  "name": "oBlock_16x16_mc",
   "tags": [],
   "resourceType": "GMObject",
 }

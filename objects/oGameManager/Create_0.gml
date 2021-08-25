@@ -11,7 +11,9 @@ CollectTrees = 0;
 
 // Grid for AI
 global.rmGrid = mp_grid_create(0,0,room_width/4, room_height/4, 4, 4);
-mp_grid_add_instances(global.rmGrid, oBlock_32x32, true);
+mp_grid_add_instances(global.rmGrid, oBlock_16x16, true);
+mp_grid_add_instances(global.rmGrid, oBlock_16x16_mc, true);
+mp_grid_add_instances(global.rmGrid, oBlock_32x32_tl, true);
 mp_grid_add_instances(global.rmGrid, oFarmer, true);
 
 // Farmer create
