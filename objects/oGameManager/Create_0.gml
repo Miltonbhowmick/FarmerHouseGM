@@ -51,8 +51,7 @@ total_create = 0;
 
 
 // -- Tree --
-// tree cut
-number_of_click = 3;
+
 // cut tree position
 c_tx = 0;
 c_ty = 50;
