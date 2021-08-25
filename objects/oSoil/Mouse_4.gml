@@ -10,12 +10,13 @@ if(position_meeting(x,y,oBlock_32x32_tl)==false){
 }
 else{
 	// unlock soil
-	if(GameManager.CollectTrees>=3){
+	if(GameManager.coins>=3){
 		with instance_position(x,y,oBlock_32x32_tl){
 			mp_grid_clear_rectangle(global.rmGrid,x,y,x+32,y+32);
 			instance_destroy();
 			mp_grid_add_instances(global.rmGrid,oBlock_16x16_mc,true);
 		}
+		GameManager.coins-=3;
 		self.number_of_click--;
 	}
 }

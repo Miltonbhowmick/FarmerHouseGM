@@ -6,6 +6,7 @@ if(GameManager.Cut){
 	if(MousePressed==OccupiedSoil.number_of_click){	
 		instance_destroy();
 		GameManager.CollectTrees++;
+		GameManager.coins++;
 		soil.PlantTree = noone;
 		MousePressed=0;
 	}

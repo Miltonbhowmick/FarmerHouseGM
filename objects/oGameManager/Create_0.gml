@@ -50,6 +50,9 @@ prev_total = 9;
 total_create = 0;
 
 
+// Resources
+coins = 0;
+
 // -- Tree --
 
 // cut tree position
