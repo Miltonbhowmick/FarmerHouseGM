@@ -3,7 +3,7 @@
 
 if(GameManager.Cut){
 	MousePressed++;
-	if(MousePressed==3){	
+	if(MousePressed==GameManager.number_of_click){	
 		instance_destroy();
 		GameManager.CollectTrees++;
 		soil.PlantTree = noone;
