@@ -7,6 +7,11 @@ if(GameManager.Cut){
 		instance_destroy();
 		GameManager.CollectTrees++;
 		GameManager.coins++;
+		
+		// tree stack operation
+		tree_stack_operation();
+		
+		// re-initialize
 		soil.PlantTree = noone;
 		MousePressed=0;
 	}

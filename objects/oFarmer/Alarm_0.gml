@@ -4,10 +4,10 @@
 audio_play_sound(snd_Destroy,10,false);
 // increasing number of cut tree
 GameManager.CollectTrees++;
+GameManager.coins++;
 
 // Tree stack operation
 if(GameManager.c_ty<=0){
-	show_debug_message(GameManager.c_ty);
 	GameManager.c_tx+=4;
 	GameManager.c_ty=50;
 	GameManager._depth-=10;

@@ -7,6 +7,7 @@
     {"id":{"name":"sPlantTreeBtn","path":"sprites/sPlantTreeBtn/sPlantTreeBtn.yy",},"order":0,},
     {"id":{"name":"oFarmer","path":"objects/oFarmer/oFarmer.yy",},"order":5,},
     {"id":{"name":"sBlock_16x16_mc","path":"sprites/sBlock_16x16_mc/sBlock_16x16_mc.yy",},"order":24,},
+    {"id":{"name":"tree_stack_operation","path":"scripts/tree_stack_operation/tree_stack_operation.yy",},"order":8,},
     {"id":{"name":"sGuard","path":"sprites/sGuard/sGuard.yy",},"order":11,},
     {"id":{"name":"scr_saveGame","path":"scripts/scr_saveGame/scr_saveGame.yy",},"order":6,},
     {"id":{"name":"sMenuBackground","path":"sprites/sMenuBackground/sMenuBackground.yy",},"order":0,},
