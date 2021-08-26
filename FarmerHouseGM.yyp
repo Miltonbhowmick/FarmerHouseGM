@@ -64,6 +64,7 @@
     {"id":{"name":"oTreeStackPosition","path":"objects/oTreeStackPosition/oTreeStackPosition.yy",},"order":15,},
     {"id":{"name":"oLargeTree","path":"objects/oLargeTree/oLargeTree.yy",},"order":3,},
     {"id":{"name":"sTileSet1","path":"sprites/sTileSet1/sTileSet1.yy",},"order":23,},
+    {"id":{"name":"oParticleSetup","path":"objects/oParticleSetup/oParticleSetup.yy",},"order":0,},
     {"id":{"name":"oFarmerPosition","path":"objects/oFarmerPosition/oFarmerPosition.yy",},"order":6,},
     {"id":{"name":"oGameManager","path":"objects/oGameManager/oGameManager.yy",},"order":0,},
     {"id":{"name":"sBlock_16x16","path":"sprites/sBlock_16x16/sBlock_16x16.yy",},"order":12,},
@@ -116,6 +117,7 @@
     {"folderPath":"folders/Sprites/Roads.yy","order":19,"resourceVersion":"1.0","name":"Roads","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Trees.yy","order":20,"resourceVersion":"1.0","name":"Trees","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Trees.yy","order":19,"resourceVersion":"1.0","name":"Trees","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Particles.yy","order":23,"resourceVersion":"1.0","name":"Particles","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
