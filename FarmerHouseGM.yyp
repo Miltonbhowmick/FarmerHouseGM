@@ -48,6 +48,7 @@
     {"id":{"name":"sTileSet","path":"sprites/sTileSet/sTileSet.yy",},"order":3,},
     {"id":{"name":"oSmallTree","path":"objects/oSmallTree/oSmallTree.yy",},"order":0,},
     {"id":{"name":"sFarmerBtn","path":"sprites/sFarmerBtn/sFarmerBtn.yy",},"order":1,},
+    {"id":{"name":"sCutTreeTransportBtn","path":"sprites/sCutTreeTransportBtn/sCutTreeTransportBtn.yy",},"order":4,},
     {"id":{"name":"tGround1","path":"tilesets/tGround1/tGround1.yy",},"order":1,},
     {"id":{"name":"oRoad","path":"objects/oRoad/oRoad.yy",},"order":7,},
     {"id":{"name":"oSoil","path":"objects/oSoil/oSoil.yy",},"order":1,},

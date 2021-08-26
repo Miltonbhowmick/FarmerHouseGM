@@ -1,5 +1,10 @@
 function on_click(){
-	if(text=="1"){
+	if(text == "1"){
+		if(GameManager.CollectTrees>=GameManager.stack_loaded_range){
+			GameManager.transport_call = true;
+		}
+	}
+	else if(text=="2"){
 		GameManager.Plant = !GameManager.Plant;
 		if(GameManager.Plant==true){
 			btn_x = floor(mouse_x/GameManager.sp_grid)*GameManager.sp_grid;
@@ -8,11 +13,11 @@ function on_click(){
 		}
 		show_debug_message("Plant");
 	}	
-	else if(text=="2"){
+	else if(text=="3"){
 		GameManager.Cut = !GameManager.Cut;
 		show_debug_message("Cut");	
 	}	
-	else if(text=="3"){
+	else if(text=="4"){
 		if(GameManager.Farmer>0){
 			var _x = GameManager.FarmerPosition.x;
 			var _y = GameManager.FarmerPosition.y;
@@ -24,7 +29,7 @@ function on_click(){
 		}
 		show_debug_message("Farmer");	
 	}
-	else if(text=="4"){
+	else if(text=="5"){
 		show_debug_message("Add soil");
 		GameManager.soil_create = true;
 		

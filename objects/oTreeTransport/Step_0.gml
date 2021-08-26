@@ -22,11 +22,12 @@ if(inst_TreeStackPosition.x+far_from_tree_stack_x==floor(x) && inst_TreeStackPos
 	}
 }
 // if cut tree stack is full of loaded range
-if(moving == false && GameManager.CollectTrees>=GameManager.stack_loaded_range){
+if(moving == false && GameManager.CollectTrees>=GameManager.stack_loaded_range && GameManager.transport_call){
+	sprite_index = sHorseCarriage_left;
 	myPath = path_add();
-	moving = true;	
+	moving = true;
 	if(mp_grid_path(global.rmGrid_transport, myPath, x,y, inst_TreeStackPosition.x+far_from_tree_stack_x, inst_TreeStackPosition.y+far_from_tree_stack_y, false)){
 		path_start(myPath,1,path_action_stop,false);
 	}
-	sprite_index = sHorseCarriage_left;
+	GameManager.transport_call=false;
 }
