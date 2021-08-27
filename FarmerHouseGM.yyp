@@ -70,6 +70,7 @@
     {"id":{"name":"oParticleSetup","path":"objects/oParticleSetup/oParticleSetup.yy",},"order":0,},
     {"id":{"name":"oFarmerPosition","path":"objects/oFarmerPosition/oFarmerPosition.yy",},"order":6,},
     {"id":{"name":"oGameManager","path":"objects/oGameManager/oGameManager.yy",},"order":0,},
+    {"id":{"name":"oWeatherManager","path":"objects/oWeatherManager/oWeatherManager.yy",},"order":3,},
     {"id":{"name":"sBlock_16x16","path":"sprites/sBlock_16x16/sBlock_16x16.yy",},"order":12,},
     {"id":{"name":"scr_loadGame","path":"scripts/scr_loadGame/scr_loadGame.yy",},"order":7,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

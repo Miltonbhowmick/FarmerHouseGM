@@ -1,3 +1,4 @@
+
 // oCameraControl
 instance_create_layer(250,250,"GUI", oCameraControl);
 
@@ -69,3 +70,8 @@ list_cut_tree = ds_list_create();
 // -- Transport --
 // cut tree transport
 transport_call = false;
+
+// -- Rain --
+// raining or not
+raining = false;
+

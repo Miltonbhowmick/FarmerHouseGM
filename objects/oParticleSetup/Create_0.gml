@@ -1,10 +1,12 @@
 /// @description 
 
-particle_system = part_system_create_layer("Weather", 0);
+globalvar particle_system;
+global.particle_system = part_system_create_layer("Weather", 0);
 
 #region Rain
 // Rain
-particleType_Rain = part_type_create();
+globalvar particleType_Rain;
+global.particleType_Rain = part_type_create();
 
 part_type_sprite(particleType_Rain, sParticleRain_Soft, 0,0,1);
 part_type_size(particleType_Rain, 2,2,0,0);
