@@ -55,6 +55,9 @@ total_create = 0;
 coins = 0;
 
 // -- Tree --
+// small, medium, large tree
+tree_grow_time = 10;
+tree_cut_time = 10;
 
 // cut tree position
 c_tx = 0;
@@ -74,4 +77,5 @@ transport_call = false;
 // -- Rain --
 // raining or not
 raining = false;
+rain_n_times = 3;
 

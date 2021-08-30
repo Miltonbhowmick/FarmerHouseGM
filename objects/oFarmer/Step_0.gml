@@ -58,7 +58,7 @@ else
 			// 35 is grid_size + 3
 			if((x==inst_large_tree.x+28 && y==inst_large_tree.y+25) || (x==inst_large_tree.x+20 && y==inst_large_tree.y) ||(x==inst_large_tree.x-4 && y==inst_large_tree.y+20) ){
 				if(alarm[0]<0){
-					alarm[0] = room_speed  * 5;
+					alarm[0] = room_speed  * GameManager.tree_cut_time;
 				}
 			}
 			else{
