@@ -2,17 +2,19 @@
 // You can write your code in this editor
 
 if(GameManager.Cut){
-	MousePressed++;
-	if(MousePressed==OccupiedSoil.number_of_click){	
-		instance_destroy();
-		GameManager.CollectTrees++;
-		GameManager.coins++;
+	if(GameManager.stack_loaded_range<10){
+		MousePressed++;
+		if(MousePressed==OccupiedSoil.number_of_click){	
+			instance_destroy();
+			GameManager.CollectTrees++;
+			GameManager.coins++;
 		
-		// tree stack operation
-		tree_stack_operation();
+			// tree stack operation
+			tree_stack_operation();
 		
-		// re-initialize
-		soil.PlantTree = noone;
-		MousePressed=0;
+			// re-initialize
+			soil.PlantTree = noone;
+			MousePressed=0;
+		}
 	}
 }

@@ -6,8 +6,8 @@ if(GameManager.droughting && !GameManager.drought_time && !GameManager.raining){
 		GameManager.drought_time = true;
 		GameManager.tree_cut_time = GameManager.init_cut_time - floor(GameManager.init_cut_time*30/100);
 		GameManager.tree_grow_time = GameManager.init_grow_time + floor(GameManager.init_grow_time*30/100);
-		show_message(GameManager.tree_cut_time);
-		show_message(GameManager.tree_grow_time);
+//		show_message(GameManager.tree_cut_time);
+//		show_message(GameManager.tree_grow_time);
 		alarm[0] = room_speed * 10;
 	}
 	else{
