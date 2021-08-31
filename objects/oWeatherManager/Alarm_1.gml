@@ -5,5 +5,5 @@ part_particles_clear(global.particle_system);
 GameManager.raining = false;
 GameManager.rain_start = false;
 
-GameManager.tree_cut_time -= floor(GameManager.tree_cut_time*30/100);
-GameManager.tree_grow_time += floor(GameManager.tree_grow_time*30/100);
+GameManager.tree_cut_time = GameManager.init_cut_time;
+GameManager.tree_grow_time = GameManager.init_grow_time;

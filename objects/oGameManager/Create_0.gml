@@ -56,8 +56,10 @@ coins = 0;
 
 // -- Tree --
 // small, medium, large tree
-tree_grow_time = 10;
-tree_cut_time = 10;
+init_grow_time = 10;
+init_cut_time = 10;
+tree_grow_time = init_grow_time;
+tree_cut_time = init_cut_time;
 
 // cut tree position
 c_tx = 0;
