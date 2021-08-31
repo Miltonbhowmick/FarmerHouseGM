@@ -74,8 +74,13 @@ list_cut_tree = ds_list_create();
 // cut tree transport
 transport_call = false;
 
-// -- Rain --
+// -- Weather --
 // raining or not
+rain_start = false;
 raining = false;
 rain_n_times = 3;
+
+// drought
+droughting = false;
+drought_time = false;
 
