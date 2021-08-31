@@ -7,7 +7,6 @@ function farmer_bubble_skip(){
 	init_py = argument[3];
 	
 	if(init_px+3>=px && px<=init_px-3 && init_py+3>=py && py<=init_py-3){ 
-		show_message("koi");
 		return true;	
 	}
 	else{

@@ -239,7 +239,6 @@ if(go_go && mouse_check_button_pressed(mb_left)){
 
 	
 	if(total_create == prev_total+4){
-		show_debug_message("sdasdasda");
 		soil_layer++;
 		up_y -= (sp_grid*3);
 		down_y += (sp_grid*3);

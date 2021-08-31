@@ -1,4 +1,3 @@
-//show_message("aisee");
 
 // sound on each cut of tree
 audio_play_sound(snd_Destroy,10,false);

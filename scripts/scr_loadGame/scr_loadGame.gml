@@ -14,10 +14,7 @@ function scr_loadGame(){
 			var _loadEntity = array_pop(_loadData);
 			
 			var cm = instance_create_layer(_loadEntity.x,_loadEntity.y,layer,asset_get_index(_loadEntity.obj))
-			show_debug_message(cm.x);
-			show_debug_message(cm.y);
 		}
-		show_debug_message("Game Loaded! " + _string);
 		
 	}
 }
