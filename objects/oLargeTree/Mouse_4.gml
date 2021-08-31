@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(GameManager.Cut){
-	if(GameManager.stack_loaded_range<10){
+	if(GameManager.CollectTrees<=GameManager.stack_loaded_range){
 		MousePressed++;
 		if(MousePressed==OccupiedSoil.number_of_click){	
 			instance_destroy();
