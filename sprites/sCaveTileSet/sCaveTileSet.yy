@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 10,
-  "bbox_bottom": 31,
+  "bbox_right": 255,
+  "bbox_top": 0,
+  "bbox_bottom": 255,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 256,
+  "height": 256,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","path":"sprites/sCaveGate/sCaveGate.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","path":"sprites/sCaveGate/sCaveGate.yy",},"LayerId":{"name":"9ad3cf00-a533-407f-92f2-aaafa7470f42","path":"sprites/sCaveGate/sCaveGate.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sCaveGate","path":"sprites/sCaveGate/sCaveGate.yy",},"resourceVersion":"1.0","name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"08c9ee4e-4dfd-4652-aaed-2058d83881a8","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"08c9ee4e-4dfd-4652-aaed-2058d83881a8","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},"LayerId":{"name":"3cece56e-c633-4b43-9f8b-e4aa7e33a1b6","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sCaveTileSet","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},"resourceVersion":"1.0","name":"08c9ee4e-4dfd-4652-aaed-2058d83881a8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sCaveGate","path":"sprites/sCaveGate/sCaveGate.yy",},
+    "spriteId": {"name":"sCaveTileSet","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"11ee825d-ca39-40b4-9982-f273d2e1451a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","path":"sprites/sCaveGate/sCaveGate.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0fd1f792-12db-4cc7-b8ad-e47b46837b0b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"08c9ee4e-4dfd-4652-aaed-2058d83881a8","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sCaveGate","path":"sprites/sCaveGate/sCaveGate.yy",},
+    "parent": {"name":"sCaveTileSet","path":"sprites/sCaveTileSet/sCaveTileSet.yy",},
     "resourceVersion": "1.3",
-    "name": "sCaveGate",
+    "name": "sCaveTileSet",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9ad3cf00-a533-407f-92f2-aaafa7470f42","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3cece56e-c633-4b43-9f8b-e4aa7e33a1b6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/CaveRoom.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sCaveGate",
+  "name": "sCaveTileSet",
   "tags": [],
   "resourceType": "GMSprite",
 }

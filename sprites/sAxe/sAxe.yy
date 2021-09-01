@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 31,
-  "bbox_top": 10,
+  "bbox_top": 0,
   "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","path":"sprites/sCaveGate/sCaveGate.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","path":"sprites/sCaveGate/sCaveGate.yy",},"LayerId":{"name":"9ad3cf00-a533-407f-92f2-aaafa7470f42","path":"sprites/sCaveGate/sCaveGate.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sCaveGate","path":"sprites/sCaveGate/sCaveGate.yy",},"resourceVersion":"1.0","name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9b6aa2e9-6056-44ae-9f16-dc1f3ac0d9bb","path":"sprites/sAxe/sAxe.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9b6aa2e9-6056-44ae-9f16-dc1f3ac0d9bb","path":"sprites/sAxe/sAxe.yy",},"LayerId":{"name":"04c70621-33df-45cc-9aa5-5056752eef59","path":"sprites/sAxe/sAxe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},"resourceVersion":"1.0","name":"9b6aa2e9-6056-44ae-9f16-dc1f3ac0d9bb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sCaveGate","path":"sprites/sCaveGate/sCaveGate.yy",},
+    "spriteId": {"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"11ee825d-ca39-40b4-9982-f273d2e1451a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"587e50a8-0ec3-43f1-80e6-8bb9700368f9","path":"sprites/sCaveGate/sCaveGate.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5605a7bd-7fde-4404-8291-1f1cf66d0ac3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9b6aa2e9-6056-44ae-9f16-dc1f3ac0d9bb","path":"sprites/sAxe/sAxe.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sCaveGate","path":"sprites/sCaveGate/sCaveGate.yy",},
+    "parent": {"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},
     "resourceVersion": "1.3",
-    "name": "sCaveGate",
+    "name": "sAxe",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9ad3cf00-a533-407f-92f2-aaafa7470f42","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"04c70621-33df-45cc-9aa5-5056752eef59","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CaveRoom",
-    "path": "folders/Sprites/CaveRoom.yy",
+    "name": "Equipments",
+    "path": "folders/Sprites/CaveRoom/Equipments.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sCaveGate",
+  "name": "sAxe",
   "tags": [],
   "resourceType": "GMSprite",
 }

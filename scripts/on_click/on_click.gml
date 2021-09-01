@@ -41,7 +41,7 @@ function on_click(){
 		if(file_exists("savedgame.save")){
 			file_delete("savedgame.save");
 		}
-		room_goto_next();
+		room_goto(rMain);
 	}
 	else if(text == ""){
 		// pending*

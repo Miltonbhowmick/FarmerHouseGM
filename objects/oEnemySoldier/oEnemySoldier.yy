@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sCaveGate",
-    "path": "sprites/sCaveGate/sCaveGate.yy",
+    "name": "sEnemySoldier",
+    "path": "sprites/sEnemySoldier/sEnemySoldier.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": {
-    "name": "sCaveGate",
-    "path": "sprites/sCaveGate/sCaveGate.yy",
+    "name": "sEnemySoldier",
+    "path": "sprites/sEnemySoldier/sEnemySoldier.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -25,16 +25,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "CaveRoom",
-    "path": "folders/Objects/CaveRoom.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oCaveGate",
+  "name": "oEnemySoldier",
   "tags": [],
   "resourceType": "GMObject",
 }

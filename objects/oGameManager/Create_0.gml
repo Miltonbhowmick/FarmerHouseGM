@@ -1,93 +1,98 @@
 
-// oCameraControl
-instance_create_layer(250,250,"GUI", oCameraControl);
+if(room==rMain){
+	// oCameraControl
+	instance_create_layer(250,250,"GUI", oCameraControl);
 
-// oManager GUI Button
-Farmer = 2;
-FarmerPosition = inst_FarmerPosition;
+	// oManager GUI Button
+	Farmer = 2;
+	FarmerPosition = inst_FarmerPosition;
 
-Cut = 0;
-Plant = 0;
-CollectTrees = 0;
+	Cut = 0;
+	Plant = 0;
+	CollectTrees = 0;
 
-// Grid for AI
-global.rmGrid = mp_grid_create(0,0,room_width/4, room_height/4, 4, 4);
-mp_grid_add_instances(global.rmGrid, oBlock_16x16, true);
-mp_grid_add_instances(global.rmGrid, oBlock_16x16_mc, true);
-mp_grid_add_instances(global.rmGrid, oBlock_32x32_tl, true);
-mp_grid_add_instances(global.rmGrid, oFarmer, true);
+	// Grid for AI
+	global.rmGrid = mp_grid_create(0,0,room_width/4, room_height/4, 4, 4);
+	mp_grid_add_instances(global.rmGrid, oBlock_16x16, true);
+	mp_grid_add_instances(global.rmGrid, oBlock_16x16_mc, true);
+	mp_grid_add_instances(global.rmGrid, oBlock_32x32_tl, true);
+	mp_grid_add_instances(global.rmGrid, oFarmer, true);
 
-// Farmer create
-//bubble_range = 16;
-CollideResponse = noone;
+	// Farmer create
+	//bubble_range = 16;
+	CollideResponse = noone;
 
-// create go go...
-go_go = false;
-
-
-// Soil create
-soil_create = false;
-sp_grid = 16;
-spx = 32;
-spy = 192;
-
-// soil up create x,y
-up_x = FarmerPosition.x - (sp_grid*3);
-up_y = FarmerPosition.y - (sp_grid*9);
-
-// soil down create x,y
-down_x = FarmerPosition.x - (sp_grid*3);
-down_y = FarmerPosition.y + (sp_grid*8);
-
-// soil side x,y
-//side_x = down_x - sp_grid*up_down_soil;
-
-soil_layer = 3;
-up_down_soil = 4*3;
-side_soil = 11;
-side_gap = 16;
-
-prev_total = 9;
-total_create = 0;
+	// create go go...
+	go_go = false;
 
 
-// Resources
-coins = 0;
+	// Soil create
+	soil_create = false;
+	sp_grid = 16;
+	spx = 32;
+	spy = 192;
 
-// -- Tree --
-// small, medium, large tree
-init_grow_time = 10;
-init_cut_time = 10;
-tree_grow_time = init_grow_time;
-tree_cut_time = init_cut_time;
+	// soil up create x,y
+	up_x = FarmerPosition.x - (sp_grid*3);
+	up_y = FarmerPosition.y - (sp_grid*9);
 
-// cut tree position
-c_tx = 0;
-c_ty = 50;
-_depth = 2;
-tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceLocation.y,"Transports", oTreeTransport);
-with tree_transport{
-	depth = -1000;
+	// soil down create x,y
+	down_x = FarmerPosition.x - (sp_grid*3);
+	down_y = FarmerPosition.y + (sp_grid*8);
+
+	// soil side x,y
+	//side_x = down_x - sp_grid*up_down_soil;
+
+	soil_layer = 3;
+	up_down_soil = 4*3;
+	side_soil = 11;
+	side_gap = 16;
+
+	prev_total = 9;
+	total_create = 0;
+
+
+	// Resources
+	coins = 0;
+
+	// -- Tree --
+	// small, medium, large tree
+	init_grow_time = 10;
+	init_cut_time = 10;
+	tree_grow_time = init_grow_time;
+	tree_cut_time = init_cut_time;
+
+	// cut tree position
+	c_tx = 0;
+	c_ty = 50;
+	_depth = 2;
+	tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceLocation.y,"Transports", oTreeTransport);
+	with tree_transport{
+		depth = -1000;
+	}
+	stack_loaded_range = 10;
+	list_cut_tree = ds_list_create();
+
+	// -- Transport --
+	// cut tree transport
+	transport_call = false;
+
+	// -- Weather --
+	// raining or not
+	rain_start = false;
+	raining = false;
+	rain_n_times = 3;
+
+	// drought
+	droughting = false;
+	drought_time = false;
+
+	// -- Cave --
+	// call for cave move
+	cave_call = false;
+	cave_call_x = inst_CaveGate.x + 16;
+	cave_call_y = inst_CaveGate.y + 10;
 }
-stack_loaded_range = 10;
-list_cut_tree = ds_list_create();
+else if(room==rCave){
 
-// -- Transport --
-// cut tree transport
-transport_call = false;
-
-// -- Weather --
-// raining or not
-rain_start = false;
-raining = false;
-rain_n_times = 3;
-
-// drought
-droughting = false;
-drought_time = false;
-
-// -- Cave --
-// call for cave move
-cave_call = false;
-cave_call_x = inst_CaveGate.x + 16;
-cave_call_y = inst_CaveGate.y + 10;
+}
