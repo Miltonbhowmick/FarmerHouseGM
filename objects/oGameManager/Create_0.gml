@@ -89,5 +89,5 @@ drought_time = false;
 // -- Cave --
 // call for cave move
 cave_call = false;
-cave_call_x = inst_CaveGate.x;
-cave_call_y = inst_CaveGate.y;
+cave_call_x = inst_CaveGate.x + 16;
+cave_call_y = inst_CaveGate.y + 10;

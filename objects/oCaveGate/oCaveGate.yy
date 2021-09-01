@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sCaveGate",
+    "path": "sprites/sCaveGate/sCaveGate.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

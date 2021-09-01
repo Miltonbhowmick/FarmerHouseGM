@@ -3,6 +3,7 @@
 GameManager  = inst_GameManager;
 
 inst_object = noone;
+depth = -400;
 
 // large tree instance
 inst_large_tree = noone;

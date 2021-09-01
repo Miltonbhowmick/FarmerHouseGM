@@ -1,15 +1,19 @@
 
+// mp grid path speed 
+path_speed = .5;
+
+if(x==GameManager.cave_call_x && y==GameManager.cave_call_y){
+	room_goto(rCave);
+}
+
 if(GameManager.cave_call){
 	myPath = path_add();
 	show_debug_message(mp_grid_path(global.rmGrid, myPath, x,y, GameManager.cave_call_x, GameManager.cave_call_y, false));
-	if(mp_grid_path(global.rmGrid, myPath, x,y,736, 896, false)){
-		path_start(global.rmGrid, 1, path_action_stop, true);
-		
+	if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.cave_call_x, GameManager.cave_call_y, false)){
+		path_start(myPath, 2, path_action_stop, true);
 	}
 }
 else{
-	// mp grid path speed 
-	path_speed = .5;
 
 	// Two farmer collision -> old distance_to_object 25 , co-circle 22
 	if(distance_to_object(oFarmerPosition)>=22 && collision_circle(x,y,20, oFarmer, false,true)){
