@@ -86,3 +86,8 @@ rain_n_times = 3;
 droughting = false;
 drought_time = false;
 
+// -- Cave --
+// call for cave move
+cave_call = false;
+cave_call_x = inst_CaveGate.x;
+cave_call_y = inst_CaveGate.y;

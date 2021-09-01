@@ -1,4 +1,4 @@
-/// @description
+		/// @description
 
 GameManager = inst_GameManager;
 fade_in_speed = .0003;
