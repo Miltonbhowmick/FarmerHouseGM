@@ -13,6 +13,9 @@ if(room==rMain){
 	ck=true;
 	instance_destroy(inst_large_tree);
 }
-else if (room==rCave){
-	
+else if (room==rCave){	
+	myPath = path_add();
+	if(mp_grid_path(global.cave_rmGrid,myPath,x,y,inst_Axe.x,inst_Axe.y,false)){
+		path_start(myPath,1,path_action_stop,false);	
+	}
 }

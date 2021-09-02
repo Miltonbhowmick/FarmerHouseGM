@@ -43,11 +43,13 @@
     {"id":{"name":"sH_Road","path":"sprites/sH_Road/sH_Road.yy",},"order":10,},
     {"id":{"name":"sObstacle","path":"sprites/sObstacle/sObstacle.yy",},"order":7,},
     {"id":{"name":"oBlock_16x16","path":"objects/oBlock_16x16/oBlock_16x16.yy",},"order":10,},
+    {"id":{"name":"oCaveGrid","path":"objects/oCaveGrid/oCaveGrid.yy",},"order":28,},
     {"id":{"name":"oMediumTree","path":"objects/oMediumTree/oMediumTree.yy",},"order":2,},
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":1,},
     {"id":{"name":"sLargeTree","path":"sprites/sLargeTree/sLargeTree.yy",},"order":4,},
     {"id":{"name":"tGround","path":"tilesets/tGround/tGround.yy",},"order":0,},
     {"id":{"name":"oTreeTransport","path":"objects/oTreeTransport/oTreeTransport.yy",},"order":18,},
+    {"id":{"name":"oAssistant","path":"objects/oAssistant/oAssistant.yy",},"order":27,},
     {"id":{"name":"tCaveTileSet","path":"tilesets/tCaveTileSet/tCaveTileSet.yy",},"order":0,},
     {"id":{"name":"sCollectTree","path":"sprites/sCollectTree/sCollectTree.yy",},"order":0,},
     {"id":{"name":"on_click","path":"scripts/on_click/on_click.yy",},"order":2,},
@@ -105,8 +107,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+    {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rCave","path":"rooms/rCave/rCave.yy",},},
   ],
   "Folders": [
