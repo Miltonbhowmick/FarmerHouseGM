@@ -259,6 +259,7 @@ if(room == rMain){
 	}
 }
 else if(room==rCave){
-	var farmer = instance_create_layer(inst_CaveFarmerPosition.x,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
-
+	if(Farmer!=instance_number(oFarmer)){
+		var farmer = instance_create_layer(inst_CaveFarmerPosition.x,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
+	}
 }

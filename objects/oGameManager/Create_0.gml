@@ -94,5 +94,5 @@ if(room==rMain){
 	cave_call_y = inst_CaveGate.y + 10;
 }
 else if(room==rCave){
-
+	
 }

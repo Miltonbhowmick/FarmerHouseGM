@@ -3,7 +3,7 @@
     "name": "sAxe",
     "path": "sprites/sAxe/sAxe.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": {
     "name": "sAxe",
