@@ -260,8 +260,5 @@ if(room == rMain){
 }
 else if(room==rCave){
 	var farmer = instance_create_layer(inst_CaveFarmerPosition.x,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
-	with farmer{
-		point_direction(x,y,inst_Axe.x,inst_Axe.y);
-		speed=1;
-	}
+
 }
