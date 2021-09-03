@@ -20,4 +20,10 @@ else if (room==rCave){
 			path_start(myPath,1,path_action_stop,false);
 		}
 	}
+	else if(instance_exists(oEnemyBoss)){
+		near_enemy_boss = instance_nearest(x,y,oEnemyBoss);
+		if(mp_grid_path(global.cave_rmGrid,myPath,x,y,near_enemy_boss.x,near_enemy_boss.y,false)){
+			path_start(myPath,1,path_action_stop,false);
+		}
+	}
 }

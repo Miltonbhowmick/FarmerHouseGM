@@ -262,4 +262,7 @@ else if(room==rCave){
 	if(Farmer!=instance_number(oFarmer)){
 		var farmer = instance_create_layer(inst_CaveFarmerPosition.x,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
 	}
+	if(instance_number(oEnemySoldier)==0 && instance_number(oEnemyBoss)==0){
+		instance_create_layer(-64,256,"Enemies",oEnemyBoss);
+	}
 }
