@@ -95,6 +95,11 @@ if(room==rMain){
 	}
 }
 else if(room==rCave){
+	
+	near_enemy = instance_nearest(x,y,oEnemySoldier);
+	if(distance_to_object(oEnemySoldier)<enemy_range){
+		move_towards_point(x,y,-.5);
+	}
 	if(alarm[0]<0){
 		alarm[0]=room_speed * 1;
 	}

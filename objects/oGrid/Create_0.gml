@@ -1,6 +1,6 @@
 /// @description Create grid
 
-// For farmer 
+// For farmer
 globalvar rmGrid;
 global.rmGrid = mp_grid_create(0,0,room_width/4, room_height/4, 4, 4);
 mp_grid_add_instances(global.rmGrid, oBlock_16x16, true);
