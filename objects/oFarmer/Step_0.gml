@@ -100,7 +100,12 @@ else if(room==rCave){
 	if(instance_exists(near_enemy) && distance_to_object(oEnemySoldier)==enemy_range){
 		move_towards_point(x,y,-enemy_range);
 		near_enemy.life++;
-//		show_message(near_enemy.life);
+	}
+	
+	near_enemy_boss = instance_nearest(x,y,oEnemyBoss);
+	if(instance_exists(near_enemy_boss) && distance_to_object(oEnemyBoss)==enemy_range){
+		move_towards_point(x,y,-enemy_range);
+		near_enemy_boss.life++;
 	}
 	if(alarm[0]<0){
 		alarm[0]=room_speed * 1;

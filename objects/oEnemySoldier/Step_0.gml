@@ -3,6 +3,7 @@
 // destroy
 if(life>=3){
 	instance_destroy();
+	GameManager.number_enemy_soldier--;
 }
 // avoid overlapping
 if(distance_to_object(oFarmer)<farmer_range){

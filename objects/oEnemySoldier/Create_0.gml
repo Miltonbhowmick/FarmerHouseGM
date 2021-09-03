@@ -1,5 +1,8 @@
 /// @description 
 
+// Game manager
+GameManager = inst_GameManager;
+
 // move towards farmer
 alarm[0] = room_speed * 2;
 
