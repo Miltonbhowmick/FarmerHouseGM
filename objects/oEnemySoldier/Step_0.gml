@@ -1,5 +1,9 @@
 /// @description 
 
+// destroy
+if(life>=3){
+	instance_destroy();
+}
 // avoid overlapping
 if(distance_to_object(oFarmer)<farmer_range){
 	move_towards_point(x,y,.5);

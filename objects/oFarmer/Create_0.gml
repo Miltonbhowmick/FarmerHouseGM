@@ -20,5 +20,5 @@ near_farmer = noone;
 bubble_message = noone;
 
 // enemey
-enemy_range = 3;
+enemy_range = 1;
 near_enemy = noone;

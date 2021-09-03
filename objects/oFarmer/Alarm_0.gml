@@ -14,8 +14,10 @@ if(room==rMain){
 }
 else if (room==rCave){
 	myPath = path_add();
-	if(mp_grid_path(global.cave_rmGrid,myPath,x,y,near_enemy.x,near_enemy.y,true)){
-		path_start(myPath,1	,path_action_stop,false);
+	near_enemy = instance_nearest(x,y,oEnemySoldier);
+	if(instance_exists(near_enemy)){
+		if(mp_grid_path(global.cave_rmGrid,myPath,x,y,near_enemy.x,near_enemy.y,false)){
+			path_start(myPath,1,path_action_stop,false);
+		}
 	}
-	
 }
