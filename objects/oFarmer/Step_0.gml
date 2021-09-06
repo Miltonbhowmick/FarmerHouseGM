@@ -21,7 +21,6 @@ if(room==rMain){
 	
 			// near farmer on collision moment
 			near_farmer = instance_nth_nearest(x,y,oFarmer,2);
-	
 			// changing grid size 2x2
 			mp_grid_clear_all(global.rmGrid);
 			global.rmGrid = mp_grid_create(0,0,room_width/2, room_height/2, 2, 2);
@@ -29,7 +28,6 @@ if(room==rMain){
 			mp_grid_add_instances(global.rmGrid, oBlock_16x16_mc, true);
 			mp_grid_add_instances(global.rmGrid, oBlock_32x32_tl, true);
 			mp_grid_add_instances(global.rmGrid, near_farmer , true);
-
 			// bubble message position
 			var mid_x=0;
 			var mid_y=0;
@@ -51,7 +49,7 @@ if(room==rMain){
 		// Farmer is running to large tree
 		if(GameManager.CollectTrees>=GameManager.stack_loaded_range or instance_number(oLargeTree)<1){
 			myPath = path_add();
-			if(mp_grid_path(rmGrid, myPath, x, y ,inst_FarmerPosition.x, inst_FarmerPosition.y, true)){
+			if(mp_grid_path(rmGrid, myPath, x, y ,farmer_pos_x, farmer_pos_y, true)){
 				path_start(myPath, 2, path_action_stop, true);
 			}
 			ck=true;
@@ -107,6 +105,15 @@ else if(room==rCave){
 		move_towards_point(x,y,-enemy_range);
 		near_enemy_boss.life++;
 	}
+	
+	/* 
+	// Two farmer collision -> old distance_to_object 25 , co-circle 22
+	if(distance_to_object(oFarmerPosition)>=22 && collision_circle(x,y,20, oFarmer, false,true)){
+		near_farmer = instance_nearest(x,y,oFarmer);
+		mp_grid_add_instances(global.cave_rmGrid, near_farmer, true);
+	}
+	*/
+	
 	if(alarm[0]<0){
 		alarm[0]=room_speed * 1;
 	}

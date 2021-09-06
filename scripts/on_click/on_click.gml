@@ -19,8 +19,14 @@ function on_click(){
 	}	
 	else if(text=="4"){
 		if(GameManager.Farmer>0){
-			var _x = GameManager.FarmerPosition.x;
-			var _y = GameManager.FarmerPosition.y;
+			if(instance_number(oFarmer)){
+				var _x = GameManager.FarmerPosition.x;
+				var _y = GameManager.FarmerPosition.y-6;
+			}
+			else{
+				var _x = GameManager.FarmerPosition.x;
+				var _y = GameManager.FarmerPosition.y;
+			}	
 			var _farmer = instance_create_layer(_x,_y,"Farmers",oFarmer);
 			with(_farmer){
 				_farmer.inst_object = _farmer;

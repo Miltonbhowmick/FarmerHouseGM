@@ -5,6 +5,10 @@ GameManager  = inst_GameManager;
 inst_object = noone;
 depth = -400;
 
+// room gate
+farmer_pos_x = x;
+farmer_pos_y = y;
+
 // large tree instance
 inst_large_tree = noone;
 // ck as trigger
