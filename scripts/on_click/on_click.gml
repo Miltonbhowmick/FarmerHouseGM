@@ -21,11 +21,11 @@ function on_click(){
 		if(GameManager.Farmer>0){
 			if(instance_number(oFarmer)){
 				var _x = GameManager.FarmerPosition.x;
-				var _y = GameManager.FarmerPosition.y-6;
+				var _y = GameManager.FarmerPosition.y-10;
 			}
 			else{
 				var _x = GameManager.FarmerPosition.x;
-				var _y = GameManager.FarmerPosition.y;
+				var _y = GameManager.FarmerPosition.y+10;
 			}	
 			var _farmer = instance_create_layer(_x,_y,"Farmers",oFarmer);
 			with(_farmer){

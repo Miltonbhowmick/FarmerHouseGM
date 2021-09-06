@@ -261,12 +261,18 @@ if(room == rMain){
 else if(room==rCave){
 	if(Farmer<2){
 		if(instance_number(oFarmer)>0){
-			instance_create_layer(inst_CaveFarmerPosition.x-32,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
+			var farmer = instance_create_layer(inst_CaveFarmerPosition.x-32,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
 		}
 		else{
 			instance_create_layer(inst_CaveFarmerPosition.x,inst_CaveFarmerPosition.y,"Farmers", oFarmer);
 		}
 		Farmer++;
+	}
+	if(initial_enemy_soldier>0){
+		_x = irandom_range(128,550);
+		_y = irandom_range(222,352);
+		instance_create_layer(_x,_y,"Enemies",oEnemySoldier);
+		initial_enemy_soldier--;
 	}
 	if(number_enemy_soldier==0){
 		instance_create_layer(-64,256,"Enemies",oEnemyBoss);

@@ -1,9 +1,8 @@
+// mp grid path speed 
+path_speed = .5;
  
 if(room==rMain){
 	
-	// mp grid path speed 
-	path_speed = .5;
-
 	if(x==GameManager.cave_call_x && y==GameManager.cave_call_y){
 		room_goto(rCave);
 	}
@@ -106,15 +105,16 @@ else if(room==rCave){
 		near_enemy_boss.life++;
 	}
 	
-	/* 
 	// Two farmer collision -> old distance_to_object 25 , co-circle 22
-	if(distance_to_object(oFarmerPosition)>=22 && collision_circle(x,y,20, oFarmer, false,true)){
-		near_farmer = instance_nearest(x,y,oFarmer);
-		mp_grid_add_instances(global.cave_rmGrid, near_farmer, true);
+	if(place_meeting(x,y,oFarmer)){
+		//Make it change direction when it touches player object
+		x-=3;
+		y-=3;
 	}
-	*/
 	
 	if(alarm[0]<0){
 		alarm[0]=room_speed * 1;
 	}
+	
+	
 }

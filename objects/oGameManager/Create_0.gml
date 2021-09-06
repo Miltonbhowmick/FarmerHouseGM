@@ -94,4 +94,5 @@ cave_call_y = inst_CaveGate.y + 10;
 
 // -- Enemy --
 // enemy soldier
+initial_enemy_soldier = 3;
 number_enemy_soldier = 3;
