@@ -101,19 +101,39 @@ else if(room==rCave){
 	
 	near_enemy_boss = instance_nearest(x,y,oEnemyBoss);
 	if(instance_exists(near_enemy_boss) && distance_to_object(oEnemyBoss)==enemy_range){
-		move_towards_point(x,y,-enemy_range);
+		move_towards_point(x,y,-enemy_range*4);
 		near_enemy_boss.life++;
 	}
 	
 	// Two farmer collision -> old distance_to_object 25 , co-circle 22
-	if(place_meeting(x,y,oFarmer)){
+	if(place_meeting(x+3,y,oEnemyBoss) || place_meeting(x-3,y, oEnemyBoss) || place_meeting(x,y+3, oEnemyBoss) || place_meeting(x,y-3, oEnemyBoss)){
+		x-=5;
+		y=-5;
+	}
+	//if(place_meeting(x+1,y,oFarmer) || place_meeting(x-1,y,oFarmer) || place_meeting(x,y+1,oFarmer) || place_meeting(x,y-1,oFarmer)){
+	if(distance_to_object(oFarmer)<4){
 		//Make it change direction when it touches player object
-		x-=3;
-		y-=3;
+		near_farmer = instance_nth_nearest(x,y,oFarmer,2);
+		if(near_farmer.x < x){
+			x+=6;
+//			show_message("asdas");
+		}
+		if(near_farmer.y < y){
+//			show_message("asdas");
+			y+=6;
+		}
+		if(near_farmer.x > x){
+//			show_message("asdas");
+			x-=6;
+		}
+		if(near_farmer.y > y){
+//			show_message("asdas");
+			y-=6;
+		}
 	}
 	
 	if(alarm[0]<0){
-		alarm[0]=room_speed * 1;
+		alarm[0]=room_speed * .5;
 	}
 	
 	
