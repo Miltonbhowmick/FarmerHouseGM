@@ -110,24 +110,19 @@ else if(room==rCave){
 		x-=5;
 		y=-5;
 	}
-	//if(place_meeting(x+1,y,oFarmer) || place_meeting(x-1,y,oFarmer) || place_meeting(x,y+1,oFarmer) || place_meeting(x,y-1,oFarmer)){
 	if(distance_to_object(oFarmer)<4){
 		//Make it change direction when it touches player object
 		near_farmer = instance_nth_nearest(x,y,oFarmer,2);
 		if(near_farmer.x < x){
 			x+=6;
-//			show_message("asdas");
 		}
 		if(near_farmer.y < y){
-//			show_message("asdas");
 			y+=6;
 		}
 		if(near_farmer.x > x){
-//			show_message("asdas");
 			x-=6;
 		}
 		if(near_farmer.y > y){
-//			show_message("asdas");
 			y-=6;
 		}
 	}
