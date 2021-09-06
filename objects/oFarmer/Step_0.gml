@@ -105,11 +105,7 @@ else if(room==rCave){
 		near_enemy_boss.life++;
 	}
 	
-	// Two farmer collision -> old distance_to_object 25 , co-circle 22
-	if(place_meeting(x+3,y,oEnemyBoss) || place_meeting(x-3,y, oEnemyBoss) || place_meeting(x,y+3, oEnemyBoss) || place_meeting(x,y-3, oEnemyBoss)){
-		x-=5;
-		y=-5;
-	}
+	
 	if(distance_to_object(oFarmer)<4){
 		//Make it change direction when it touches player object
 		near_farmer = instance_nth_nearest(x,y,oFarmer,2);
