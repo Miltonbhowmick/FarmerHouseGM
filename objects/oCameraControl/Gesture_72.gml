@@ -1,6 +1,5 @@
 /// @description Zoom Out
 
-
 var _scale = event_data[? "relativescale"];
 var _w = camera_get_view_width(view_camera[0]);
 var _h = camera_get_view_height(view_camera[0]);
