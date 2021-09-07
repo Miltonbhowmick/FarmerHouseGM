@@ -95,19 +95,19 @@ else if(room==rCave){
 	
 	near_enemy = instance_nearest(x,y,oEnemySoldier);
 	if(instance_exists(near_enemy) && distance_to_object(oEnemySoldier)==enemy_range){
-		move_towards_point(x,y,-enemy_range);
+		move_towards_point(x,y,-enemy_range*1.5);
 		near_enemy.life++;
 	}
 	
 	near_enemy_boss = instance_nearest(x,y,oEnemyBoss);
-	if(instance_exists(near_enemy_boss) && distance_to_object(oEnemyBoss)==enemy_range){
+	if(instance_exists(near_enemy_boss) && distance_to_object(oEnemyBoss)==enemy_range*2){
+		show_message("asdsad");
 		move_towards_point(x,y,-enemy_range*4);
 		near_enemy_boss.life++;
 	}
-	
-	
+
 	if(distance_to_object(oFarmer)<4){
-		//Make it change direction when it touches player object
+		//Make it change direction when it touches farmer object
 		near_farmer = instance_nth_nearest(x,y,oFarmer,2);
 		if(near_farmer.x < x){
 			x+=6;
