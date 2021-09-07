@@ -1,3 +1,3 @@
 /// @description
-op_space = 50;
+op_space = 35;
 event_user(0);

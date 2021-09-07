@@ -4,7 +4,7 @@ var _width = 35;
 var _height = 35;
 
 var pos_x = 680-50;
-var pos_y = floor(340/2)-120;
+var pos_y = floor(340/2)-90;
 
 create_button(pos_x,pos_y, _width, _height, sSoilAddBtn ,"5", on_click);
 create_button(pos_x,pos_y+op_space, _width, _height, sFarmerBtn ,"4", on_click);
