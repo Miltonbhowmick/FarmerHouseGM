@@ -127,5 +127,4 @@ else if(room==rCave){
 		alarm[0]=room_speed * .5;
 	}
 	
-	
 }
