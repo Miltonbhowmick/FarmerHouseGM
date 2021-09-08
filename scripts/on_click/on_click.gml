@@ -15,7 +15,13 @@ function on_click(){
 	}	
 	else if(text=="3"){
 		GameManager.Cut = !GameManager.Cut;
-		show_debug_message("Cut");	
+		if(GameManager.Cut==true){
+			_image_index = 1;
+		}
+		else{
+			_image_index = 0;
+		}
+		show_debug_message("Cut");
 	}	
 	else if(text=="4"){
 		if(GameManager.Farmer>0){
@@ -31,6 +37,7 @@ function on_click(){
 			with(_farmer){
 				_farmer.inst_object = _farmer;
 			}
+			
 			GameManager.Farmer--;
 		}
 		show_debug_message("Farmer");	
