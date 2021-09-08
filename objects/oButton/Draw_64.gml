@@ -15,5 +15,6 @@ if(_sprite_index = noone){
 	draw_set_color(c_white);
 }
 else{
-	draw_sprite(_sprite_index,0,x,y);
+	image_index=1;
+	draw_sprite(_sprite_index,_image_index ,x,y);
 }
