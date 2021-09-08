@@ -7,10 +7,12 @@ function on_click(){
 	else if(text=="2"){
 		GameManager.Plant = !GameManager.Plant;
 		if(GameManager.Plant==true){
-			
+			_image_index = 1;
 			btn_x = floor(mouse_x/GameManager.sp_grid)*GameManager.sp_grid;
 			btn_y = floor(mouse_y/GameManager.sp_grid)*GameManager.sp_grid;
-			show_debug_message(string(place_meeting(mouse_x,mouse_y,oButton)));
+		}
+		else{
+			_image_index = 0;
 		}
 		show_debug_message("Plant");
 	}	
