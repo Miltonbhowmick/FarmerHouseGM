@@ -8,5 +8,4 @@ if(room==rMain){
 	mp_grid_add_instances(global.rmGrid, oBlock_32x32_tl, true);
 }
 else if(room==rCave){
-
 }
