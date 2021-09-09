@@ -4,6 +4,7 @@ path_speed = .5;
 if(room==rMain){
 	
 	if(x==GameManager.cave_call_x && y==GameManager.cave_call_y){
+		GameManager.cave_call=false;
 		room_goto(rCave);
 	}
 
@@ -12,6 +13,8 @@ if(room==rMain){
 		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.cave_call_x, GameManager.cave_call_y, false)){
 			path_start(myPath, 2, path_action_stop, true);//fast
 		}
+		
+		
 	}
 	else{
 

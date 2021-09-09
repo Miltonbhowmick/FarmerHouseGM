@@ -7,8 +7,7 @@ if(AttackCount=15)
 	
 
 if (distance_to_object(oFarmer)<15)
-    {
-
+{
 	
     path_end();
 	FarmerSpeed=0;
@@ -19,12 +18,13 @@ if (distance_to_object(oFarmer)<15)
 	move_towards_point(oFarmer.x,oFarmer.y,1);
 	if(AttackCount=25)
 	{
-	instance_destroy();
-	sprite_set_speed(sMovingRoad,0,10);
-	var _x = camera_get_view_width(view_camera[0])/2;
-	var _y = camera_get_view_height(view_camera[0])/2;
+		instance_destroy();
+		sprite_set_speed(sMovingRoad,0,10);
 	
-	instance_create_layer(_x,_y,"Notification",oNotification);
+		var _x = camera_get_view_width(view_camera[0])/2;
+		var _y = camera_get_view_height(view_camera[0])/2;
+	
+		instance_create_layer(_x,_y,"Notification",oNotification);
 	}
 
 
