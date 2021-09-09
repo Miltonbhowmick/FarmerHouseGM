@@ -268,7 +268,7 @@ else if(room==rCave){
 		}
 		Farmer++;
 	}
-	if(initial_enemy_soldier>0){
+	/*if(initial_enemy_soldier>0){
 		_x = irandom_range(128,550);
 		_y = irandom_range(222,352);
 		instance_create_layer(_x,_y,"Enemies",oEnemySoldier);
@@ -277,5 +277,5 @@ else if(room==rCave){
 	if(number_enemy_soldier==0){
 		instance_create_layer(-64,256,"Enemies",oEnemyBoss);
 		number_enemy_soldier--;
-	}
+	}*/
 }
