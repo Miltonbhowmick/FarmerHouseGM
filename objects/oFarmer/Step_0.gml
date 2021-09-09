@@ -99,7 +99,5 @@ else if(room==rCave){
 	   if(AttackCount>14 && AttackCount<25)
 	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,FarmerSpeed);
 	   
-	
-	
-	
+		
 }

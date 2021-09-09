@@ -7,15 +7,24 @@ function on_click(){
 	else if(text=="2"){
 		GameManager.Plant = !GameManager.Plant;
 		if(GameManager.Plant==true){
+			_image_index = 1;
 			btn_x = floor(mouse_x/GameManager.sp_grid)*GameManager.sp_grid;
 			btn_y = floor(mouse_y/GameManager.sp_grid)*GameManager.sp_grid;
-			show_debug_message(string(place_meeting(mouse_x,mouse_y,oButton)));
+		}
+		else{
+			_image_index = 0;
 		}
 		show_debug_message("Plant");
 	}	
 	else if(text=="3"){
 		GameManager.Cut = !GameManager.Cut;
-		show_debug_message("Cut");	
+		if(GameManager.Cut==true){
+			_image_index = 1;
+		}
+		else{
+			_image_index = 0;
+		}
+		show_debug_message("Cut");
 	}	
 	else if(text=="4"){
 		if(GameManager.Farmer>0){
@@ -31,6 +40,7 @@ function on_click(){
 			with(_farmer){
 				_farmer.inst_object = _farmer;
 			}
+			
 			GameManager.Farmer--;
 		}
 		show_debug_message("Farmer");	

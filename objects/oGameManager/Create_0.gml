@@ -6,7 +6,7 @@ instance_create_layer(250,250,"GUI", oCameraControl);
 Farmer = 2;
 FarmerPosition = inst_FarmerPosition;
 
-Cut = 0;
+Cut = false;
 Plant = 0;
 CollectTrees = 0;
 

@@ -16,8 +16,12 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oCaveGrid","path":"objects/oCaveGrid/oCaveGrid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":0.0,"resourceVersion":"1.0","name":"inst_CaveGrid","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Managers","tags":[],"resourceType":"GMRInstanceLayer",},
+<<<<<<< HEAD
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Notification","tags":[],"resourceType":"GMRInstanceLayer",},
     {"pathId":{"name":"pFireStick","path":"paths/pFireStick/pFireStick.yy",},"colour":4278190335,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Path_1","tags":[],"resourceType":"GMRPathLayer",},
+=======
+    {"pathId":{"name":"pFireStick","path":"paths/pFireStick/pFireStick.yy",},"colour":4278190335,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Paths","tags":[],"resourceType":"GMRPathLayer",},
+>>>>>>> 7eecd7dcb8c8a1261d8c61e2a20d8180b6abca83
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oBlock_16x16","path":"objects/oBlock_16x16/oBlock_16x16.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":-32.0,"resourceVersion":"1.0","name":"inst_584FDA2","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Equipments","tags":[],"resourceType":"GMRInstanceLayer",},

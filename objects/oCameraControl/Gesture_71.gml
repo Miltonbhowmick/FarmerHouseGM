@@ -16,7 +16,6 @@ if(_w>320){
 	_h *= _scale;
 	_x = mx - (cx *_scale);
 	_y = my - (cy *_scale);
-	show_debug_message(string(_x)+"---"+string(_y));
 	camera_set_view_pos(view_camera[0], _x, _y);
 	camera_set_view_size(view_camera[0], _w, _h);
 }
