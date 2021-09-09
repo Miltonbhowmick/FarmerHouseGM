@@ -10,6 +10,14 @@ Cut = false;
 Plant = 0;
 CollectTrees = 0;
 
+//variables for roomCave
+globalvar EnemyCount;
+EnemyCount=0;
+globalvar AttackCount;
+AttackCount=1;
+globalvar FarmerSpeed;
+FarmerSpeed=.1;
+
 // Grid for AI
 global.rmGrid = mp_grid_create(0,0,room_width/4, room_height/4, 4, 4);
 mp_grid_add_instances(global.rmGrid, oBlock_16x16, true);

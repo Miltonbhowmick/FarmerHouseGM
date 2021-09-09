@@ -1,10 +1,10 @@
 {
   "kind": 0,
-  "closed": false,
-  "precision": 4,
+  "closed": true,
+  "precision": 10,
   "points": [
-    {"speed":100.0,"x":672.0,"y":-32.0,},
-    {"speed":100.0,"x":0.0,"y":384.0,},
+    {"speed":100.0,"x":224.000031,"y":281.6667,},
+    {"speed":100.0,"x":334.0,"y":-2.0,},
   ],
   "parent": {
     "name": "Paths",

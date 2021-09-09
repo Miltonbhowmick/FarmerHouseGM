@@ -10,7 +10,7 @@ if(room==rMain){
 	if(GameManager.cave_call){
 		myPath = path_add();
 		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.cave_call_x, GameManager.cave_call_y, false)){
-			path_start(myPath, 2, path_action_stop, true);
+			path_start(myPath, 22, path_action_stop, true);//fast
 		}
 	}
 	else{
@@ -92,5 +92,65 @@ if(room==rMain){
 	}
 }
 else if(room==rCave){
+<<<<<<< HEAD
 		
+=======
+	
+	
+	   if(AttackCount<15)
+	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,FarmerSpeed);
+	   if(AttackCount>14 && AttackCount<25)
+	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,FarmerSpeed);
+	   
+	   if (distance_to_object(oEnemyBoss)==10|| distance_to_object(oEnemySoldier)==10)
+    {
+		
+		//move_towards_point(oFarmer.x,oFarmer.y,1);
+	}
+	
+	/*near_enemy = instance_nearest(x,y,oEnemySoldier);
+	if(instance_exists(near_enemy) && distance_to_object(oEnemySoldier)==enemy_range){
+		sprite_set_speed(sMovingRoad,0,10);
+		move_towards_point(x,y,-enemy_range*1.5);
+		near_enemy.life++;
+		
+	}
+	if(!instance_exists(near_enemy) && !distance_to_object(oEnemySoldier)==enemy_range){
+		sprite_set_speed(sMovingRoad,10,10);
+		
+	}
+	
+	
+	
+	near_enemy_boss = instance_nearest(x,y,oEnemyBoss);
+	if(instance_exists(near_enemy_boss) && distance_to_object(oEnemyBoss)==enemy_range*2){
+	
+		move_towards_point(x,y,-enemy_range*4);
+		near_enemy_boss.life++;
+	}
+
+	if(distance_to_object(oFarmer)<4){
+		//Make it change direction when it touches farmer object
+		near_farmer = instance_nth_nearest(x,y,oFarmer,2);
+		if(near_farmer.x < x){
+			x+=6;
+		}
+		if(near_farmer.y < y){
+			y+=6;
+		}
+		if(near_farmer.x > x){
+			x-=6;
+		}
+		if(near_farmer.y > y){
+			y-=6;
+		}
+	}
+	
+	if(alarm[0]<0){
+		alarm[0]=room_speed * .5;
+	}
+	path_start(pFireStick,2,path_action_reverse,true);*/
+	
+	
+>>>>>>> staging
 }
