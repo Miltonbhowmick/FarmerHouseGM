@@ -90,6 +90,7 @@
     {"id":{"name":"oLargeTree","path":"objects/oLargeTree/oLargeTree.yy",},"order":3,},
     {"id":{"name":"sTileSet1","path":"sprites/sTileSet1/sTileSet1.yy",},"order":20,},
     {"id":{"name":"oParticleSetup","path":"objects/oParticleSetup/oParticleSetup.yy",},"order":0,},
+    {"id":{"name":"sFarmerHouse","path":"sprites/sFarmerHouse/sFarmerHouse.yy",},"order":31,},
     {"id":{"name":"oFarmerPosition","path":"objects/oFarmerPosition/oFarmerPosition.yy",},"order":6,},
     {"id":{"name":"oGameManager","path":"objects/oGameManager/oGameManager.yy",},"order":0,},
     {"id":{"name":"oWeatherManager","path":"objects/oWeatherManager/oWeatherManager.yy",},"order":3,},
@@ -165,7 +166,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.3.574",
+    "IDEVersion": "2.3.4.577",
   },
   "resourceVersion": "1.4",
   "name": "FarmerHouseGM",
