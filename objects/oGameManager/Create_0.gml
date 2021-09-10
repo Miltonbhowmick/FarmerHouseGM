@@ -96,3 +96,11 @@ cave_call_y = inst_CaveGate.y + 10;
 // enemy soldier
 initial_enemy_soldier = 3;
 number_enemy_soldier = 3;
+
+//variables for roomCave
+globalvar EnemyCount;
+EnemyCount=0;
+globalvar AttackCount;
+AttackCount=1;
+globalvar FarmerSpeed;
+FarmerSpeed=.1;

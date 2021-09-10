@@ -4,6 +4,7 @@ path_speed = .5;
 if(room==rMain){
 	
 	if(x==GameManager.cave_call_x && y==GameManager.cave_call_y){
+		GameManager.cave_call=false;
 		room_goto(rCave);
 	}
 
@@ -92,5 +93,10 @@ if(room==rMain){
 	}
 }
 else if(room==rCave){
+	
+	if(AttackCount<15)
+	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,FarmerSpeed);
+	   if(AttackCount>14 && AttackCount<25)
+	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,FarmerSpeed);
 		
 }
