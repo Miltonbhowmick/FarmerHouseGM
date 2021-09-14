@@ -20,6 +20,5 @@ draw_sprite(sCaveGate,0, op_x, op_y + (op_space*4));
 draw_text(op_x+text_logo_pad_x, op_y + (op_space*4) + text_logo_pad_y, cave_gate_btn);
 
 // continue text
-
 draw_text(continue_x ,continue_y ,continue_text);
 
