@@ -10,5 +10,6 @@ if(mouse_check_button_pressed(mb_left)){
 			}
 			instance_destroy();
 			GameManager.instruction_room_main=true;
+			instance_create_layer(0,0,"GUI",oManager);
 		}
 } 

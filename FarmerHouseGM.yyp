@@ -17,6 +17,7 @@
     {"id":{"name":"sMenuBackground","path":"sprites/sMenuBackground/sMenuBackground.yy",},"order":0,},
     {"id":{"name":"oSmallLargeTree","path":"objects/oSmallLargeTree/oSmallLargeTree.yy",},"order":0,},
     {"id":{"name":"oBlock_16x16_mc","path":"objects/oBlock_16x16_mc/oBlock_16x16_mc.yy",},"order":20,},
+    {"id":{"name":"oGardenManager","path":"objects/oGardenManager/oGardenManager.yy",},"order":4,},
     {"id":{"name":"custom_destroy_instance","path":"scripts/custom_destroy_instance/custom_destroy_instance.yy",},"order":4,},
     {"id":{"name":"sSmallLargeTree","path":"sprites/sSmallLargeTree/sSmallLargeTree.yy",},"order":1,},
     {"id":{"name":"sHighRoad","path":"sprites/sHighRoad/sHighRoad.yy",},"order":0,},
@@ -130,9 +131,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rGarden","path":"rooms/rGarden/rGarden.yy",},},
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
-    {"roomId":{"name":"rGarden","path":"rooms/rGarden/rGarden.yy",},},
     {"roomId":{"name":"rCave","path":"rooms/rCave/rCave.yy",},},
   ],
   "Folders": [
