@@ -9,5 +9,6 @@ if(mouse_check_button_pressed(mb_left)){
 				view_visible[0] = true;
 			}
 			instance_destroy();
+			GameManager.instruction_room_main=true;
 		}
 } 
