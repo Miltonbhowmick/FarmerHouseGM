@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sGardener",
-    "path": "sprites/sGardener/sGardener.yy",
-  },
+  "spriteId": null,
   "solid": true,
   "visible": true,
   "spriteMaskId": null,
@@ -22,15 +19,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Gardeners",
-    "path": "folders/Objects/Gardeners.yy",
+    "name": "Instructions",
+    "path": "folders/Objects/Instructions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oGardener",
+  "name": "oRoom_Main",
   "tags": [],
   "resourceType": "GMObject",
 }

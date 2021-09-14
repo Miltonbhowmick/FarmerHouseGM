@@ -46,8 +46,7 @@ function on_click(){
 		show_debug_message("Farmer");	
 	}
 	else if(text=="5"){
-		show_debug_message("Add soil");
-		GameManager.soil_create = true;
+		show_debug_message("Show Instruction");
 		
 	}
 	else if(text =="Resume"){

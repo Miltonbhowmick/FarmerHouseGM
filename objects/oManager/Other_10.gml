@@ -8,6 +8,6 @@ var pos_y = floor(340/2)-90;
 
 create_button(pos_x,pos_y, _width, _height, sFarmerBtn ,"4", on_click);
 create_button(pos_x,pos_y+op_space, _width, _height, sCutTreeTransportBtn,"1", on_click);
-create_button(pos_x,pos_y+op_space*2, _width, _height, sSoilAddBtn ,"5", on_click);
-create_button(pos_x,pos_y+op_space*3, _width, _height, sTreeCutBtn,"3", on_click);
-create_button(pos_x,pos_y+op_space*4, _width, _height, sPlantTreeBtn,"2", on_click);
+create_button(pos_x,pos_y+op_space*2, _width, _height, sTreeCutBtn,"3", on_click);
+create_button(pos_x,pos_y+op_space*3, _width, _height, sPlantTreeBtn,"2", on_click);
+create_button(pos_x,pos_y+op_space*4, _width, _height, sInstruction ,"5", on_click);

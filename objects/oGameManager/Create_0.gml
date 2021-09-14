@@ -1,6 +1,16 @@
 
 // oCameraControl
-instance_create_layer(250,250,"GUI", oCameraControl);
+camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
+
+// first time show
+instruction_room_main = false;
+instruction_room_cave = false;
+instruction_room_gardener = false;
+
+// Room Instructions
+if(room == rMain){
+	instance_create_layer(camera_control.x,camera_control.y,"Instructions", oRoom_Main);
+}
 
 // oManager GUI Button
 Farmer = 2;
