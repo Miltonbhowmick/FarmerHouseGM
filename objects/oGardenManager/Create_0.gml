@@ -8,7 +8,9 @@ environment_size = .75;
 road_den_size = .25;
 
 // cell occupied
-total_cell = room_width*room_height;
+hcells = room_width/16;
+vcells = room_height/16;
+total_cell = (room_width*vcells);
 environment_occupied = total_cell*environment_size;
 road_den_occupied = total_cell-environment_occupied; /// minus for fast calculation
 
@@ -25,11 +27,9 @@ dx = inst_df.x;
 dy = inst_df.y;
 
 
-//nnini
-
-
-
-// Roads creating
+// Trees, Flowers, rocks creation
+event_user(0);
+// Roads creation
 event_user(1);
 
 // Random Trees, Flowers, rocks
