@@ -53,6 +53,7 @@
     {"id":{"name":"sObstacle","path":"sprites/sObstacle/sObstacle.yy",},"order":7,},
     {"id":{"name":"oLargeStone","path":"objects/oLargeStone/oLargeStone.yy",},"order":1,},
     {"id":{"name":"oGardener","path":"objects/oGardener/oGardener.yy",},"order":0,},
+    {"id":{"name":"oGardenGate","path":"objects/oGardenGate/oGardenGate.yy",},"order":35,},
     {"id":{"name":"oBlock_16x16","path":"objects/oBlock_16x16/oBlock_16x16.yy",},"order":10,},
     {"id":{"name":"oCaveGrid","path":"objects/oCaveGrid/oCaveGrid.yy",},"order":28,},
     {"id":{"name":"oMediumTree","path":"objects/oMediumTree/oMediumTree.yy",},"order":2,},
