@@ -72,6 +72,7 @@
     {"id":{"name":"sBubbleMessage","path":"sprites/sBubbleMessage/sBubbleMessage.yy",},"order":12,},
     {"id":{"name":"sTileSet","path":"sprites/sTileSet/sTileSet.yy",},"order":3,},
     {"id":{"name":"oSmallTree","path":"objects/oSmallTree/oSmallTree.yy",},"order":0,},
+    {"id":{"name":"wilson_algorithm","path":"scripts/wilson_algorithm/wilson_algorithm.yy",},"order":9,},
     {"id":{"name":"sGardener","path":"sprites/sGardener/sGardener.yy",},"order":0,},
     {"id":{"name":"sSunLight","path":"sprites/sSunLight/sSunLight.yy",},"order":24,},
     {"id":{"name":"sFarmerBtn","path":"sprites/sFarmerBtn/sFarmerBtn.yy",},"order":1,},
