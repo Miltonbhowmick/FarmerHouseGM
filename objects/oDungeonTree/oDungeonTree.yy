@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sGuard",
-    "path": "sprites/sGuard/sGuard.yy",
+    "name": "sDungeonTree",
+    "path": "sprites/sDungeonTree/sDungeonTree.yy",
   },
   "solid": true,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oGardenGate",
+  "name": "oDungeonTree",
   "tags": [],
   "resourceType": "GMObject",
 }
