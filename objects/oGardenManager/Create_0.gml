@@ -30,7 +30,6 @@ dy = inst_df.y;
 // Trees, Flowers, rocks creation
 event_user(0);
 
-
 // Roads creation
 mp_grid_add_instances(global.rm_road_path,oFlower,true);
 mp_grid_add_instances(global.rm_road_path,oDungeonTree,true);
