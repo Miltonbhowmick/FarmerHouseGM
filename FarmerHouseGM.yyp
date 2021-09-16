@@ -42,6 +42,7 @@
     {"id":{"name":"sFarmer","path":"sprites/sFarmer/sFarmer.yy",},"order":0,},
     {"id":{"name":"oNotification","path":"objects/oNotification/oNotification.yy",},"order":30,},
     {"id":{"name":"fMenu","path":"fonts/fMenu/fMenu.yy",},"order":0,},
+    {"id":{"name":"sGardenGate","path":"sprites/sGardenGate/sGardenGate.yy",},"order":36,},
     {"id":{"name":"sTreeStack","path":"sprites/sTreeStack/sTreeStack.yy",},"order":0,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":0,},
     {"id":{"name":"sEnemyBoss","path":"sprites/sEnemyBoss/sEnemyBoss.yy",},"order":1,},

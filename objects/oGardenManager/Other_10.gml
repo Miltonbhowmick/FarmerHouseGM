@@ -5,7 +5,7 @@ while(i<environment_occupied){
 	randomize();
 	var xx = floor((irandom_range(0,room_width)/cell_size)) * cell_size;
 	var yy = floor((irandom_range(0,room_height)/cell_size)) * cell_size;
-	if(!position_meeting(xx,yy,oGardenGate) && !position_meeting(xx,yy,oDungeonTree) ){
+	if(!position_meeting(xx,yy,oGardenGate)){
 		instance_create_layer(xx,yy,"Flowers", oDungeonTree);
 		i+=3;
 	}

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sGuard",
-    "path": "sprites/sGuard/sGuard.yy",
+    "name": "sGardenGate",
+    "path": "sprites/sGardenGate/sGardenGate.yy",
   },
   "solid": true,
   "visible": true,
