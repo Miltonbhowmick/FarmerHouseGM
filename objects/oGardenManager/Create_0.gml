@@ -23,11 +23,13 @@ globalvar rm_road_path;
 global.rm_road_path = mp_grid_create(0,0, room_width/16,room_height/16,16,16);
 
 // source gate
-sx = inst_sf.x;
-sy = inst_sf.y;
+sx = room_width-cell_size;
+sy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
+instance_create_layer(sx,sy,"Gates",oGardenGate);
 // destination gate
-dx = inst_df.x;
-dy = inst_df.y;
+dx = 0;
+dy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
+instance_create_layer(dx,dy,"Gates",oGardenGate);
 
 free_cell[# floor(sx/cell_size), floor(sy/cell_size)] = 1;
 free_cell[# floor(dx/cell_size), floor(dy/cell_size)] = 1;

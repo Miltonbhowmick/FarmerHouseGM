@@ -1,10 +1,11 @@
 /// @description Roads, Duengon
-
 myPath = path_add();
-if(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
-	
+while(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
+	with(oGardenGate){
+		instance_destroy();
+	}
+	random_dungeon_gate(inst_GardenManager);
 }
-
 path_num = path_get_number(myPath) - 1;
 var a;
 for (a = 0; a < path_num; ++a)
