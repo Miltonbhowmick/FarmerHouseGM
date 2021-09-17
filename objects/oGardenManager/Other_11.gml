@@ -1,7 +1,9 @@
 /// @description Roads, Duengon
 
 myPath = path_add();
-mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0);
+if(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
+	
+}
 
 path_num = path_get_number(myPath) - 1;
 var a;
