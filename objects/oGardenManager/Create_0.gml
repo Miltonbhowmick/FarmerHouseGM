@@ -37,4 +37,3 @@ mp_grid_add_instances(global.rm_road_path,oSmallStone,true);
 
 event_user(1);
 
-//show_message(random_get_seed()*.25);
