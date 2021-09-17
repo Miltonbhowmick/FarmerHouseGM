@@ -49,6 +49,7 @@
     {"id":{"name":"sEnemyBoss","path":"sprites/sEnemyBoss/sEnemyBoss.yy",},"order":1,},
     {"id":{"name":"oObstacle","path":"objects/oObstacle/oObstacle.yy",},"order":9,},
     {"id":{"name":"oBubbleMessage","path":"objects/oBubbleMessage/oBubbleMessage.yy",},"order":12,},
+    {"id":{"name":"random_dungeon_gate","path":"scripts/random_dungeon_gate/random_dungeon_gate.yy",},"order":10,},
     {"id":{"name":"farmer_bubble_skip","path":"scripts/farmer_bubble_skip/farmer_bubble_skip.yy",},"order":5,},
     {"id":{"name":"sSmallTree","path":"sprites/sSmallTree/sSmallTree.yy",},"order":1,},
     {"id":{"name":"oCaveGate","path":"objects/oCaveGate/oCaveGate.yy",},"order":0,},

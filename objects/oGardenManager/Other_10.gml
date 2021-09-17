@@ -9,6 +9,7 @@ while(i<environment_occupied){
 	if(!position_meeting(xx,yy,oGardenGate) && !position_meeting(x,y,oDungeonTree) && !position_meeting(x,y,oSmallStone) && !position_meeting(x,y,oFlower))
 	{
 		instance_create_layer(xx,yy,"Trees", oDungeonTree);
+		free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 		i+=3;
 	}
 	xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
@@ -16,6 +17,7 @@ while(i<environment_occupied){
 	if(!position_meeting(xx,yy,oGardenGate) && !position_meeting(x,y,oDungeonTree) && !position_meeting(x,y,oSmallStone) && !position_meeting(x,y,oFlower))
 	{
 		instance_create_layer(xx,yy,"Flowers", oFlower);
+		free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 		i+=3;
 	}
 	xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
@@ -23,6 +25,7 @@ while(i<environment_occupied){
 	if(!position_meeting(xx,yy,oGardenGate) && !position_meeting(x,y,oDungeonTree) && !position_meeting(x,y,oSmallStone) && !position_meeting(x,y,oFlower))
 	{
 		instance_create_layer(xx,yy,"Stones", oSmallStone);
+		free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 		i+=3;
 	}
 	
