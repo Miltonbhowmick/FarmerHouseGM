@@ -1,5 +1,5 @@
 /// @description 
 
-with place_meeting(x,y,oDungeonTree){
-	instance_destroy();
+if(place_meeting(x,y,oDungeonTree) || place_meeting(x,y,oFlower) || place_meeting(x,y,oSmallStone)){
+	
 }
