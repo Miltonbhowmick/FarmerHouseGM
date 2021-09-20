@@ -22,6 +22,8 @@ function scr_saveGame(){
 	buffer_save(_buffer, "savedgame.save");
 	buffer_delete(_buffer);
 	
+	
+	
 	show_debug_message("Game saved! " + _string);
 	
 } 
