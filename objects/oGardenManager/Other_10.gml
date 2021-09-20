@@ -1,10 +1,10 @@
 /// @description Tree, Rocks, Flowers
-
+var xx,yy; 
 var i=0;
-while(i<environment_occupied){
+while(i<tree_percentage){
 	randomize();
-	var xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
-	var yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
+	xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
+	yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
 		
 	if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0)
 	{
@@ -12,6 +12,9 @@ while(i<environment_occupied){
 		free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 		i+=3;
 	}
+}
+i=0;
+while(i<flower_percentage){
 	xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
 	yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
 	if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0)
@@ -20,6 +23,9 @@ while(i<environment_occupied){
 		free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 		i+=3;
 	}
+}
+i=0;
+while(i<stone_percentage){
 	xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
 	yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
 	if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0)

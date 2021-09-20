@@ -15,6 +15,14 @@ total_cell = (hcells*vcells)-hcells;
 environment_occupied = floor(total_cell*environment_size);
 road_den_occupied = total_cell-environment_occupied; /// minus for fast calculation
 
+randomize();
+// trees percentage
+tree_percentage = floor(environment_occupied * (irandom_range(40,45)/100));
+// flowers percentage
+flower_percentage = floor((environment_occupied) * (irandom_range(40,45)/100));
+// stones percentage
+stone_percentage = environment_occupied - (tree_percentage+flower_percentage);
+
 free_cell = ds_grid_create(hcells+1,vcells+1);
 ds_grid_clear(free_cell,0);
 
