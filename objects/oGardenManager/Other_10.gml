@@ -44,8 +44,4 @@ while(i<environment_occupied){
 tree_percentage =instance_number(oDungeonTree); 
 flower_percentage = instance_number(oFlower);
 stone_percentage = instance_number(oSmallStone);
-t=tree_percentage+flower_percentage+stone_percentage;
-totalInstances=[tree_percentage,flower_percentage,stone_percentage,t];
-
-show_message(totalInstances);
 
