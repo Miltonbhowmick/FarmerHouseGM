@@ -50,7 +50,7 @@ function on_click(){
 		
 	}
 	else if(text =="Resume"){
-		room_goto_next();
+		room_goto(rMain);
 	}
 	else if(text =="New Game"){
 		if(file_exists("savedgame.save")){
