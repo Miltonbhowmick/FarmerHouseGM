@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Walls",
+    "path": "folders/Sprites/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBlock_16x16",
