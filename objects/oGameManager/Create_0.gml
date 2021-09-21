@@ -1,8 +1,7 @@
-
-// oCameraControl
+// camera creating on game start
 camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
 
-// first time show
+// instructions to be showed on each room [first time showed]
 instruction_room_main = false;
 instruction_room_cave = false;
 instruction_room_gardener = false;
@@ -16,10 +15,12 @@ if(room == rMain && instruction_room_main==false){
 	}
 }
 
-// oManager GUI Button
+// total farmer available
 Farmer = 2;
+// farmer's position of their house gate
 FarmerPosition = inst_FarmerPosition;
 
+// GUI buttons enable - disable
 Cut = false;
 Plant = 0;
 CollectTrees = 0;
@@ -31,41 +32,13 @@ mp_grid_add_instances(global.rmGrid, oBlock_16x16_mc, true);
 mp_grid_add_instances(global.rmGrid, oBlock_32x32_tl, true);
 mp_grid_add_instances(global.rmGrid, oFarmer, true);
 
-// Farmer create
-//bubble_range = 16;
+// Farmers are colliding while moving closely 
 CollideResponse = noone;
 
-// create go go...
-go_go = false;
-
-
-// Soil create
-soil_create = false;
+// grid size
 sp_grid = 16;
-spx = 32;
-spy = 192;
 
-// soil up create x,y
-up_x = FarmerPosition.x - (sp_grid*3);
-up_y = FarmerPosition.y - (sp_grid*9);
-
-// soil down create x,y
-down_x = FarmerPosition.x - (sp_grid*3);
-down_y = FarmerPosition.y + (sp_grid*8);
-
-// soil side x,y
-//side_x = down_x - sp_grid*up_down_soil;
-
-soil_layer = 3;
-up_down_soil = 4*3;
-side_soil = 11;
-side_gap = 16;
-
-prev_total = 9;
-total_create = 0;
-
-
-// Resources
+// Resources or earnings
 coins = 0;
 
 // -- Tree --
@@ -79,11 +52,14 @@ tree_cut_time = init_cut_time;
 c_tx = 0;
 c_ty = 50;
 _depth = 2;
+// cut tree carrier
 tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceLocation.y,"Transports", oTreeTransport);
 with tree_transport{
-depth = -1000;
+	depth = -1000;
 }
+// how many cut trees can the tree carrier can carry
 stack_loaded_range = 10;
+// all ids of last cut trees
 list_cut_tree = ds_list_create();
 
 // -- Transport --
@@ -107,11 +83,6 @@ cave_call_x = inst_CaveGate.x + 16;
 cave_call_y = inst_CaveGate.y + 10;
 
 // -- Enemy --
-// enemy soldier
-initial_enemy_soldier = 3;
-number_enemy_soldier = 3;
-
-//variables for roomCave
 globalvar EnemyCount;
 EnemyCount=0;
 globalvar AttackCount;

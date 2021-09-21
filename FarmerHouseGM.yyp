@@ -96,7 +96,7 @@
     {"id":{"name":"sSmallStone","path":"sprites/sSmallStone/sSmallStone.yy",},"order":0,},
     {"id":{"name":"sTreeCutBtn","path":"sprites/sTreeCutBtn/sTreeCutBtn.yy",},"order":2,},
     {"id":{"name":"sParticleRain_Soft","path":"sprites/sParticleRain_Soft/sParticleRain_Soft.yy",},"order":1,},
-    {"id":{"name":"oCameraControl","path":"objects/oCameraControl/oCameraControl.yy",},"order":13,},
+    {"id":{"name":"oCameraControl","path":"objects/oCameraControl/oCameraControl.yy",},"order":5,},
     {"id":{"name":"oTreeStack","path":"objects/oTreeStack/oTreeStack.yy",},"order":16,},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},"order":0,},
     {"id":{"name":"sHorseCarriage_left","path":"sprites/sHorseCarriage_left/sHorseCarriage_left.yy",},"order":11,},
