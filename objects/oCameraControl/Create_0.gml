@@ -10,7 +10,6 @@ cam_y = y;
 camWidth = 680;
 camHeight = 340;
 
-show_debug_message(string(x)+"--" +string(y) + "==" +string(cam_x) + "--"+string(cam_y));
 // setup camera
 view_enabled = true;
 view_visible[0] = true;
