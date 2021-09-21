@@ -1,3 +1,4 @@
+// @func on_click()
 function on_click(){
 	if(text == "1"){
 		if(GameManager.CollectTrees>=GameManager.stack_loaded_range){

@@ -1,5 +1,5 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+// @func tree_stack_operation()
+// To keep track of cut trees with their ids
 function tree_stack_operation(){
 	if(GameManager.c_ty<=0){
 		GameManager.c_tx+=4;

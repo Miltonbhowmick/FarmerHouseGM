@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+// @func create_button()
 function create_button(){
 	var _x = argument[0];
 	var _y = argument[1];

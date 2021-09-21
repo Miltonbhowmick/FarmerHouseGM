@@ -1,5 +1,5 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+// @func instance_nth_nearest(x, y, object_name, nth_nearest)
+// credit of this scripts to https://www.gmlscripts.com/script/instance_nth_nearest
 function instance_nth_nearest(){
     var pointx,pointy,object,n,list,nearest;
     pointx = argument0;
