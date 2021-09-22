@@ -4,6 +4,7 @@ while(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
 	with(oGardenGate){
 		instance_destroy();
 	}
+	
 	random_dungeon_gate(inst_GardenManager);
 }
 path_num = path_get_number(myPath) - 1;
