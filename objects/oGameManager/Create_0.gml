@@ -78,7 +78,7 @@ drought_time = false;
 
 // -- Garden --
 // seed value
-seed = 0;
+seed_value = 0;
 
 // -- Cave --
 // call for cave move

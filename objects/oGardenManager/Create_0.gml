@@ -1,8 +1,5 @@
 /// @description
 
-// virtual keyboard show to input seed value
-keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, false);
-
 // Game manager
 GameManager = inst_GameManager;
 
@@ -32,6 +29,7 @@ ds_grid_clear(free_cell,0);
 timeToDraw = false;
 globalvar rm_road_path;
 global.rm_road_path = mp_grid_create(0,0, room_width/16,room_height/16,16,16);
+
 
 // source gate
 sx = room_width-cell_size;
