@@ -1,4 +1,7 @@
-/// @description 
+/// @description
+
+// virtual keyboard show to input seed value
+keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, false);
 
 // Game manager
 GameManager = inst_GameManager;
@@ -8,7 +11,7 @@ environment_size = .75;
 road_den_size = .25;
 
 // cell occupied
-cell_size = 16;	
+cell_size = 16;
 hcells = floor(room_width/cell_size);
 vcells = floor(room_height/cell_size);
 total_cell = (hcells*vcells)-hcells;

@@ -1,9 +1,9 @@
 /// @description Tree, Rocks, Flowers
 var xx,yy; 
 var i=0;
+random_set_seed(irandom(5));
 while(i<environment_occupied){
 	
-	randomize();
 	var _choose=choose("tree","flower","small_stone");
 	if(_choose="tree"){
 		xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
@@ -15,6 +15,7 @@ while(i<environment_occupied){
 			free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 			i+=3;
 		}
+		
 	}
 	if(_choose="flower"){
 
@@ -44,4 +45,3 @@ while(i<environment_occupied){
 tree_percentage =instance_number(oDungeonTree); 
 flower_percentage = instance_number(oFlower);
 stone_percentage = instance_number(oSmallStone);
-

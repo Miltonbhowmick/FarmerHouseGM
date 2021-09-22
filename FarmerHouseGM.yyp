@@ -89,6 +89,7 @@
     {"id":{"name":"oSoil","path":"objects/oSoil/oSoil.yy",},"order":1,},
     {"id":{"name":"sHorseCarriage_right","path":"sprites/sHorseCarriage_right/sHorseCarriage_right.yy",},"order":19,},
     {"id":{"name":"oSunLight","path":"objects/oSunLight/oSunLight.yy",},"order":24,},
+    {"id":{"name":"sInputField","path":"sprites/sInputField/sInputField.yy",},"order":40,},
     {"id":{"name":"oFlower","path":"objects/oFlower/oFlower.yy",},"order":0,},
     {"id":{"name":"sEnemySoldier","path":"sprites/sEnemySoldier/sEnemySoldier.yy",},"order":0,},
     {"id":{"name":"oRoom_Main","path":"objects/oRoom_Main/oRoom_Main.yy",},"order":0,},
@@ -139,8 +140,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
     {"roomId":{"name":"rGarden","path":"rooms/rGarden/rGarden.yy",},},
+    {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rCave","path":"rooms/rCave/rCave.yy",},},
   ],

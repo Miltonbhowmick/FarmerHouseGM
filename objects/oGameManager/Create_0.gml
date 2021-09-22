@@ -76,6 +76,10 @@ rain_n_times = 3;
 droughting = false;
 drought_time = false;
 
+// -- Garden --
+// seed value
+seed = 0;
+
 // -- Cave --
 // call for cave move
 cave_call = false;
