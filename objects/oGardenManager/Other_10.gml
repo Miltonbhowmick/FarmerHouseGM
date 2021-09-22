@@ -1,7 +1,7 @@
 /// @description Tree, Rocks, Flowers
 var xx,yy; 
 var i=0;
-random_set_seed(GameManager.seed_value);
+random_set_seed(3);
 while(i<environment_occupied){
 	
 	var _choose=choose("tree","flower","small_stone");

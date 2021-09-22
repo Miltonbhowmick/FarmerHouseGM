@@ -1,7 +1,7 @@
 /// @description
 
 // Game manager
-GameManager = inst_GameManager;
+GardenManager = inst_GardenManager;
 
 // virtual keyboard show to input seed value
 seed_input = true;

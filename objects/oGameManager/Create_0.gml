@@ -1,5 +1,5 @@
 // camera creating on game start
-camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
+camera_control = instance_create_layer(250,250,"Managers", oCameraControl);
 
 // instructions to be showed on each room [first time showed]
 instruction_room_main = false;
@@ -52,11 +52,13 @@ tree_cut_time = init_cut_time;
 c_tx = 0;
 c_ty = 50;
 _depth = 2;
+
 // cut tree carrier
 tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceLocation.y,"Transports", oTreeTransport);
 with tree_transport{
 	depth = -1000;
 }
+
 // how many cut trees can the tree carrier can carry
 stack_loaded_range = 10;
 // all ids of last cut trees
