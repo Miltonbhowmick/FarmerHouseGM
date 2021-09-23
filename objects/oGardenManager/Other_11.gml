@@ -4,8 +4,16 @@ while(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
 	with(oGardenGate){
 		instance_destroy();
 	}
-	
 	random_dungeon_gate(inst_GardenManager);
+}
+
+if(gate_cell[? seed_value]==undefined){
+	gate_cell[? seed_value] = [sx,sy,dx,dy];
+	ini_open("map.ini");
+	var t_string;
+	t_string = ds_map_write(gate_cell);
+	ini_write_string("Saved", "0", t_string);
+	ini_close(); 
 }
 path_num = path_get_number(myPath) - 1;
 var a;

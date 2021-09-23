@@ -23,6 +23,18 @@ flower_percentage = 0;
 stone_percentage = 0;
 
 free_cell = ds_grid_create(hcells+1,vcells+1);
+
+// file load or create ds_map for gate cells
+gate_cell = ds_map_create();
+// load 
+ini_open("map.ini");
+var t_string = ini_read_string("Saved", "0", "");
+if (t_string != "")
+   {
+   ds_map_read(gate_cell, t_string);
+   }
+ini_close(); 
+
 ds_grid_clear(free_cell,0);
 
 // grid for garden room
