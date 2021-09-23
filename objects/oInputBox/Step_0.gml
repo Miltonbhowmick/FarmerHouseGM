@@ -1,5 +1,10 @@
 /// @description
 
+if(keyboard_check_pressed(vk_backspace)){
+	if(string_length(text)>=1){
+		text = string_delete(text,string_length(text),1);
+	}
+}
 if(keyboard_check_pressed(vk_anykey) && string_length(text)<10){
 	if(keyboard_string>="0" && keyboard_string<="9"){
 		text = text + string(keyboard_string);

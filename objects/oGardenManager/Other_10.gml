@@ -3,7 +3,6 @@ var xx,yy;
 var i=0;
 
 random_set_seed(seed_value);
-
 while(i<environment_occupied){
 	
 	var _choose=choose("tree","flower","small_stone");

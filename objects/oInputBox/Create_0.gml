@@ -1,4 +1,4 @@
-/// @description
+// @description
 
 // Game manager
 GardenManager = inst_GardenManager;
