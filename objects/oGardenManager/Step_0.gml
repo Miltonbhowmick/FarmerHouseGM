@@ -1,5 +1,5 @@
 if(seed_value>0){
-	if(gate_cell[? seed_value]==undefined){
+	if(gate_cell[$ seed_value]==undefined){
 		// source gate
 		sx = room_width-cell_size;
 		sy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
@@ -10,10 +10,13 @@ if(seed_value>0){
 		instance_create_layer(dx,dy,"Gates",oGardenGate);
 	}
 	else{
-		sx = array_get(gate_cell[? seed_value],0);
-		sy = array_get(gate_cell[? seed_value],1);
-		dx = array_get(gate_cell[? seed_value],2);
-		dy = array_get(gate_cell[? seed_value],3);
+		sx = array_get(gate_cell[$ seed_value],0);
+		sy = array_get(gate_cell[$ seed_value],1);
+		instance_create_layer(sx,sy,"Gates",oGardenGate);
+		dx = array_get(gate_cell[$ seed_value],2);
+		dy = array_get(gate_cell[$ seed_value],3);
+		instance_create_layer(dx,dy,"Gates",oGardenGate);
+
 	}
 
 	free_cell[# floor(sx/cell_size), floor(sy/cell_size)] = 1;
