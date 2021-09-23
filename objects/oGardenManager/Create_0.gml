@@ -26,19 +26,11 @@ free_cell = ds_grid_create(hcells+1,vcells+1);
 
 // file load or create struct for gate cells
 gate_cell = {};
-var _string = LoadString("gate.json");
-gate_cell = json_parse(_string);
-
-/*
-// load by ini file
-ini_open("map.ini");
-var t_string = ini_read_string("Saved", "0", "");
-if (t_string != "")
-{
-	ds_map_read(gate_cell, t_string);
+if(file_exists("gate.save")){
+	
+	var _string = LoadString("gate.save");
+	gate_cell = json_parse(_string);
 }
-ini_close(); 
-*/
 
 ds_grid_clear(free_cell,0);
 
