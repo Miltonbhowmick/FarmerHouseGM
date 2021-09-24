@@ -46,7 +46,7 @@ _depth = 2;
 // cut tree carrier
 tree_transport = instance_create_layer(inst_OpenSpaceLocation.x, inst_OpenSpaceLocation.y,"Transports", oTreeTransport);
 with tree_transport{
-	depth = -1000;
+	depth = -700;
 }
 
 // how many cut trees can the tree carrier can carry
