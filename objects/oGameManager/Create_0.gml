@@ -1,5 +1,5 @@
 // camera creating on game start
-camera_control = instance_create_layer(250,250,"Managers", oCameraControl);
+camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
 
 // instructions to be showed on each room [first time showed]
 instruction_room_main = false;
