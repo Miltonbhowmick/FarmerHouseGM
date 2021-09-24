@@ -9,10 +9,7 @@ instruction_room_gardener = false;
 // Room Instructions
 if(room == rMain && instruction_room_main==false){
 	instance_create_layer(0,0,"Instructions", oRoom_Main);
-	with (camera_control) {
-		view_enabled = false;
-		view_visible[0] = false;
-	}
+
 }
 
 // total farmer available
