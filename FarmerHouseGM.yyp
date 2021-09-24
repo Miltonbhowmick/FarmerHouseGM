@@ -2,7 +2,7 @@
   "resources": [
     {"id":{"name":"snd_Destroy","path":"sounds/snd_Destroy/snd_Destroy.yy",},"order":0,},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},"order":1,},
-    {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":8,},
+    {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":6,},
     {"id":{"name":"sHorseCarriage","path":"sprites/sHorseCarriage/sHorseCarriage.yy",},"order":18,},
     {"id":{"name":"oEnemyBoss","path":"objects/oEnemyBoss/oEnemyBoss.yy",},"order":1,},
     {"id":{"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},"order":0,},

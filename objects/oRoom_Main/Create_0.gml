@@ -1,5 +1,4 @@
 /// @description 
-
 GameManager = inst_GameManager;
 
 GameManager.instruction_room_main = true;
