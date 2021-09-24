@@ -6,10 +6,6 @@ room_instruction_properties = function(){
 	instruction_room_cave = false;
 	instruction_room_gardener = false;
 }
-init_rmain = function(){
-	
-}
-
 init_button = function(){
 	// GUI buttons enable - disable
 	Cut = false;

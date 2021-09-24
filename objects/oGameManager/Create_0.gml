@@ -1,6 +1,8 @@
 // camera creating on game start
 camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
 
+event_user(15);
+
 // total farmer available
 Farmer = 2;
 // farmer's position of their house gate
@@ -16,8 +18,6 @@ if(room == rMain && instruction_room_main==false){
 	instance_create_layer(0,0,"Instructions", oRoom_Main);
 
 }
-
-event_user(15);
 
 init_button();
 // Farmers are colliding while moving closely 
