@@ -16,7 +16,6 @@ room_instruction_properties();
 // Room Instructions
 if(room == rMain && instruction_room_main==false){
 	instance_create_layer(0,0,"Instructions", oRoom_Main);
-
 }
 
 init_button();

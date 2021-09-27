@@ -12,7 +12,7 @@ if (mouse_check_button_pressed(mb_left)) {
 }
 
 // update
-if (opened && mouse_check_button(mb_left)) {
+if (opened && instance_number(oRoom_Main)==0 && mouse_check_button(mb_left)) {
     // actual dragging logic:
     _x = drag_x - (mouse_x - _x);
     _y = drag_y - (mouse_y - _y);
