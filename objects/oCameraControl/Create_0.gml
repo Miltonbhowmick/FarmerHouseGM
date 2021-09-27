@@ -2,7 +2,6 @@
 
 // room opened
 opened = false;
-show_message(instance_number(oInputBox));
 // camera
 camWidth = 680;
 camHeight = 340;

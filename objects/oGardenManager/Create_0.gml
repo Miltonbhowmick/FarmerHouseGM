@@ -29,7 +29,6 @@ free_cell = ds_grid_create(hcells+1,vcells+1);
 // file load or create struct for gate cells
 gate_cell = {};
 if(file_exists("gate.save")){
-	
 	var _string = LoadString("gate.save");
 	gate_cell = json_parse(_string);
 }
