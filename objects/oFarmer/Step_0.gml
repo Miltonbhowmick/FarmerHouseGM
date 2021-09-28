@@ -7,10 +7,20 @@ if(room==rMain){
 		GameManager.cave_call=false;
 		room_goto(rCave);
 	}
+	if(x==GameManager.forest_call_x && y==GameManager.forest_call_y){
+		GameManager.cave_call=false;
+		room_goto(rGarden);
+	}
 
 	if(GameManager.cave_call){
 		myPath = path_add();
 		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.cave_call_x, GameManager.cave_call_y, false)){
+			path_start(myPath, 2, path_action_stop, true);
+		}
+	}
+	else if(GameManager.forest_call){
+		myPath = path_add();
+		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.forest_call_x, GameManager.forest_call_y, false)){
 			path_start(myPath, 2, path_action_stop, true);
 		}
 	}

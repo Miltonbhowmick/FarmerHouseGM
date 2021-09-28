@@ -53,6 +53,9 @@ garden_properties = function(){
 	// seed value
 	seed_value = 0;
 	forest_call = false;
+	// forest gate
+	forest_call_x = inst_ForestGate.x;
+	forest_call_y = inst_ForestGate.y;
 }
 
 cave_properties = function(){
