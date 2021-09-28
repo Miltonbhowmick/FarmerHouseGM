@@ -52,6 +52,7 @@ weather_properties = function(){
 garden_properties = function(){
 	// seed value
 	seed_value = 0;
+	forest_call = false;
 }
 
 cave_properties = function(){
