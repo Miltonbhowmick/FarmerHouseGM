@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CaveRoom",
-    "path": "folders/Sprites/CaveRoom.yy",
+    "name": "Gates",
+    "path": "folders/Sprites/Gates.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCaveGate",
