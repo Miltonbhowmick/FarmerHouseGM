@@ -59,6 +59,7 @@ function on_click(){
 					_image_index = 0;
 				}
 			}
+			GameManager.stop_work = false;
 		}
 		else{
 			_image_index = 0;
@@ -73,6 +74,7 @@ function on_click(){
 					_image_index = 0;
 				}
 			}
+			GameManager.start_work = false;
 		}
 		else{
 			_image_index = 0;
