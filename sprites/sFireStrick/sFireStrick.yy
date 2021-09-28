@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 10,
-  "bbox_bottom": 31,
+  "bbox_right": 69,
+  "bbox_top": 0,
+  "bbox_bottom": 87,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 70,
+  "height": 88,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dd604970-86d8-44eb-8307-18c51003d33e","path":"sprites/sGardenGate/sGardenGate.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd604970-86d8-44eb-8307-18c51003d33e","path":"sprites/sGardenGate/sGardenGate.yy",},"LayerId":{"name":"855a738f-1292-496f-b1e4-99012e4e8805","path":"sprites/sGardenGate/sGardenGate.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sGardenGate","path":"sprites/sGardenGate/sGardenGate.yy",},"resourceVersion":"1.0","name":"dd604970-86d8-44eb-8307-18c51003d33e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ab8df533-94d2-4ef9-83c6-039047316d0b","path":"sprites/sFireStrick/sFireStrick.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ab8df533-94d2-4ef9-83c6-039047316d0b","path":"sprites/sFireStrick/sFireStrick.yy",},"LayerId":{"name":"c1b7d012-0a57-4169-a78c-9595bfda14c7","path":"sprites/sFireStrick/sFireStrick.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFireStrick","path":"sprites/sFireStrick/sFireStrick.yy",},"resourceVersion":"1.0","name":"ab8df533-94d2-4ef9-83c6-039047316d0b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sGardenGate","path":"sprites/sGardenGate/sGardenGate.yy",},
+    "spriteId": {"name":"sFireStrick","path":"sprites/sFireStrick/sFireStrick.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"500abefb-ddb7-4c5f-a407-87a6efaf208c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd604970-86d8-44eb-8307-18c51003d33e","path":"sprites/sGardenGate/sGardenGate.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5a728952-da9b-44e0-b541-a6098596aad2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab8df533-94d2-4ef9-83c6-039047316d0b","path":"sprites/sFireStrick/sFireStrick.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sGardenGate","path":"sprites/sGardenGate/sGardenGate.yy",},
+    "parent": {"name":"sFireStrick","path":"sprites/sFireStrick/sFireStrick.yy",},
     "resourceVersion": "1.3",
-    "name": "sGardenGate",
+    "name": "sFireStrick",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"855a738f-1292-496f-b1e4-99012e4e8805","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c1b7d012-0a57-4169-a78c-9595bfda14c7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sGardenGate",
+  "name": "sFireStrick",
   "tags": [],
   "resourceType": "GMSprite",
 }
