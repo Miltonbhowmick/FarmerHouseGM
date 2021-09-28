@@ -51,8 +51,32 @@ function on_click(){
 		show_debug_message("Farmer");	
 	}
 	else if(text=="5"){
-		show_debug_message("Show Instruction");
-		
+		GameManager.start_work = !GameManager.start_work;
+		if(GameManager.start_work==true){
+			_image_index = 1;
+			with (oButton){
+				if(text=="6"){
+					_image_index = 0;
+				}
+			}
+		}
+		else{
+			_image_index = 0;
+		}
+	}
+	else if(text=="6"){
+		GameManager.stop_work = !GameManager.stop_work;
+		if(GameManager.stop_work==true){
+			_image_index = 1;
+			with (oButton){
+				if(text=="5"){
+					_image_index = 0;
+				}
+			}
+		}
+		else{
+			_image_index = 0;
+		}
 	}
 	else if(text =="Resume"){
 		room_goto(rMain);

@@ -151,8 +151,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rGarden","path":"rooms/rGarden/rGarden.yy",},},
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+    {"roomId":{"name":"rGarden","path":"rooms/rGarden/rGarden.yy",},},
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rCave","path":"rooms/rCave/rCave.yy",},},
   ],

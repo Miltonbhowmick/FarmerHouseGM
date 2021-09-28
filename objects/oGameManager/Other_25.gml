@@ -8,9 +8,13 @@ room_instruction_properties = function(){
 }
 init_button = function(){
 	// GUI buttons enable - disable
+	// buttons for main room
 	Cut = false;
 	Plant = 0;
 	CollectTrees = 0;
+	// buttons for garden room
+	start_work = false;
+	stop_work = false;
 }
 
 tree_properties = function(){
