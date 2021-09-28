@@ -4,7 +4,7 @@ camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
 event_user(15);
 
 // total farmer available
-Farmer = 2;
+Farmer = 3;
 // farmer's position of their house gate
 FarmerPosition = inst_FarmerPosition;
 // grid size
