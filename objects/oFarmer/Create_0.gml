@@ -2,7 +2,6 @@
 GameManager  = inst_GameManager;
 
 inst_object = noone;
-depth = -400;
 
 // room gate
 farmer_pos_x = x;
