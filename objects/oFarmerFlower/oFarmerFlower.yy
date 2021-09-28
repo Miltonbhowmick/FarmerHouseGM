@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sFarmer",
-    "path": "sprites/sFarmer/sFarmer.yy",
+    "name": "sFarmerFlower",
+    "path": "sprites/sFarmerFlower/sFarmerFlower.yy",
   },
   "solid": true,
   "visible": true,
@@ -36,7 +36,7 @@
     "path": "folders/Objects/Farmers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oFarmer",
+  "name": "oFarmerFlower",
   "tags": [],
   "resourceType": "GMObject",
 }
