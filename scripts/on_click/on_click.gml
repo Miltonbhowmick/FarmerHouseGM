@@ -29,12 +29,16 @@ function on_click(){
 	}	
 	else if(text=="4"){
 		if(GameManager.Farmer>0){
-			if(instance_number(oFarmer)){
-				var _x = GameManager.FarmerPosition.x-10;
+			if(instance_number(oFarmer)==2){
+				var _x = GameManager.FarmerPosition.x-20;
+				var _y = GameManager.FarmerPosition.y;
+			}
+			else if(instance_number(oFarmer)==1){
+				var _x = GameManager.FarmerPosition.x;
 				var _y = GameManager.FarmerPosition.y;
 			}
 			else{
-				var _x = GameManager.FarmerPosition.x+10;
+				var _x = GameManager.FarmerPosition.x+20;
 				var _y = GameManager.FarmerPosition.y;
 			}	
 			var _farmer = instance_create_layer(_x,_y,"Farmers",oFarmer);
