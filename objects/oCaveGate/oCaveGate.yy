@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "CaveRoom",
-    "path": "folders/Objects/CaveRoom.yy",
+    "name": "Gates",
+    "path": "folders/Objects/Gates.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCaveGate",
