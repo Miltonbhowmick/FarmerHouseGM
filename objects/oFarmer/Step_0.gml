@@ -8,7 +8,7 @@ if(room==rMain){
 		room_goto(rCave);
 	}
 	if(x==GameManager.forest_call_x && y==GameManager.forest_call_y){
-		GameManager.cave_call=false;
+		GameManager.forest_call=false;
 		room_goto(rGarden);
 	}
 
