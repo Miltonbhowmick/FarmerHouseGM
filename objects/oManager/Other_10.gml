@@ -13,7 +13,7 @@ if(room==rMain){
 	create_button(pos_x,pos_y+op_space*2, _width, _height, sTreeCutBtn,"3", on_click);
 	create_button(pos_x,pos_y+op_space*3, _width, _height, sPlantTreeBtn,"2", on_click);
 }
-if(room==rGarden){
+else if(room==rGarden){
 	var pos_x = 680-50;
 	var pos_y = 8;
 	

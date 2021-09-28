@@ -7,12 +7,12 @@ while(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
 	random_dungeon_gate(inst_GardenManager);
 }
 
-if(gate_cell[$ seed_value]==undefined){
-	// creating farmers 
-	instance_create_layer(sx,sy-16,"Farmers",oFarmer);
-	instance_create_layer(sx,sy,"Farmers",oFarmerFlower);
-	instance_create_layer(sx,sy+16,"Farmers",oFarmerStone);
-	
+// creating farmers 
+instance_create_layer(sx,sy-5,"Farmers",oFarmer);
+instance_create_layer(sx,sy,"Farmers",oFarmerFlower);
+instance_create_layer(sx,sy+5,"Farmers",oFarmerStone);
+
+if(gate_cell[$ seed_value]==undefined){	
 	// save source and destination gate position along with seed value
 	gate_cell[$ seed_value] = [sx,sy,dx,dy];
 	SaveString(json_stringify(gate_cell),"gate.save");

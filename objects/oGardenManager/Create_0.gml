@@ -1,7 +1,5 @@
 /// @description
 
-// input box create
-
 // seed value
 seed_value = -1;
 
