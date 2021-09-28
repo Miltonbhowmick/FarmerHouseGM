@@ -12,6 +12,6 @@ if(room==rMain){
 	ck=true;
 	instance_destroy(inst_large_tree);
 }
-else if (room==rCave){
+if (room==rCave){
 	
 }

@@ -8,9 +8,9 @@ while(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
 }
 
 // creating farmers 
-instance_create_layer(sx,sy-5,"Farmers",oFarmer);
+instance_create_layer(sx,sy-10,"Farmers",oFarmer);
 instance_create_layer(sx,sy,"Farmers",oFarmerFlower);
-instance_create_layer(sx,sy+5,"Farmers",oFarmerStone);
+instance_create_layer(sx,sy+10,"Farmers",oFarmerStone);
 
 if(gate_cell[$ seed_value]==undefined){	
 	// save source and destination gate position along with seed value

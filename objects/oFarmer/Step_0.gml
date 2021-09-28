@@ -103,10 +103,25 @@ if(room==rMain){
 	}
 }
 else if(room==rCave){
-	
 	if(AttackCount<15)
 	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,FarmerSpeed);
 	   if(AttackCount>14 && AttackCount<25)
 	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,FarmerSpeed);
 		
+}
+else if(room==rGarden){
+	if(GardenManager.stop_touch_x==x && GardenManager.stop_touch_y==y){
+		GameManager.stop_work=false;
+	}
+	if(GameManager.stop_work==true){
+		var _dx = GardenManager.stop_touch_x;
+		var _dy = GardenManager.stop_touch_y;
+		if(_dx!=-1 && _dy!=-1){
+			show_message("a");
+			myPath = path_add();
+			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
+				path_start(myPath,1,path_action_stop,false);
+			}
+		}
+	}
 }

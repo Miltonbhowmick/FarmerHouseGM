@@ -1,8 +1,9 @@
 // oGameManager instance
-GameManager  = inst_GameManager;
+
+GameManager = inst_GameManager;
+show_message(inst_GameManager.id);
 
 inst_object = noone;
-
 // room gate
 farmer_pos_x = x;
 farmer_pos_y = y;
@@ -30,4 +31,7 @@ if(room==rCave){
 	sprite_set_speed(sMovingRoad,2,2);
     path_start(pFireStick,2,path_action_stop,true);
     path_end();
+}
+if(room==rGarden){
+	GardenManager = inst_GardenManager;
 }

@@ -1,8 +1,14 @@
 /// @description Draw Pressed
 
-if(timeToDraw){
-	timeToDraw = false;	
+if(room==rMain){
+	if(timeToDraw){
+		timeToDraw = false;	
+	}
+	else{
+		timeToDraw = true;
+	}
 }
-else{
-	timeToDraw = true;
+
+if(room==rGarden){
+	garden_timeToDraw = !garden_timeToDraw;
 }

@@ -1,3 +1,4 @@
+
 // camera creating on game start
 camera_control = instance_create_layer(250,250,"GUI", oCameraControl);
 
