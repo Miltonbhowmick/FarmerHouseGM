@@ -1,7 +1,6 @@
 // oGameManager instance
 
 GameManager = inst_GameManager;
-show_message(inst_GameManager.id);
 
 inst_object = noone;
 // room gate
@@ -34,4 +33,8 @@ if(room==rCave){
 }
 if(room==rGarden){
 	GardenManager = inst_GardenManager;
+	// moving blocks
+	mp_grid_add_instances(global.rmGarden,oFlower,true);
+	mp_grid_add_instances(global.rmGarden,oDungeonTree,true);
+	mp_grid_add_instances(global.rmGarden,oSmallStone,true);
 }

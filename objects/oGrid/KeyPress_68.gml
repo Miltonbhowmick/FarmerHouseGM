@@ -9,6 +9,3 @@ if(room==rMain){
 	}
 }
 
-if(room==rGarden){
-	garden_timeToDraw = !garden_timeToDraw;
-}

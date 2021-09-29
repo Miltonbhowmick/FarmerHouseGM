@@ -1,3 +1,5 @@
 /// @description transport grid
 
-transport_timeToDraw = !transport_timeToDraw;
+if(room==rMain){
+	transport_timeToDraw = !transport_timeToDraw;
+}

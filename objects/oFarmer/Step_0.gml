@@ -114,14 +114,18 @@ else if(room==rGarden){
 		GameManager.stop_work=false;
 	}
 	if(GameManager.stop_work==true){
+		if(mouse_check_button_pressed(mb_left)){
+			GardenManager.stop_touch_x = mouse_x;
+			GardenManager.stop_touch_y = mouse_y;
+		}
 		var _dx = GardenManager.stop_touch_x;
 		var _dy = GardenManager.stop_touch_y;
 		if(_dx!=-1 && _dy!=-1){
-			show_message("a");
 			myPath = path_add();
 			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
 				path_start(myPath,1,path_action_stop,false);
 			}
 		}
+		
 	}
 }

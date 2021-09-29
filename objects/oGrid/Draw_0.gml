@@ -16,7 +16,7 @@ if(room==rMain){
 
 if(room==rGarden){
 	if(garden_timeToDraw){
-		draw_set_alpha(.2);
+		draw_set_alpha(.5);
 		mp_grid_draw(rmGarden);
 		draw_set_alpha(10);
 	}
