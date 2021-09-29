@@ -111,9 +111,9 @@ else if(room==rCave){
 }
 else if(room==rGarden){
 	if(GardenManager.stop_touch_x==x && GardenManager.stop_touch_y==y){
-		GameManager.stop_work=false;
+		path_end();
 	}
-	if(GameManager.stop_work==true){
+	if(GameManager.stop_work==true && GameManager.start_work==false){
 		if(mouse_check_button_pressed(mb_left)){
 			GardenManager.stop_touch_x = mouse_x;
 			GardenManager.stop_touch_y = mouse_y;
