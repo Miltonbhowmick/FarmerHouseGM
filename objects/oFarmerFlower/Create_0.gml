@@ -1,9 +1,10 @@
 // oGameManager instance
 
+GameManager = inst_GameManager;
 // large tree instance
 inst_large_tree = noone;	
 if(room==rGarden){
-	GameManager  = inst_GameManager;
+	GardenManager = inst_GardenManager;
 
 	_start_gx = -1;
 	_start_gy = -1;

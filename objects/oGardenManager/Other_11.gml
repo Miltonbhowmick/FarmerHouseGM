@@ -20,16 +20,9 @@ for (a = 0; a < path_num; ++a)
 	px = floor(path_get_point_x(myPath, a)/cell_size) * cell_size;
 	py = floor(path_get_point_y(myPath, a)/cell_size) * cell_size;
 	
+	/// creater elements cutter
 	if(cutter==3){
 		instance_create_layer(px,py,"Farmers",oFarmer);
-		cutter--;
-	}
-	else if(cutter==2){
-		instance_create_layer(px,py,"Farmers",oFarmerFlower);
-		cutter--;
-	}
-	if(cutter==1){
-		instance_create_layer(px,py,"Farmers",oFarmerStone);
 		cutter--;
 	}
 	
