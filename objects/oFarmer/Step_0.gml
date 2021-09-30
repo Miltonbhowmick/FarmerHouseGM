@@ -110,10 +110,38 @@ else if(room==rCave){
 		
 }
 else if(room==rGarden){
-	if(GardenManager.stop_touch_x==x && GardenManager.stop_touch_y==y){
-		path_end();
+	
+	if(GameManager.start_work==true && GameManager.stop_work==false){
+		// nearest tree or flower or stone instance 
+		var _near_obj = instance_nearest(x,y,oDungeonTree);
+		var _nx = _near_obj.x;
+		var _ny = _near_obj.y;
+		// stay with a distance from tree or flower or stone instances
+		var _sp = 18;
+		// grid 4-neighbours
+		var _drx = [-1,1,0,0]; // x change, y unchanged
+		var _dry = [0,0,-1,1]; // y changed, x unchanged
+		var _ln = array_length(_drx);
+		// move to nearest tree or flower or stone
+		var _dx = _nx, _dy = _ny;
+
+		myPath = path_add();
+		for(var i = 0; i < _ln; i++){
+			if(GameManager.is_click_object(_nx+_drx[i]*_sp , _ny+_dry[i]*_sp)==noone){
+				_dx = _nx+_drx[i]*_sp;
+				_dy = _ny+_dry[i]*_sp;
+				break;
+			}
+		}
+		show_debug_message(string(_nx) + "-" + string(_ny));
+		show_debug_message(string(_dx) + "-" + string(_dy));
+		if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
+			path_start(myPath,1,path_action_stop,false);
+		}
 	}
+	
 	if(GameManager.stop_work==true && GameManager.start_work==false){
+		
 		if(mouse_check_button_pressed(mb_left)){
 			GardenManager.stop_touch_x = mouse_x;
 			GardenManager.stop_touch_y = mouse_y;
@@ -126,6 +154,5 @@ else if(room==rGarden){
 				path_start(myPath,1,path_action_stop,false);
 			}
 		}
-		
 	}
 }
