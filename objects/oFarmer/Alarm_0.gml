@@ -15,3 +15,7 @@ if(room==rMain){
 if (room==rCave){
 	
 }
+if(room==rGarden){
+	show_message("Cut done!");
+	inst_large_tree=noone;
+}
