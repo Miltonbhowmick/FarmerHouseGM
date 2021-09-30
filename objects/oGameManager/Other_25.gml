@@ -79,6 +79,6 @@ cave_properties = function(){
 // @func is_click_object(mouse_x, mouse_y) returns noone if not object else instance
 
 is_click_object = function(_mouse_x, _mouse_y){
-	return instance_position(_mouse_x, _mouse_y,all);
+	return instance_place(_mouse_x, _mouse_y,all);
 }
 

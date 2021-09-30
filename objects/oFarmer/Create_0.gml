@@ -32,6 +32,8 @@ if(room==rCave){
     path_end();
 }
 if(room==rGarden){
+	
+	show_message(instance_place(575,176,all));
 	GardenManager = inst_GardenManager;
 	_start_gx = -1;
 	_start_gy = -1;
