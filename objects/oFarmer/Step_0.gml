@@ -123,8 +123,8 @@ else if(room==rGarden){
 	
 	#region start work	
 	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
-		show_debug_message(string(x)+"-"+string(y));
-		if( round(x) ==_start_gx && round(y) ==_start_gy){
+		//show_debug_message(string(x)+"-"+string(y));
+		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
 			//show_debug_message("aise");
 			if(alarm[0]<0){
 				alarm[0] = room_speed * 2;
@@ -175,7 +175,7 @@ else if(room==rGarden){
 				path_start(myPath,2,path_action_stop,false);
 			}
 			else{
-				// bugs 
+				// bugs
 				// farmers not getting move if elemets is on the wall grids 
 				mp_grid_clear_cell(global.rmGarden, floor(_nx/16), floor(_ny/16));
 				instance_destroy(instance_place(_nx,_ny,oDungeonTree));

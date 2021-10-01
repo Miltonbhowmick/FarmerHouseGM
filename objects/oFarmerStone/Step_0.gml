@@ -15,9 +15,11 @@ if(room==rGarden){
 	
 	#region start work	
 	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
-		//show_message(string(x)+" aci " +string(y));	
-		if( round(x) ==_start_gx && round(y) ==_start_gy){
+		//show_debug_message(string(x)+" == " +string(y));	
+	//	show_debug_message(string(_start_gx)+" ++ " +string(_start_gy));	
+		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
 			if(alarm[0]<0){
+				show_debug_message("aise");
 				alarm[0] = room_speed * 2;
 			}
 		}
