@@ -8,6 +8,7 @@ if(room==rGarden){
 
 	_start_gx = -1;
 	_start_gy = -1;
+	moved = true;
 	
 	// moving blocks
 	mp_grid_add_instances(global.rmGarden,oFlower,true);

@@ -25,6 +25,14 @@ for (a = 0; a < path_num; ++a)
 		instance_create_layer(px,py,"Farmers",oFarmer);
 		cutter--;
 	}
+	if(cutter==2){
+		instance_create_layer(px,py,"Farmers",oFarmerFlower);
+		cutter--;
+	}
+	if(cutter==1){
+		instance_create_layer(px,py,"Farmers",oFarmerStone);
+		cutter--;
+	}
 	
 	instance_create_layer(px, py,"Roads", oRoad);
 }

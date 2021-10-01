@@ -1,4 +1,8 @@
+
 // mp grid path speed 
+
+// to make real view from avoiding overlapping
+depth=-y;
 
 if(room==rMain){
 	
@@ -112,12 +116,14 @@ else if(room==rGarden){
 	
 	// when there is no elements remained, stay in the last cut position
 	if(instance_number(oDungeonTree)==0){
-		GameManager.start_work=false;
+//		x=GardenManager.sx;
+//		y=GardenManager.sy;
+		moved = false;
 	}
 	
 	#region start work	
-	if(GameManager.start_work==true && GameManager.stop_work==false){
-		//show_message(string(x)+" aci " +string(y));	
+	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
+		show_debug_message(string(x)+"-"+string(y));
 		if( round(x) ==_start_gx && round(y) ==_start_gy){
 			show_debug_message("aise");
 			if(alarm[0]<0){
@@ -126,7 +132,7 @@ else if(room==rGarden){
 		}
 		
 		if(!instance_exists(inst_large_tree)){
-			var _i = 0;
+			var _i = 1;
 			while(_i<100){
 				var _ck = false;
 				// nearest tree or flower or stone instance 
@@ -166,7 +172,7 @@ else if(room==rGarden){
 				inst_large_tree = _near_obj;
 				_start_gx = _dx;
 				_start_gy = _dy;
-				path_start(myPath,9,path_action_stop,false);
+				path_start(myPath,20,path_action_stop,false);
 			}
 			else{
 				// bugs 
@@ -176,8 +182,6 @@ else if(room==rGarden){
 				
 			}
 		}
-		
-		
 	}
 	#endregion start work
 	
@@ -185,6 +189,7 @@ else if(room==rGarden){
 	if(GameManager.stop_work==true && GameManager.start_work==false){
 		// reinitialize to get new near tree
 		inst_large_tree = noone;
+				
 		// click any position to call farmers moved there
 		if(mouse_check_button_pressed(mb_left)){
 			GardenManager.stop_touch_x = mouse_x;
@@ -194,7 +199,7 @@ else if(room==rGarden){
 		var _dy = GardenManager.stop_touch_y;
 		if(_dx!=-1 && _dy!=-1){
 			myPath = path_add();
-			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
+			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx-6, _dy-6, true)){
 				path_start(myPath,1,path_action_stop,false);
 			}
 		}

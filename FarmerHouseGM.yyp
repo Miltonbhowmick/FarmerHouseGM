@@ -39,6 +39,7 @@
     {"id":{"name":"sInstruction","path":"sprites/sInstruction/sInstruction.yy",},"order":5,},
     {"id":{"name":"oBlock_32x32_tl","path":"objects/oBlock_32x32_tl/oBlock_32x32_tl.yy",},"order":22,},
     {"id":{"name":"sParticleRain_Hard","path":"sprites/sParticleRain_Hard/sParticleRain_Hard.yy",},"order":0,},
+    {"id":{"name":"sFarmerTree","path":"sprites/sFarmerTree/sFarmerTree.yy",},"order":3,},
     {"id":{"name":"sFireStick","path":"sprites/sFireStick/sFireStick.yy",},"order":3,},
     {"id":{"name":"sFarmer","path":"sprites/sFarmer/sFarmer.yy",},"order":0,},
     {"id":{"name":"sDungeonTileset","path":"sprites/sDungeonTileset/sDungeonTileset.yy",},"order":37,},

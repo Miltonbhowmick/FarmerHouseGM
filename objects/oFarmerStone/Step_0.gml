@@ -1,12 +1,13 @@
-/// @description 
+/// @description
 
 // to make real view from avoiding overlapping
 depth=-y;
 
 if(room==rGarden){
+	
 
 	// when there is no elements remained, stay in the last cut position
-	if(instance_number(oFlower)==0){
+	if(instance_number(oSmallStone)==0){
 //		x=GardenManager.sx;
 //		y=GardenManager.sy;
 		moved = false;
@@ -26,7 +27,7 @@ if(room==rGarden){
 			while(_i<100){
 				var _ck = false;
 				// nearest tree or flower or stone instance 
-				var _near_obj = instance_nth_nearest(x,y,oFlower,_i);
+				var _near_obj = instance_nth_nearest(x,y,oSmallStone,_i);
 				var _nx = _near_obj.x;
 				var _ny = _near_obj.y;
 				// stay with a distance from tree or flower or stone instances
@@ -68,7 +69,7 @@ if(room==rGarden){
 				// bugs 
 				// farmers not getting move if elemets is on the wall grids 
 				mp_grid_clear_cell(global.rmGarden, floor(_nx/16), floor(_ny/16));
-				instance_destroy(instance_place(_nx,_ny,oFlower));
+				instance_destroy(instance_place(_nx,_ny,oSmallStone));
 				
 			}
 		}
@@ -81,6 +82,8 @@ if(room==rGarden){
 	if(GameManager.stop_work==true && GameManager.start_work==false){
 		// reinitialize to get new near tree
 		inst_large_tree = noone;
+		
+		
 		// click any position to call farmers moved there
 		if(mouse_check_button_pressed(mb_left)){
 			GardenManager.stop_touch_x = mouse_x;
@@ -90,7 +93,7 @@ if(room==rGarden){
 		var _dy = GardenManager.stop_touch_y;
 		if(_dx!=-1 && _dy!=-1){
 			myPath = path_add();
-			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx-6, _dy, true)){
+			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy+6, true)){
 				path_start(myPath,1,path_action_stop,false);
 			}
 		}
