@@ -47,7 +47,7 @@ if(room==rGarden){
 						break;	
 					}
 				}	
-				show_debug_message(string(_nx)+ "-"+string(_ny) + string(GameManager.is_click_object(_dx,_dy)));				
+				//show_debug_message(string(_nx)+ "-"+string(_ny) + string(GameManager.is_click_object(_dx,_dy)));				
 				if(_ck==true){
 					//show_message("pasei"+string(j));
 					break;
@@ -56,14 +56,14 @@ if(room==rGarden){
 			}
 			
 			myPath = path_add();
-			show_debug_message(string(_dx)+"="+string(_dy));
+			//show_debug_message(string(_dx)+"="+string(_dy));
 			//show_message(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true));
 
 			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
 				inst_large_tree = _near_obj;
 				_start_gx = _dx;
 				_start_gy = _dy;
-				path_start(myPath,20,path_action_stop,false);
+				path_start(myPath,2,path_action_stop,false);
 			}
 			else{
 				// bugs 

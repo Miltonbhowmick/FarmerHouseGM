@@ -125,7 +125,7 @@ else if(room==rGarden){
 	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
 		show_debug_message(string(x)+"-"+string(y));
 		if( round(x) ==_start_gx && round(y) ==_start_gy){
-			show_debug_message("aise");
+			//show_debug_message("aise");
 			if(alarm[0]<0){
 				alarm[0] = room_speed * 2;
 			}
@@ -156,7 +156,7 @@ else if(room==rGarden){
 						break;	
 					}
 				}	
-				show_debug_message(string(_nx)+ "-"+string(_ny) + string(GameManager.is_click_object(_dx,_dy)));				
+				//show_debug_message(string(_nx)+ "-"+string(_ny) + string(GameManager.is_click_object(_dx,_dy)));				
 				if(_ck==true){
 					//show_message("pasei"+string(j));
 					break;
@@ -165,14 +165,14 @@ else if(room==rGarden){
 			}
 			
 			myPath = path_add();
-			show_debug_message(string(_dx)+"="+string(_dy));
+			//show_debug_message(string(_dx)+"="+string(_dy));
 			//show_message(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true));
 
 			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
 				inst_large_tree = _near_obj;
 				_start_gx = _dx;
 				_start_gy = _dy;
-				path_start(myPath,20,path_action_stop,false);
+				path_start(myPath,2,path_action_stop,false);
 			}
 			else{
 				// bugs 

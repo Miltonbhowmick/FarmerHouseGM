@@ -15,7 +15,8 @@ if(room==rGarden){
 	#region start work	
 	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
 		//show_message(string(x)+" aci " +string(y));	
-		if( round(x) ==_start_gx && round(y) ==_start_gy){
+		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
+			show_debug_message("aise");
 			if(alarm[0]<0){
 				alarm[0] = room_speed * 2;
 			}
@@ -62,7 +63,7 @@ if(room==rGarden){
 				inst_large_tree = _near_obj;
 				_start_gx = _dx;
 				_start_gy = _dy;
-				path_start(myPath,20,path_action_stop,false);
+				path_start(myPath,3,path_action_stop,false);
 			}
 			else{
 				// bugs 
