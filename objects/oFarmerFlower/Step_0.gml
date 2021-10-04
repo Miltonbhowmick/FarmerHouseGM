@@ -7,8 +7,6 @@ if(room==rGarden){
 
 	// when there is no elements remained, stay in the last cut position
 	if(instance_number(oFlower)==0){
-//		x=GardenManager.sx;
-//		y=GardenManager.sy;
 		moved = false;
 	}
 	

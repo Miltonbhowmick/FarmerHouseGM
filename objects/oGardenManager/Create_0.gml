@@ -1,9 +1,9 @@
 /// @description
+randomize();
 
 GameManager = inst_GameManager;
-
 // seed value
-seed_value = -1;
+seed_value = irandom(1000000);
 
 // initialize parts
 environment_size = .75;
