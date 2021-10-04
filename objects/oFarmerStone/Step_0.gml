@@ -7,12 +7,12 @@ if(room==rGarden){
 	
 	// when there is no elements remained, stay in the last cut position
 	if(instance_number(oSmallStone)==0){
-		moved = false;
+		GardenManager.moved = false;
 	}
 	
 	#region start work	
-	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
-		touched = false;
+	if(GardenManager.moved && GameManager.start_work==true && GameManager.stop_work==false){
+		GardenManager.touched = false;
 		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
 			if(alarm[0]<0){
 				show_debug_message("aise");
@@ -82,7 +82,7 @@ if(room==rGarden){
 		inst_large_tree = noone;
 				
 		// click any position to call farmers moved there
-		if(touched==true){
+		if(GardenManager.touched==true){
 			// click any position to call farmers moved there
 			if(mouse_check_button_pressed(mb_left)){
 				GardenManager.stop_touch_x = mouse_x;
@@ -98,7 +98,7 @@ if(room==rGarden){
 			}
 		}
 		else{
-			touched = true;
+			GardenManager.touched = true;
 		}
 	}
 	#endregion stop work

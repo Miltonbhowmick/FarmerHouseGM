@@ -34,3 +34,7 @@ if(seed_value>0){
 
 	seed_value=-1;
 }
+
+if(GameManager.stop_work==false){
+	touched = false;
+}

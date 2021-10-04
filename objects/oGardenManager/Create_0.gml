@@ -41,5 +41,9 @@ globalvar rm_road_path;
 global.rm_road_path = mp_grid_create(0,0, room_width/16,room_height/16,16,16);
 
 // stop work button clicked and touched anywhere
+touched = false;
 stop_touch_x = -1;
 stop_touch_y = -1;
+
+// start work button click and moved
+moved = true;
