@@ -121,6 +121,7 @@ else if(room==rGarden){
 	
 	#region start work	
 	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
+		touched = false;
 		//show_debug_message(string(x)+"-"+string(y));
 		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
 			//show_debug_message("aise");
@@ -187,19 +188,24 @@ else if(room==rGarden){
 	if(GameManager.stop_work==true && GameManager.start_work==false){
 		// reinitialize to get new near tree
 		inst_large_tree = noone;
-				
-		// click any position to call farmers moved there
-		if(mouse_check_button_pressed(mb_left)){
-			GardenManager.stop_touch_x = mouse_x;
-			GardenManager.stop_touch_y = mouse_y;
-		}
-		var _dx = GardenManager.stop_touch_x;
-		var _dy = GardenManager.stop_touch_y;
-		if(_dx!=-1 && _dy!=-1){
-			myPath = path_add();
-			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx-6, _dy-6, true)){
-				path_start(myPath,1,path_action_stop,false);
+			
+		if(touched==true){
+			// click any position to call farmers moved there
+			if(mouse_check_button_pressed(mb_left)){
+				GardenManager.stop_touch_x = mouse_x;
+				GardenManager.stop_touch_y = mouse_y;
 			}
+			var _dx = GardenManager.stop_touch_x;
+			var _dy = GardenManager.stop_touch_y;
+			if(_dx!=-1 && _dy!=-1){
+				myPath = path_add();
+				if(mp_grid_path(global.rmGarden, myPath, x,y, _dx-8, _dy-8, true)){
+					path_start(myPath,1,path_action_stop,false);
+				}
+			}
+		}
+		else{
+			touched = true;
 		}
 	}
 	#endregion stop work
