@@ -5,8 +5,7 @@ function custom_destroy_instance(){
 	pointY = argument[1];
 	object = argument[2];
 	if(instance_position(pointX,pointY,object)){
-		var objBlock = instance_position(pointX,pointY,object);
-		show_debug_message("geche");		
+		var objBlock = instance_position(pointX,pointY,object);		
 		with objBlock {
 			instance_destroy();
 		}

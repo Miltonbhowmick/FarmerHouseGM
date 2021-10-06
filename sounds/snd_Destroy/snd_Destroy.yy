@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_Destroy.wav",
-  "duration": 0.1689,
+  "duration": 0.1639,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -20,7 +20,7 @@
 				 }        
 	    }
   
-	  if(GardenManager.cutDungeonTree=="start_farmers" && !instance_exists(oDungeonTree))
+	  if(GardenManager.cutDungeonTree=="start_farmers" && !instance_exists(oDungeonTree) )
 	    {
 		        myPath = path_add();
 		        mp_grid_path(rmGarden, myPath, x, y ,GardenManager._fx,GardenManager._fy+64, false)

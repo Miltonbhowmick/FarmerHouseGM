@@ -29,13 +29,28 @@ if(room==rGarden)
 	  }
    
 	   //moving to initial position after cut all the flowers
-	if(GardenManager.cutFlower=="start_farmers" && !instance_exists(oFlower))
+	if(GardenManager.cutFlower=="start_farmers" &&  !instance_exists(oFlower) )
 	  {
 		        myPath = path_add();
 		        mp_grid_path(rmGarden, myPath, x, y ,GardenManager._fx,GardenManager._fy+32, false)
 				path_start(myPath, 2, path_action_stop, true);
 		
 	  }
+	  
+	  
+	  //back to main room
+	  if(!instance_exists(oDungeonTree) && !instance_exists(oFlower) && !instance_exists(oLargeStone))
+	  {
+		  
+		  earnPoints=floor((GardenManager.countFlower+GardenManager.countGardenTree+GardenManager.countStone)/3);
+		  GameManager.coins=GameManager.coins+earnPoints
+		  
+		  // back to rMain room
+	     room_goto(rMain);
+		  
+	  }
+	  
+	  
 	  
   
 	  //end path after reach to flower and cutflower=1 for cut by start button

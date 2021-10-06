@@ -31,3 +31,6 @@ weather_properties();
 garden_properties();
 // -- Cave --
 cave_properties();
+
+//to destroy first instruction
+instructionDestroy=0;

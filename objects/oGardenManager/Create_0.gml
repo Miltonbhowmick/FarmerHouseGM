@@ -1,9 +1,9 @@
 /// @description
-randomize();
+//randomize();
 
 GameManager = inst_GameManager;
 // seed value
-seed_value = irandom(100);
+seed_value = choose(1,14,1405,13285,217,17,27);
 
 
 // initialize parts
@@ -53,6 +53,12 @@ collisionMap = layer_tilemap_get_id(layer_get_id("ArrivalPosition"));
 cutFlower=0;
 collecStone=0;
 cutDungeonTree=0;
+
+
+//count instancescollected by farmer
+	countGardenTree=0;
+	countFlower=0;
+	countStone=0;
 
 //variables for garden farmers point
 

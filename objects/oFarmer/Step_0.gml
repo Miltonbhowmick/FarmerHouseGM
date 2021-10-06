@@ -139,7 +139,7 @@ else if(room==rGarden)
       }
 	 
 	 //move to initial position after collect all stone
-	if(GardenManager.collecStone=="start_farmers" && !instance_exists(oLargeStone))
+	if(GardenManager.collecStone=="start_farmers" &&  !instance_exists(oLargeStone))
 	   {
 	        myPath = path_add();
 	        mp_grid_path(rmGarden, myPath, x, y ,GardenManager._fx,GardenManager._fy, false)

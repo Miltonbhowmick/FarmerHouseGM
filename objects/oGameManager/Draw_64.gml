@@ -13,3 +13,7 @@ if(room==rMain){
 	draw_sprite(sCoin, 0, pos_x, pos_y+20*2);
 	draw_text(pos_x+10,pos_y+30, string(coins));
 }
+
+if(room==rGarden){
+	
+}

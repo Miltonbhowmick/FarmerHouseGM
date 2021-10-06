@@ -60,6 +60,8 @@ garden_properties = function(){
 	// forest gate
 	forest_call_x = inst_ForestGate.x;
 	forest_call_y = inst_ForestGate.y;
+	
+	
 }
 
 cave_properties = function(){
