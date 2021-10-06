@@ -5,17 +5,17 @@ if (distance_to_object(oFarmer)<15)
 	
 
    path_end();
-   FarmerSpeed=0;
+   GameManager.FarmerSpeed=0;
 	 sprite_set_speed(sMovingRoad,0,1);  
 	oEnemySoldier.x=oEnemySoldier.x+20;
 	oEnemySoldier.y=oEnemySoldier.y-40;
 	move_towards_point(oFarmer.x,oFarmer.y,2);
 	
-   if(AttackCount=5 || AttackCount=10 || AttackCount=15)
+   if(GameManager.AttackCount=5 || GameManager.AttackCount=10 || GameManager.AttackCount=15)
    {
-	   if(AttackCount=15)
+	   if(GameManager.AttackCount=15)
 	   {
-	   FarmerSpeed=.1;
+	   GameManager.FarmerSpeed=.1;
 	   sprite_set_speed(sMovingRoad,1,1);
 	   }
     instance_destroy();
@@ -23,16 +23,16 @@ if (distance_to_object(oFarmer)<15)
 
 
 
- if(EnemyCount<2){	
-	 if(AttackCount=5 || AttackCount=10){
-		 FarmerSpeed=.1;
-		 sprite_set_speed(sMovingRoad,1,1);
- instance_create_layer(x,y-200,"Enemies",oEnemySoldier);
- EnemyCount++;
+	 if(GameManager.EnemyCount<2){	
+		 if(GameManager.AttackCount=5 || GameManager.AttackCount=10){
+			 GameManager.FarmerSpeed=.1;
+			 sprite_set_speed(sMovingRoad,1,1);
+	 instance_create_layer(x,y-200,"Enemies",oEnemySoldier);
+	 GameManager.EnemyCount++;
+		 }
 	 }
- }
  
-AttackCount++;
+	GameManager.AttackCount++;
 
 
 	

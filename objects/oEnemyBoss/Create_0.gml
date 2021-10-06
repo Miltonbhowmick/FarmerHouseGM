@@ -1,0 +1,1 @@
+GameManager=inst_GameManager;

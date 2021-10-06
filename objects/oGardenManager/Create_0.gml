@@ -45,5 +45,3 @@ touched = false;
 stop_touch_x = -1;
 stop_touch_y = -1;
 
-// start work button click and moved
-moved = true;

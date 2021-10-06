@@ -106,21 +106,22 @@ if(room==rMain){
 	}
 }
 else if(room==rCave){
-	if(AttackCount<15)
-	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,FarmerSpeed);
-	   if(AttackCount>14 && AttackCount<25)
-	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,FarmerSpeed);
-		
+	path_speed = .5;
+	if(GameManager.AttackCount<15)
+	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,GameManager.FarmerSpeed);
+	   if(GameManager.AttackCount>14 && GameManager.AttackCount<25)
+	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,GameManager.FarmerSpeed);
+	   
 }
 else if(room==rGarden){
 	
 	// when there is no elements remained, stay in the last cut position
 	if(instance_number(oDungeonTree)==0){
-		GardenManager.moved = false;
+		moved = false;
 	}
 	
 	#region start work
-	if(GardenManager.moved && GameManager.start_work==true && GameManager.stop_work==false){
+	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
 		GardenManager.touched = false;
 		//show_debug_message(string(x)+"-"+string(y));
 		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
@@ -149,8 +150,8 @@ else if(room==rGarden){
 		
 				for(var j = 0; j< _ln; j++){
 					if(instance_place(_nx+_drx[j]*_sp , _ny+_dry[j]*_sp,all)==noone){
-						_dx = _nx+_drx[j]*_sp;
-						_dy = _ny+_dry[j]*_sp;
+						_dx = _nx+(_drx[j]*_sp);
+						_dy = _ny+(_dry[j]*_sp);
 						_ck=true;
 						break;	
 					}
@@ -174,7 +175,7 @@ else if(room==rGarden){
 				path_start(myPath,2,path_action_stop,false);
 			}
 			else{
-				// bugskkkm
+				// bugs
 				// farmers not getting move if elemets is on the wall grids 
 				mp_grid_clear_cell(global.rmGarden, floor(_nx/16), floor(_ny/16));
 				instance_destroy(instance_place(_nx,_ny,oDungeonTree));

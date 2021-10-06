@@ -3,15 +3,22 @@
 // to make real view from avoiding overlapping
 depth=-y;
 
+if(room==rCave)  
+{      
+	if(GameManager.AttackCount>14 && GameManager.AttackCount<25){
+	    move_towards_point(oEnemyBoss.x+100,oEnemyBoss.y,GameManager.FarmerSpeed*6); 
+	}			   
+}
+
 if(room==rGarden){
 	
 	// when there is no elements remained, stay in the last cut position
 	if(instance_number(oSmallStone)==0){
-		GardenManager.moved = false;
+		moved = false;
 	}
 	
 	#region start work	
-	if(GardenManager.moved && GameManager.start_work==true && GameManager.stop_work==false){
+	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
 		GardenManager.touched = false;
 		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
 			if(alarm[0]<0){
@@ -39,8 +46,8 @@ if(room==rGarden){
 		
 				for(var j = 0; j< _ln; j++){
 					if(instance_place(_nx+_drx[j]*_sp , _ny+_dry[j]*_sp,all)==noone){
-						_dx = _nx+_drx[j]*_sp;
-						_dy = _ny+_dry[j]*_sp;
+						_dx = _nx+(_drx[j]*_sp);
+						_dy = _ny+(_dry[j]*_sp);
 						_ck=true;
 						break;	
 					}

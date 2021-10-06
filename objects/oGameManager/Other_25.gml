@@ -67,13 +67,11 @@ cave_properties = function(){
 	cave_call = false;
 	cave_call_x = inst_CaveGate.x + 16;
 	cave_call_y = inst_CaveGate.y + 10;
-	// -- Enemy --
-	globalvar EnemyCount;
+	
+	// -- Enemy --	
 	EnemyCount=0;
-	globalvar AttackCount;
-	AttackCount=1;
-	globalvar FarmerSpeed;
-	FarmerSpeed=.1;	
+	AttackCount=1;	
+	FarmerSpeed=.1;		
 }
 
 // @func is_click_object(mouse_x, mouse_y) returns noone if not object else instance

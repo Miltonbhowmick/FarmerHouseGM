@@ -3,15 +3,23 @@
 // to make real view from avoiding overlapping
 depth=-y;
 
+   
+if(room==rCave)  
+{
+	if(GameManager.AttackCount>14 && GameManager.AttackCount<25){
+		move_towards_point(oEnemyBoss.x,oEnemyBoss.y,GameManager.FarmerSpeed*9); 
+	}			   
+}
+
 if(room==rGarden){
 
 	// when there is no elements remained, stay in the last cut position
 	if(instance_number(oFlower)==0){
-		GardenManager.moved = false;
+		moved = false;
 	}
 	
 	#region start work	
-	if(GardenManager.moved && GameManager.start_work==true && GameManager.stop_work==false){
+	if(moved && GameManager.start_work==true && GameManager.stop_work==false){
 		GardenManager.touched = false;
 		if( floor(x) ==_start_gx && floor(y) ==_start_gy){
 			//show_debug_message("aise");
@@ -29,7 +37,7 @@ if(room==rGarden){
 				var _nx = _near_obj.x;
 				var _ny = _near_obj.y;
 				// stay with a distance from tree or flower or stone instances
-				var _sp = 14;
+				var _sp = 16;
 				// grid 4-neighbours
 				var _drx = [-1,1,0,0]; // x change, y unchanged
 				var _dry = [0,0,-1,1]; // y changed, x unchanged
@@ -39,8 +47,8 @@ if(room==rGarden){
 		
 				for(var j = 0; j< _ln; j++){
 					if(instance_place(_nx+_drx[j]*_sp , _ny+_dry[j]*_sp,all)==noone){
-						_dx = _nx+_drx[j]*_sp;
-						_dy = _ny+_dry[j]*_sp;
+						_dx = _nx+(_drx[j]*_sp);
+						_dy = _ny+(_dry[j]*_sp);
 						_ck=true;
 						break;	
 					}
