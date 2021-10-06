@@ -68,10 +68,10 @@ cave_properties = function(){
 	cave_call_x = inst_CaveGate.x + 16;
 	cave_call_y = inst_CaveGate.y + 10;
 	// -- Enemy --
-	globalvar EnemyCount;
+	
 	EnemyCount=0;
-	globalvar AttackCount;
+
 	AttackCount=1;
-	globalvar FarmerSpeed;
+	
 	FarmerSpeed=.1;	
 }

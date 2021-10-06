@@ -1,9 +1,10 @@
 /// @description
+randomize();
 
 GameManager = inst_GameManager;
-
 // seed value
-seed_value = -1;
+seed_value = irandom(100);
+
 
 // initialize parts
 environment_size = .75;
@@ -43,3 +44,17 @@ global.rm_road_path = mp_grid_create(0,0, room_width/16,room_height/16,16,16);
 // stop work button clicked and touched anywhere
 stop_touch_x = -1;
 stop_touch_y = -1;
+
+//tilecollision
+collisionMap = layer_tilemap_get_id(layer_get_id("ArrivalPosition"));
+
+//flowe cut
+
+cutFlower=0;
+collecStone=0;
+cutDungeonTree=0;
+
+//variables for garden farmers point
+
+_fx=653;
+_fy=260;

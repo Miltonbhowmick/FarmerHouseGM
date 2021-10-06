@@ -1,7 +1,8 @@
 // mp grid path speed 
-path_speed = .5;
+
 
 if(room==rMain){
+	path_speed = .5;
 	
 	if(x==GameManager.cave_call_x && y==GameManager.cave_call_y){
 		GameManager.cave_call=false;
@@ -21,7 +22,7 @@ if(room==rMain){
 	else if(GameManager.forest_call){
 		myPath = path_add();
 		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.forest_call_x, GameManager.forest_call_y, false)){
-			path_start(myPath, 2, path_action_stop, true);
+			path_start(myPath, 200, path_action_stop, true);
 		}
 	}
 	else{
@@ -103,25 +104,76 @@ if(room==rMain){
 	}
 }
 else if(room==rCave){
-	if(AttackCount<15)
-	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,FarmerSpeed);
-	   if(AttackCount>14 && AttackCount<25)
-	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,FarmerSpeed);
+	path_speed = .5;
+	
+	if(GameManager.AttackCount<15)
+	   move_towards_point(oEnemySoldier.x+50,oEnemyBoss.y,GameManager.FarmerSpeed);
+	   if(GameManager.AttackCount>14 && GameManager.AttackCount<25)
+	   move_towards_point(oEnemyBoss.x+50,oEnemyBoss.y,GameManager.FarmerSpeed);
 		
 }
-else if(room==rGarden){
-	if(GardenManager.stop_touch_x==x && GardenManager.stop_touch_y==y){
-		GameManager.stop_work=false;
-	}
-	if(GameManager.stop_work==true){
-		var _dx = GardenManager.stop_touch_x;
-		var _dy = GardenManager.stop_touch_y;
-		if(_dx!=-1 && _dy!=-1){
-			show_message("a");
-			myPath = path_add();
-			if(mp_grid_path(global.rmGarden, myPath, x,y, _dx, _dy, true)){
-				path_start(myPath,1,path_action_stop,false);
-			}
-		}
-	}
+
+
+//all works for farmer in garden room and will collect stone
+else if(room==rGarden)
+
+{
+	
+	
+	
+	///added by sourav
+	if(GardenManager.collecStone=="start_farmers" && instance_exists(oLargeStone))
+	 {
+	 
+	  
+		 
+		    myPath = path_add();
+		  
+			if( mp_grid_path(rmGarden, myPath, x, y ,oLargeStone.x, oLargeStone.y, false)) 
+		   
+			    {
+		             path_start(myPath, 2, path_action_stop, true);
+		 
+		        } 
+			
+      }
+	 
+	 //move to initial position after collect all stone
+	if(GardenManager.collecStone=="start_farmers" && !instance_exists(oLargeStone))
+	   {
+	        myPath = path_add();
+	        mp_grid_path(rmGarden, myPath, x, y ,GardenManager._fx,GardenManager._fy, false)
+			path_start(myPath, 2, path_action_stop, true);
+		
+	    }
+	 
+	 
+	 //stop for 2 sec when collect stones
+	  if(distance_to_object(oLargeStone)<5  && GardenManager.collecStone=="start_farmers")
+	  {
+          
+		        path_end();
+				//mp_grid_clear_cell(rg , floor(oLargeStone.x / 16), floor(oLargeStone.y /16));
+				
+		  
+	  }
+	
+	//stop when click stop button pressed
+	 if(GardenManager.collecStone=="stop_farmers")
+	  {
+			     path_end();
+			 
+	  }
+			 
+	//mouse check
+	if(mouse_check_button_pressed(mb_right) )
+	 {
+			   GardenManager.collecStone="right_button_pressed";
+			   mp_grid_path(rmGarden, myPath, x, y ,mouse_x+16, mouse_y+16, false)
+			   path_start(myPath, 2, path_action_stop, true);
+				
+
+	 }
+			
+			
 }

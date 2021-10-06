@@ -51,8 +51,12 @@ function on_click(){
 		show_debug_message("Farmer");	
 	}
 	else if(text=="5"){
+		
 		GameManager.start_work = !GameManager.start_work;
 		if(GameManager.start_work==true){
+			GardenManager.cutFlower="start_farmers";
+			GardenManager.collecStone="start_farmers";
+			GardenManager.cutDungeonTree="start_farmers";
 			_image_index = 1;
 			with (oButton){
 				if(text=="6"){
@@ -68,6 +72,9 @@ function on_click(){
 	else if(text=="6"){
 		GameManager.stop_work = !GameManager.stop_work;
 		if(GameManager.stop_work==true){
+			GardenManager.cutFlower="stop_farmers";
+			GardenManager.collecStone="stop_farmers";
+			GardenManager.cutDungeonTree="stop_farmers";
 			_image_index = 1;
 			with (oButton){
 				if(text=="5"){
@@ -95,4 +102,18 @@ function on_click(){
 	else if(text == "Exit"){
 		game_end();
 	}
+	
+	
+	
+	if(mouse_check_button_pressed(mb_right)){
+			 
+			 show_message("@#");
+			 with (oButton){
+				if(text=="6"){
+					_image_index = 0;
+					GameManager.start_work = false;
+				}
+			}
+		 }
+	 
 }

@@ -1,4 +1,4 @@
-if(AttackCount=15)
+if(GameManager.AttackCount=15)
 {
 	path_start(pEnemySoldier,1,path_action_stop,true);	
 		
@@ -10,13 +10,13 @@ if (distance_to_object(oFarmer)<15)
 {
 	
     path_end();
-	FarmerSpeed=0;
+	GameManager.FarmerSpeed=0;
 	   
 	oEnemyBoss.x=oEnemyBoss.x+20;
 	oEnemyBoss.y=oEnemyBoss.y-60;
 	sprite_set_speed(sMovingRoad,0,10);
 	move_towards_point(oFarmer.x,oFarmer.y,1);
-	if(AttackCount=25)
+	if(GameManager.AttackCount=25)
 	{
 		instance_destroy();
 		sprite_set_speed(sMovingRoad,0,10);
@@ -28,6 +28,6 @@ if (distance_to_object(oFarmer)<15)
 	}
 
 
-  AttackCount++;
+  GameManager.AttackCount++;
  }
  

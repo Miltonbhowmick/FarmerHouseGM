@@ -23,4 +23,7 @@ else if(room==rGarden){
 	global.rmGarden = mp_grid_create(0,0,room_width/16,room_height/16, 16,16);
 	mp_grid_add_instances(global.rmGarden, oBlock_16x16, true);
 	garden_timeToDraw = false;
+	
+	globalvar rmGarden1;
+	global.rmGarden1 = mp_grid_create(0,0,room_width/16,room_height/16, 16,16);
 }

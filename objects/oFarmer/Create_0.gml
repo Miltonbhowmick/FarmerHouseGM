@@ -1,7 +1,7 @@
 // oGameManager instance
 
 GameManager = inst_GameManager;
-show_message(inst_GameManager.id);
+//show_message(inst_GameManager.id);
 
 inst_object = noone;
 // room gate
@@ -28,9 +28,14 @@ near_enemy = noone;
 
 
 if(room==rCave){
+	//farmer is going on his directed path
 	sprite_set_speed(sMovingRoad,2,2);
     path_start(pFireStick,2,path_action_stop,true);
     path_end();
+	
+	
+	   
+	
 }
 if(room==rGarden){
 	GardenManager = inst_GardenManager;

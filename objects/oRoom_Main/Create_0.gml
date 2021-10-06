@@ -5,8 +5,8 @@ GameManager.instruction_room_main = true;
 
 // instructions
 
-op_x = 128;
-op_y = 64;
+op_x = 38;
+op_y = 14;
 
 text_logo_pad_x = 40;
 text_logo_pad_y = 10;
@@ -20,6 +20,6 @@ transport_btn = "Bring a truck to transport wood After cutting 10 trees";
 cave_gate_btn =  "Move Farmer to a dungeon to collect axe which can\ncut trees 33% faster";
 
 // continue button
-continue_text = "Continue";
-continue_x = camera_get_view_width(view_camera[0])-182;
-continue_y = camera_get_view_height(view_camera[0])-80;
+continue_text = "Click On Continue";
+continue_x = camera_get_view_width(view_camera[0])-482;
+continue_y = camera_get_view_height(view_camera[0])-120;

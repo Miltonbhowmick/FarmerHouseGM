@@ -10,11 +10,13 @@ while(i<environment_occupied){
 		xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
 		yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
 		
-		if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0)
+		if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0 )
 		{
-			instance_create_layer(xx,yy,"Trees", oDungeonTree);
-			free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
-			i+=3;
+			
+				instance_create_layer(xx,yy,"Trees", oDungeonTree);
+				free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
+				i+=3;
+			
 		}
 		
 	}
@@ -22,11 +24,14 @@ while(i<environment_occupied){
 
 		xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
 		yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
-		if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0)
+		if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0 )
 		{
-			instance_create_layer(xx,yy,"Flowers", oFlower);
-			free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
-			i+=3;
+			
+				instance_create_layer(xx,yy,"Flowers", oFlower);
+				free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
+				i+=3;
+				
+			 
 		}
 	}
 	
@@ -34,11 +39,13 @@ while(i<environment_occupied){
 
 		xx = (floor((irandom_range(0,room_width)/cell_size)) * cell_size);
 		yy = (floor((irandom_range(0,room_height)/cell_size)) * cell_size);
-		if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0)
+		if(free_cell[# floor(xx/cell_size), floor(yy/cell_size)]==0 )
 		{
-			instance_create_layer(xx,yy,"Stones", oSmallStone);
+			
+			instance_create_layer(xx,yy,"Stones", oLargeStone);
 			free_cell[# floor(xx/cell_size), floor(yy/cell_size)] = 1;
 			i+=3;
+			 
 		}
 	}
 	
@@ -47,4 +54,4 @@ tree_percentage =instance_number(oDungeonTree);
 flower_percentage = instance_number(oFlower);
 stone_percentage = instance_number(oSmallStone);
 
-show_message(random_get_seed());
+//show_message(random_get_seed());

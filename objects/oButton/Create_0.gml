@@ -1,5 +1,6 @@
 
 GameManager = inst_GameManager;
+GardenManager = inst_GardenManager;
 
 width = 20;
 height = 20;
