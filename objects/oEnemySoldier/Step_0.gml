@@ -6,6 +6,10 @@ if (distance_to_object(oFarmer)<15)
 
    path_end();
    GameManager.FarmerSpeed=0;
+   
+   audio_play_sound(snd_Fight,10,false); 
+   
+   
 	 sprite_set_speed(sMovingRoad,0,1);  
 	oEnemySoldier.x=oEnemySoldier.x+20;
 	oEnemySoldier.y=oEnemySoldier.y-40;

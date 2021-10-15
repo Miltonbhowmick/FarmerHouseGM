@@ -1,3 +1,5 @@
+if(GameManager.draw_permission==true){
+
 if(seed_value>0){
 	if(gate_cell[$ seed_value]==undefined){
 		// source gate
@@ -33,4 +35,6 @@ if(seed_value>0){
 	event_user(1);
 
 	seed_value=-1;
+}
+
 }

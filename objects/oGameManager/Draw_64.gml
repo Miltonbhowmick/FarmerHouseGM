@@ -14,6 +14,3 @@ if(room==rMain){
 	draw_text(pos_x+10,pos_y+30, string(coins));
 }
 
-if(room==rGarden){
-	
-}

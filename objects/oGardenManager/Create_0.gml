@@ -6,6 +6,7 @@ GameManager = inst_GameManager;
 seed_value = choose(1,14,1405,13285,217,17,27);
 
 
+
 // initialize parts
 environment_size = .75;
 road_den_size = .25;
@@ -64,3 +65,7 @@ cutDungeonTree=0;
 
 _fx=653;
 _fy=260;
+
+//Variable for gardenroom instruction box
+gardenInstruction=true;
+

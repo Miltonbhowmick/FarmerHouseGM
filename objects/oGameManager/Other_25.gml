@@ -15,7 +15,41 @@ init_button = function(){
 	// buttons for garden room
 	start_work = false;
 	stop_work = false;
+	
+	dress=false;
+	dagger=false;
+	gloves=false;
+	shoes=false;
+	
+	draw_permission=false;
+	
+	//loot control
+	loot_Text="";
+	loot_Text2="";
+	
+	dressButtonPressed=false;
+	daggerButtonPressed=false;
+	glovesButtonPressed=false;
+	shoesButtonPressed=false;
+	
+	
+	lootdress=false;
+	lootdagger=false;
+	lootgloves=false;
+	lootshoes=false;
+	
+	
+	lootIndexSet1=0;
+	lootIndexSet2=0;
+	lootIndexSet3=0;
+	lootIndexSet4=0;
+	
+	
+		
+	
 }
+
+
 
 tree_properties = function(){
 	// small, medium, large tree

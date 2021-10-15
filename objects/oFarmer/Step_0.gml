@@ -4,7 +4,7 @@
 if(room==rMain){
 	path_speed = .5;
 	
-	if(x==GameManager.cave_call_x && y==GameManager.cave_call_y){
+	if(x==GameManager.cave_call_x && y==GameManager.cave_call_y ){
 		GameManager.cave_call=false;
 		room_goto(rCave);
 	}
@@ -13,13 +13,13 @@ if(room==rMain){
 		room_goto(rGarden);
 	}
 
-	if(GameManager.cave_call){
+	if(GameManager.cave_call && GameManager.CollectTrees<5){
 		myPath = path_add();
 		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.cave_call_x, GameManager.cave_call_y, false)){
 			path_start(myPath, 2, path_action_stop, true);
 		}
 	}
-	else if(GameManager.forest_call){
+	else if(GameManager.forest_call ){
 		myPath = path_add();
 		if(mp_grid_path(global.rmGrid, myPath, x,y,GameManager.forest_call_x, GameManager.forest_call_y, false)){
 			path_start(myPath, 200, path_action_stop, true);
@@ -174,6 +174,9 @@ else if(room==rGarden)
 				
 
 	 }
+	 
+	
+   
 			
 			
 }

@@ -11,7 +11,9 @@ if (distance_to_object(oFarmer)<15)
 	
     path_end();
 	GameManager.FarmerSpeed=0;
-	   
+	
+	audio_play_sound(snd_Fight,10,false); 
+	
 	oEnemyBoss.x=oEnemyBoss.x+20;
 	oEnemyBoss.y=oEnemyBoss.y-60;
 	sprite_set_speed(sMovingRoad,0,10);

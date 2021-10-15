@@ -1,4 +1,6 @@
 /// @description Roads, Duengon
+
+if(GameManager.draw_permission==true){
 myPath = path_add();
 
 while(mp_grid_path(global.rm_road_path, myPath,sx,sy,dx,dy,0)==0){
@@ -25,7 +27,15 @@ for (a = 0; a < path_num; ++a)
 	instance_create_layer(px, py,"Roads", oRoad);
 }
 
+
+if(instance_exists(oLootTiles))
+{
+	instance_destroy(oLootTiles);
+}
+
 // creating farmers 
 instance_create_layer(_fx,_fy,"Farmers",oFarmer);
 instance_create_layer(oFarmer.x,oFarmer.y+32,"Farmers",oFarmerFlower);
 instance_create_layer(oFarmerFlower.x,oFarmerFlower.y+32,"Farmers",oFarmerStone);
+
+}

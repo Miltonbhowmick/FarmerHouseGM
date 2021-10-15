@@ -46,7 +46,7 @@ if(room==rGarden)
 		  GameManager.coins=GameManager.coins+earnPoints
 		  
 		  // back to rMain room
-	     room_goto(rMain);
+	    // room_goto(rMain);
 		  
 	  }
 	  

@@ -1,5 +1,6 @@
 /// @description 
 GameManager = inst_GameManager;
+GardenManager = inst_GardenManager;
 
 GameManager.instruction_room_main = true;
 

@@ -7,6 +7,7 @@ if(mp_grid_path(global.rmGrid_transport, myPath, x, y, inst_OpenSpaceLocation.x,
 }
 // 
 if (GameManager.CollectTrees >= GameManager.stack_loaded_range){
+	
 	GameManager.CollectTrees -= GameManager.stack_loaded_range;
 	var sz = ds_list_size(GameManager.list_cut_tree);
 	

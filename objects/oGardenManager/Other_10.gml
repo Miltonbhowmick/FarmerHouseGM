@@ -3,7 +3,10 @@ var xx,yy;
 var i=0;
 
 random_set_seed(seed_value);
+if(GameManager.draw_permission==true){
+
 while(i<environment_occupied){
+	
 	
 	var _choose=choose("tree","flower","small_stone");
 	if(_choose="tree"){
@@ -53,5 +56,7 @@ while(i<environment_occupied){
 tree_percentage =instance_number(oDungeonTree); 
 flower_percentage = instance_number(oFlower);
 stone_percentage = instance_number(oSmallStone);
+
+}
 
 //show_message(random_get_seed());

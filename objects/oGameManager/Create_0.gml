@@ -34,3 +34,7 @@ cave_properties();
 
 //to destroy first instruction
 instructionDestroy=0;
+
+
+
+

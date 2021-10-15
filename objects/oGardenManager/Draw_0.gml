@@ -5,6 +5,8 @@
 	//mp_grid_draw(rm_road_path);
 	//draw_set_alpha(10);
 //}
+
+if(GameManager.draw_permission==true){
 var pos_x = 12;
 var pos_y = 12;
 
@@ -16,3 +18,5 @@ var pos_y = 12;
 
 	draw_sprite(sFarmerStone, 0, pos_x, pos_y+20*2);
 	draw_text(pos_x+10,pos_y+30, string(countStone));
+	
+}

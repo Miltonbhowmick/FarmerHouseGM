@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1ef6e241-5c3f-41e5-a5cb-2772cd82c103","path":"sprites/sClickPoint/sClickPoint.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ef6e241-5c3f-41e5-a5cb-2772cd82c103","path":"sprites/sClickPoint/sClickPoint.yy",},"LayerId":{"name":"b305c6a9-135e-45ae-8a0d-6fb99410cc1f","path":"sprites/sClickPoint/sClickPoint.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sClickPoint","path":"sprites/sClickPoint/sClickPoint.yy",},"resourceVersion":"1.0","name":"1ef6e241-5c3f-41e5-a5cb-2772cd82c103","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3fadd792-16d5-487f-b79e-6b7be5eb27e5","path":"sprites/sClickPoint/sClickPoint.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3fadd792-16d5-487f-b79e-6b7be5eb27e5","path":"sprites/sClickPoint/sClickPoint.yy",},"LayerId":{"name":"b305c6a9-135e-45ae-8a0d-6fb99410cc1f","path":"sprites/sClickPoint/sClickPoint.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sClickPoint","path":"sprites/sClickPoint/sClickPoint.yy",},"resourceVersion":"1.0","name":"3fadd792-16d5-487f-b79e-6b7be5eb27e5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sClickPoint","path":"sprites/sClickPoint/sClickPoint.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f57b2b2a-95fe-484c-a4dd-66f0609e625e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ef6e241-5c3f-41e5-a5cb-2772cd82c103","path":"sprites/sClickPoint/sClickPoint.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f9e73537-e7cb-4877-9c28-b1ed354d7f86","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3fadd792-16d5-487f-b79e-6b7be5eb27e5","path":"sprites/sClickPoint/sClickPoint.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
