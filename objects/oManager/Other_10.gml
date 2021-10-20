@@ -26,11 +26,7 @@ else if(room==rGarden){
 	
 	if(GameManager.draw_permission==false){
 	
-	create_button(pos_x-op_space,pos_y+120, _width, _height, sFarmerDress,"7", on_click);
-	create_button(pos_x-op_space,pos_y+160, _width, _height, sFarmerDagger,"8", on_click);
-	create_button(pos_x-op_space,pos_y+200, _width, _height, sFarmerGloves,"9", on_click);
-	create_button(pos_x-op_space,pos_y+240, _width, _height, sFarmerShoes,"10", on_click);
-	create_button(pos_x-op_space,pos_y+280, _width, _height, sPlay,"11", on_click);
+	create_button(pos_x+20,pos_y+180, _width, _height, sPlay,"11", on_click);
 	}
 			
 }

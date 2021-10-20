@@ -2,7 +2,8 @@
 // You can write your code in this editor
 GameManager=inst_GameManager;
 
-yy=0;
+xx=0;
+
 screenWidth = 200;
 screenHeight = 100;
 

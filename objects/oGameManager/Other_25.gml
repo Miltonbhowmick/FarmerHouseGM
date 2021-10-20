@@ -39,12 +39,15 @@ init_button = function(){
 	lootshoes=false;
 	
 	
-	lootIndexSet1=0;
+	lootIndexSet1=-1;
 	lootIndexSet2=0;
 	lootIndexSet3=0;
 	lootIndexSet4=0;
+	lootIndexSet5=0;
 	
-	
+	draggingValue=0;
+	tx="";
+	setcolor=0;
 		
 	
 }

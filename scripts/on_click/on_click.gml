@@ -92,12 +92,10 @@ function on_click(){
 	//Head Up Display
 	
 	//dress button
-	else if(text=="7")
+	/*else if(text=="7")
 	{
 		GameManager.dress = !GameManager.dress;
 		if(GameManager.dress==true){
-			
-
 			
 			destroyLootButtonIndex("8","9","10",true,false,false,false);
 			
@@ -187,12 +185,7 @@ function on_click(){
 			
 			
 			destroyLootButtonIndex("7","8","9",false,false,false,true);
-			
-			
 			GameManager.lootIndexSet4=0;
-			
-			
-			
 		    _image_index = 1;
 			GameManager.shoes = false;
 		}
@@ -201,12 +194,11 @@ function on_click(){
 	}
 	
 	}
-	
+	*/
 	else if(text=="11")
 	{
 		    
 	        GameManager.draw_permission=true;
-			destroyLootButtonIndex("7","8","10",false,false,false,false);
 			GameManager.loot_Text="";
 			GameManager.loot_Text2="";
 			room_goto(rMain);
