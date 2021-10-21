@@ -15,7 +15,7 @@ function destroyLootButtonIndex(v1,v2,v3,v4,tf1,tf2,tf3,tf4){
 	//GameManager.lootshoes=tf4;
 	
 	
-	instance_create_layer(350,100,"GUI",oLootBox);
+	
 	
 	
 }

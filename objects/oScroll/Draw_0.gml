@@ -2,9 +2,9 @@
 // You can write your code in this editor
 //instance_create_layer(yy,-250,"GUI",oLootDress);
 
+	
+	
 if(GameManager.draw_permission==false){	
-	
-	
 for(i = 1 ; i <=5 ; i++){
 	
 	mv= i mod 5;
@@ -37,4 +37,6 @@ for(i = 1 ; i <=5 ; i++){
 	
 scr_scrollable_set_Last_Item_Position(oScrollable, xx + (btn_height / 2) );
 
+
 }
+

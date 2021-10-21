@@ -36,7 +36,7 @@ if(distance_to_object(oLootPoint1)<18)
 	   }
 	   
 	   
-    destroyLootButtonIndex(0,0,1,0,false,false,true,false);
+    instance_create_layer(350,100,"GUI",oLootBox);
 	
 	
 	

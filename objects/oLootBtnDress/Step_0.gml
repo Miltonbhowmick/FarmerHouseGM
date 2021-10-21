@@ -35,7 +35,7 @@ if(distance_to_object(oLootPoint1)<15)
 	   if(instance_exists(oLoot5)){
 	   oLoot5.image_index=0;
 	   }
-       destroyLootButtonIndex(1,0,0,0,true,false,false,false);
+       instance_create_layer(350,100,"GUI",oLootBox);
 	 
 	
 	

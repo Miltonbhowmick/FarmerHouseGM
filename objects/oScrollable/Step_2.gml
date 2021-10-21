@@ -5,10 +5,10 @@ dragData *= 0.9;
 
 
 if(scrollY > scrollTop){
-	scrollY = lerp(scrollY, scrollTop,0.01);
+	scrollY = lerp(scrollY, scrollTop,0);
 	
 }
 else if(scrollY < -scrollBottom){
-	scrollY = lerp(scrollY, -scrollBottom, .3);
+	scrollY = lerp(scrollY, -scrollBottom, 0);
 }
 

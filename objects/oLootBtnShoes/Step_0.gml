@@ -33,6 +33,35 @@ if(distance_to_object(oLootPoint1)<15)
 	   oLoot5.image_index=3;
 	   }
 
-	destroyLootButtonIndex(0,0,0,1,false,false,false,true);
+	instance_create_layer(350,100,"GUI",oLootBox);
 			
+}
+if(y<75)
+{
+	if( instance_exists(oLootBtnDress) && instance_exists(oLootBtnDagger)
+	 && instance_exists(oLootBtnGloves) && instance_exists(oLootBtnShoes) ){
+		 image_index=1;
+	     oLootBtnDress.image_index=0;
+	     oLootBtnGloves.image_index=0;
+	     oLootBtnDagger.image_index=0;
+	     }
+		
+		GameManager.lootIndexSet1=14;
+	   	   if(instance_exists(oLoot1)){
+	   oLoot1.image_index=3;
+	   }
+	   if(instance_exists(oLoot2)){
+	   oLoot2.image_index=3;
+	   }
+	   if(instance_exists(oLoot3)){
+	   oLoot3.image_index=3;
+	   }
+	   if(instance_exists(oLoot4)){
+	   oLoot4.image_index=3;
+	   }
+	   if(instance_exists(oLoot5)){
+	   oLoot5.image_index=3;
+	   }
+
+	instance_create_layer(350,100,"GUI",oLootBox);
 }
