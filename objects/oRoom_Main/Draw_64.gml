@@ -1,8 +1,9 @@
 /// @description 
 
+if(room==rMain && GameManager.draw_permission==false && GameManager.BackFromCave==false){
 draw_set_font(fMenu);
 
-//draw_sprite(sInstructionBoard,0,x,y);
+draw_sprite(sInstructionBoard,0,x,y);
 
 draw_sprite(sFarmerBtn,0, op_x, op_y);
 draw_text(op_x+text_logo_pad_x, op_y+text_logo_pad_y, farmer_btn);
@@ -21,4 +22,5 @@ draw_text(op_x+text_logo_pad_x, op_y + (op_space*4) + text_logo_pad_y, cave_gate
 
 // continue text
 draw_text(continue_x ,continue_y ,continue_text);
+}
 

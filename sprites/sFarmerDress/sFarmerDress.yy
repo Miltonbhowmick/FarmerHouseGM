@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"79721788-86f8-4b5c-b0cc-3a139c738843","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"79721788-86f8-4b5c-b0cc-3a139c738843","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":{"name":"07d028c6-22ec-4456-bc7d-6482fc316331","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sFarmerDress","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"79721788-86f8-4b5c-b0cc-3a139c738843","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ed5e55a8-08b2-435a-a176-e782976ae5e4","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ed5e55a8-08b2-435a-a176-e782976ae5e4","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":{"name":"07d028c6-22ec-4456-bc7d-6482fc316331","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sFarmerDress","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"ed5e55a8-08b2-435a-a176-e782976ae5e4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b462fbeb-7c95-4f95-a15a-057e98bf8dbe","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b462fbeb-7c95-4f95-a15a-057e98bf8dbe","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":{"name":"07d028c6-22ec-4456-bc7d-6482fc316331","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFarmerDress","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"b462fbeb-7c95-4f95-a15a-057e98bf8dbe","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"63b4f145-5d7b-445a-b29a-7e1706eddca4","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"63b4f145-5d7b-445a-b29a-7e1706eddca4","path":"sprites/sFarmerDress/sFarmerDress.yy",},"LayerId":{"name":"07d028c6-22ec-4456-bc7d-6482fc316331","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFarmerDress","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","name":"63b4f145-5d7b-445a-b29a-7e1706eddca4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sFarmerDress","path":"sprites/sFarmerDress/sFarmerDress.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e6f85fa8-76c9-4990-959b-defc5df067cc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79721788-86f8-4b5c-b0cc-3a139c738843","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"0b2fd449-ea3e-486a-9f9d-57c27e3e1444","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed5e55a8-08b2-435a-a176-e782976ae5e4","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4a1a3662-3728-4393-9a41-955e4589d250","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b462fbeb-7c95-4f95-a15a-057e98bf8dbe","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9f15888c-9d78-4b62-84ef-cdf786606b9b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63b4f145-5d7b-445a-b29a-7e1706eddca4","path":"sprites/sFarmerDress/sFarmerDress.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

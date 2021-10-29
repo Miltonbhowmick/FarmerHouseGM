@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"61e369e9-6a79-4608-bb15-74dade9ccac5","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"61e369e9-6a79-4608-bb15-74dade9ccac5","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"LayerId":{"name":"55d61c22-b62b-4417-aeb2-52f018f8aff9","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sFarmerShoes","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","name":"61e369e9-6a79-4608-bb15-74dade9ccac5","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"d0615c47-10dd-40eb-9ddd-4b3e354d3b85","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"d0615c47-10dd-40eb-9ddd-4b3e354d3b85","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"LayerId":{"name":"55d61c22-b62b-4417-aeb2-52f018f8aff9","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sFarmerShoes","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","name":"d0615c47-10dd-40eb-9ddd-4b3e354d3b85","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a7707cb3-25d8-43fe-9df4-3af949f62224","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a7707cb3-25d8-43fe-9df4-3af949f62224","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"LayerId":{"name":"55d61c22-b62b-4417-aeb2-52f018f8aff9","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFarmerShoes","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","name":"a7707cb3-25d8-43fe-9df4-3af949f62224","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sFarmerShoes","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2ccd614d-fd13-49f4-96a3-2254146661e3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"61e369e9-6a79-4608-bb15-74dade9ccac5","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f63514dc-1b26-4378-9be1-f27e2720d24d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0615c47-10dd-40eb-9ddd-4b3e354d3b85","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f63514dc-1b26-4378-9be1-f27e2720d24d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0615c47-10dd-40eb-9ddd-4b3e354d3b85","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4d5e3e73-1e8c-4728-99c7-e03402ceb540","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7707cb3-25d8-43fe-9df4-3af949f62224","path":"sprites/sFarmerShoes/sFarmerShoes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

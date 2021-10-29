@@ -15,21 +15,30 @@ for(i = 1 ; i <=5 ; i++){
 	
     
 	if(mv==1)
-     instance_create_layer(xx-50,250,"GUI",oLoot1);
+     instance_create_layer(65,xx,"GUI",oLoot1);
 	 if(mv==2)
-     instance_create_layer(xx-50,250,"GUI",oLoot2);
+     instance_create_layer(65,xx,"GUI",oLoot2);
 	 if(mv==3)
-     instance_create_layer(xx-50,250,"GUI",oLoot3);
+     instance_create_layer(65,xx,"GUI",oLoot3);
 	 if(mv==4)
-     instance_create_layer(xx-50,250,"GUI",oLoot4);
+     instance_create_layer(65,xx,"GUI",oLoot4);
 	 if(mv==0)
-     instance_create_layer(xx-50,250,"GUI",oLoot5);
+     instance_create_layer(65,xx,"GUI",oLoot5);
+	 
+	 xx1 =(70* i);
+	 instance_create_layer(32,xx1-35,"GUI",oLootLine);
+	 instance_create_layer(92,xx1-35,"GUI",oLootLine);
+	 instance_create_layer(575,xx1-35,"GUI",oLootLine);
+	 instance_create_layer(635,xx1-35,"GUI",oLootLine);
 
    
 }
 
    
-	instance_create_layer(290,256,"GUI",oLootPoint3);
+	instance_create_layer(65,168,"GUI",oLootPoint3);
+	
+	
+	
 	
 	
 	

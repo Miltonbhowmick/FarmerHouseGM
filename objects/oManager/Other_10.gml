@@ -24,9 +24,5 @@ else if(room==rGarden){
 	create_button(pos_x-op_space,pos_y, _width, _height, sStopWorkBtn,"6", on_click);
 	}
 	
-	if(GameManager.draw_permission==false){
-	
-	create_button(pos_x+20,pos_y+180, _width, _height, sPlay,"11", on_click);
-	}
 			
 }

@@ -20,8 +20,10 @@ init_button = function(){
 	dagger=false;
 	gloves=false;
 	shoes=false;
+	dfo=10;
 	
 	draw_permission=false;
+	drawButtonControl=true;
 	
 	//loot control
 	loot_Text="";
@@ -38,6 +40,7 @@ init_button = function(){
 	lootgloves=false;
 	lootshoes=false;
 	
+
 	
 	lootIndexSet1=-1;
 	lootIndexSet2=0;
@@ -113,4 +116,6 @@ cave_properties = function(){
 	AttackCount=1;
 	
 	FarmerSpeed=.1;	
+	
+	BackFromCave=false;
 }

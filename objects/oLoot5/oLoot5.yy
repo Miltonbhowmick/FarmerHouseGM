@@ -3,7 +3,7 @@
     "name": "sLoot5",
     "path": "sprites/sLoot5/sLoot5.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

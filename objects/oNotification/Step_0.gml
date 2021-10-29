@@ -4,6 +4,7 @@
 if(mouse_check_button_pressed(mb_left)){
 	GameManager.AttackCount=1;
 	GameManager.EnemyCount=0;
+	GameManager.BackFromCave=true;
 	// cut 33% faster after killing enemy
 	
 	GameManager.tree_cut_time = GameManager.init_cut_time - floor(GameManager.init_cut_time*33/100);

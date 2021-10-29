@@ -3,7 +3,7 @@
     "name": "sFarmerDress",
     "path": "sprites/sFarmerDress/sFarmerDress.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
